@@ -1,4 +1,4 @@
-# ��� Obsidian Arcadia Network
+# ��� Obsidian Arcadia Network
 
 **Complete Autonomous AI Agent Protocol with Web3 Infrastructure**
 
@@ -11,11 +11,11 @@ Build autonomous AI agents that **think**, **adapt**, **evolve**, and operate on
 
 ---
 
-## ��� What is OAN?
+## ��� What is OAN?
 
 The **Obsidian Arcadia Network** is a complete two-layer protocol for autonomous AI agents:
 
-### **��� Layer 1: Core AI Engine** ✅ COMPLETE
+### **��� Layer 1: Core AI Engine** ✅ COMPLETE
 Python-based behavioral intelligence system with multi-agent coordination
 
 ### **⛓️ Layer 2: Web3 Protocol** ✅ COMPLETE
@@ -23,7 +23,7 @@ Python-based behavioral intelligence system with multi-agent coordination
 
 ---
 
-## ��� Project Status
+## ��� Project Status
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                   PROJECT COMPLETE STATUS                     ║
@@ -45,13 +45,13 @@ Python-based behavioral intelligence system with multi-agent coordination
 ║  ├─ Phase 2.5: Protocol Economy                 ✅          ║
 ║  └─ 17 Contracts Compiled                       ✅          ║
 ║                                                              ║
-║  STATUS: PRODUCTION READY ���                                 ║
+║  STATUS: PRODUCTION READY ���                                 ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## ��� Quick Start
+## ��� Quick Start
 
 ### Installation
 ```bash
@@ -90,7 +90,7 @@ INTENT "Execute profitable trades"
 
 ---
 
-## ��� LAYER 1: CORE ENGINE
+## ��� LAYER 1: CORE ENGINE
 
 ### Components (8 Modules)
 
@@ -389,7 +389,7 @@ Economic management
 
 ---
 
-## ��� Token Economics
+## ��� Token Economics
 
 ### $OAN Token
 
@@ -431,7 +431,7 @@ Stake Treas Crea Burn
 
 ---
 
-## ��� Complete Statistics
+## ��� Complete Statistics
 
 ### Layer 1 (Python)
 - **Components**: 8 core modules
@@ -457,7 +457,7 @@ Stake Treas Crea Burn
 
 ---
 
-## ��� Features Showcase
+## ��� Features Showcase
 
 ### Cyberpunk Dashboard
 ```
@@ -505,7 +505,7 @@ TOKENIZED True
 
 ---
 
-## ��� Complete Documentation
+## ��� Complete Documentation
 
 ### Core Documentation
 - [README.md](README.md) - This file
@@ -529,7 +529,7 @@ TOKENIZED True
 
 ---
 
-## ���️ Installation Options
+## ���️ Installation Options
 ```bash
 # Core package only
 pip install obsidian-arcadia-network
@@ -548,7 +548,7 @@ pip install -e .
 
 ---
 
-## ��� Testing
+## ��� Testing
 
 ### Run All Tests
 ```bash
@@ -575,7 +575,7 @@ npx hardhat compile
 
 ---
 
-## ��� Use Cases
+## ��� Use Cases
 
 ### Trading & Finance
 - Algorithmic trading bots
@@ -603,7 +603,7 @@ npx hardhat compile
 
 ---
 
-## ��� Deployment
+## ��� Deployment
 
 ### Testnet Deployment (Recommended First)
 
@@ -623,7 +623,7 @@ npx hardhat compile
 
 ---
 
-## ��� Contributing
+## ��� Contributing
 
 We welcome contributions!
 
@@ -636,13 +636,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
-## ��� License
+## ��� License
 
 MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## ��� Links
+## ��� Links
 
 - **GitHub**: https://github.com/cluna80/Obsidian-Arcadia-Network
 - **PyPI**: https://pypi.org/project/obsidian-arcadia-network/
@@ -651,7 +651,7 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## ��� Roadmap
+## ��� Roadmap
 
 ### ✅ Phase 1: Foundation (COMPLETE)
 - Core engine
@@ -665,21 +665,55 @@ MIT License - see [LICENSE](LICENSE)
 - DAO governance
 - Protocol economy
 
-### ��� Phase 3: Production Launch
-- Testnet deployment
-- Security audit
-- Mainnet deployment
-- Community launch
+- Coming soon More Layers
 
-### ��� Phase 4: Advanced Features
-- Machine learning integration
-- Cross-chain bridges
-- Mobile apps
-- Advanced coordination patterns
+🎮 Layer 3 — Gaming Systems
+
+✔ Web3 Game Engine
+✔ NFT Game Assets
+✔ AI NPC Agents
+✔ Player Economies
+
+👉 OAN Interactive Worlds Layer
+
+🎬 Layer 4 — Media / Movie Systems
+
+✔ NFT Movies / Scenes / Props
+✔ AI Actors / Directors
+✔ Tokenized Rights & Revenue
+
+👉 OAN Media Engine
+
+🥊 Layer 5 — Sports & Competitive Systems
+
+✔ NFT Sports Cards (Boxing, etc.)
+✔ AI Simulations
+✔ Fan Tokens
+✔ Fantasy / Prediction Systems
+
+👉 OAN Sports Layer
+
+🏛 Layer 6 — Marketplace & Economy
+
+✔ NFT Asset Trading
+✔ AI Tools & Modules
+✔ Creator Monetization
+✔ Reputation-Driven Influence
+
+👉 OAN Exchange Layer
+
+🛡 Layer 7 — Safety & Reliability
+
+✔ Secure Execution
+✔ Auditable Agent Behavior
+✔ Reputation Enforcement
+✔ Stability / Trust Layer
+
+👉 OAN Integrity Layer
 
 ---
 
-## ��� Achievements
+## ��� Achievements
 
 ✅ **Published on PyPI**  
 ✅ **17 Smart Contracts Compiled**  
@@ -689,7 +723,7 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## ��� **Welcome to the Rogue AI Lab**
+## ��� **Welcome to the Rogue AI Lab**
 
 **Two complete layers. One powerful protocol.**
 ```python
@@ -706,10 +740,10 @@ entity = oan.execute_entity("my_entity.obs")
 # Trade on marketplace
 ```
 
-**Build the future of autonomous AI agents.** ���
+**Build the future of autonomous AI agents.** ���
 
 ⭐ **Star us on GitHub!**
 
 ---
 
-**Made with ��� by the OAN Development Team**
+**Made with ��� by the OAN Development Team**
