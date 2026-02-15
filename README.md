@@ -14,4 +14,4 @@ import oan
 entity = oan.execute_entity("my_entity.ent", cycles=10)
 ```
 
-See full documentation at https://github.com/yourusername/obsidian-arcadia-network
+See full documentation at https://github.com/cluna80/obsidian-arcadia-network
