@@ -1,0 +1,8 @@
+ENTITY Researcher
+INTENT "Analyze crypto market anomalies"
+BIND WebScanner
+BIND MemoryArchive
+MODE ColdLogic
+WORLD Lab_01
+TOKENIZED False
+ENERGY 100

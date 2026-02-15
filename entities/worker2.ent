@@ -1,0 +1,16 @@
+ENTITY Worker2
+STATE Active
+ENERGY 100
+REPUTATION 0
+
+BEHAVIOR
+  IF ENERGY < 30 THEN STATE Recovery
+END
+
+EXECUTE
+  IF STATE == Active THEN SentimentAnalyzer
+  IF STATE == Recovery THEN Monitor
+END
+
+INTENT "Analyze sentiment"
+MODE Testing

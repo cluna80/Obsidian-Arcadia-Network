@@ -1,0 +1,19 @@
+
+ENTITY RecoveryBot
+STATE Active
+ENERGY 100
+REPUTATION 0
+
+BEHAVIOR
+  IF ENERGY < 30 THEN STATE Recovery
+  IF STATE == Recovery THEN ENERGY + 15
+  IF ENERGY > 80 THEN STATE Active
+END
+
+EXECUTE
+  IF STATE == Active THEN DataCollector
+  IF STATE == Recovery THEN Monitor
+END
+
+INTENT "Test energy restoration mechanics"
+MODE Testing

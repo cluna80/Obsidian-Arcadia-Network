@@ -1,0 +1,5 @@
+ENTITY TestBot
+STATE Active
+ENERGY 100
+INTENT "Test entity"
+MODE Testing

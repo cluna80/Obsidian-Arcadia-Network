@@ -1,0 +1,604 @@
+import os
+from engine.entity import Entity
+
+
+class DSLParseError(Exception):
+    """Custom exception for DSL parsing errors"""
+    def __init__(self, message, line_number=None, line_content=None):
+        self.line_number = line_number
+        self.line_content = line_content
+        
+        error_msg = f"[OAN DSL ERROR] {message}"
+        if line_number is not None:
+            error_msg += f"\n  → Line {line_number}"
+        if line_content is not None:
+            error_msg += f"\n  → Content: {line_content}"
+        
+        super().__init__(error_msg)
+
+
+class DSLValidator:
+    """Validates DSL syntax and structure"""
+    
+    VALID_KEYWORDS = {
+        'ENTITY', 'TYPE', 'STATE', 'ENERGY', 'MODULES', 
+        'INTENT', 'BIND', 'MODE', 'WORLD', 'TOKENIZED', 'REPUTATION'
+    }
+    
+    REQUIRED_FIELDS = {'ENTITY'}  # At minimum, entity must have a name
+    RECOMMENDED_FIELDS = {'INTENT', 'MODE'}  # Recommended for complete entities
+    
+    # Validation constraints
+    VALID_MODES = {'Production', 'Testing', 'Development', 'ColdLogic', 'Experimental', 'Debug'}
+    VALID_STATES = {'Idle', 'Active', 'Suspended', 'Terminated', 'Learning', 'Executing'}
+    VALID_TYPES = {'AIAgent', 'Researcher', 'Analyzer', 'Generator', 'Monitor', 'Coordinator', 'Undefined'}
+    
+    # Value constraints
+    ENERGY_MIN = 0
+    ENERGY_MAX = 1000
+    REPUTATION_MIN = -100
+    REPUTATION_MAX = 1000
+    INTENT_MIN_LENGTH = 10
+    INTENT_MAX_LENGTH = 500
+    ENTITY_NAME_MIN_LENGTH = 3
+    ENTITY_NAME_MAX_LENGTH = 50
+    MAX_BINDS = 20
+    
+    @staticmethod
+    def validate_keyword(keyword, line_number, line_content):
+        """Validate that keyword is recognized"""
+        if keyword not in DSLValidator.VALID_KEYWORDS:
+            raise DSLParseError(
+                f"Unknown keyword '{keyword}'. Valid keywords: {', '.join(sorted(DSLValidator.VALID_KEYWORDS))}",
+                line_number=line_number,
+                line_content=line_content
+            )
+    
+    @staticmethod
+    def validate_required_fields(fields_set, filepath):
+        """Ensure all required fields are present"""
+        missing_fields = DSLValidator.REQUIRED_FIELDS - fields_set
+        if missing_fields:
+            raise DSLParseError(
+                f"Missing required field(s): {', '.join(missing_fields)}\n"
+                f"  → File: {filepath}"
+            )
+    
+    @staticmethod
+    def validate_entity_name(name, line_number, line_content):
+        """Validate entity name meets requirements"""
+        if not name:
+            raise DSLParseError(
+                "Entity name cannot be empty",
+                line_number=line_number,
+                line_content=line_content
+            )
+        
+        if len(name) < DSLValidator.ENTITY_NAME_MIN_LENGTH:
+            raise DSLParseError(
+                f"Entity name '{name}' is too short. Must be at least {DSLValidator.ENTITY_NAME_MIN_LENGTH} characters.",
+                line_number=line_number,
+                line_content=line_content
+            )
+        
+        if len(name) > DSLValidator.ENTITY_NAME_MAX_LENGTH:
+            raise DSLParseError(
+                f"Entity name '{name}' is too long. Must be at most {DSLValidator.ENTITY_NAME_MAX_LENGTH} characters.",
+                line_number=line_number,
+                line_content=line_content
+            )
+        
+        # Check for valid characters (alphanumeric, underscore, hyphen)
+        import re
+        if not re.match(r'^[a-zA-Z0-9_-]+$', name):
+            raise DSLParseError(
+                f"Entity name '{name}' contains invalid characters. Only alphanumeric, underscore, and hyphen allowed.",
+                line_number=line_number,
+                line_content=line_content
+            )
+        
+        return name
+    
+    @staticmethod
+    def validate_energy_value(value, line_number, line_content):
+        """Validate ENERGY field is within acceptable range"""
+        try:
+            energy = int(value)
+            if energy < DSLValidator.ENERGY_MIN:
+                raise DSLParseError(
+                    f"ENERGY value {energy} is below minimum ({DSLValidator.ENERGY_MIN}).",
+                    line_number=line_number,
+                    line_content=line_content
+                )
+            if energy > DSLValidator.ENERGY_MAX:
+                raise DSLParseError(
+                    f"ENERGY value {energy} exceeds maximum ({DSLValidator.ENERGY_MAX}).",
+                    line_number=line_number,
+                    line_content=line_content
+                )
+            return energy
+        except ValueError:
+            raise DSLParseError(
+                f"Invalid ENERGY value: '{value}'. Must be an integer between {DSLValidator.ENERGY_MIN} and {DSLValidator.ENERGY_MAX}.",
+                line_number=line_number,
+                line_content=line_content
+            )
+    
+    @staticmethod
+    def validate_reputation_value(value, line_number, line_content):
+        """Validate REPUTATION field is within acceptable range"""
+        try:
+            reputation = int(value)
+            if reputation < DSLValidator.REPUTATION_MIN:
+                raise DSLParseError(
+                    f"REPUTATION value {reputation} is below minimum ({DSLValidator.REPUTATION_MIN}).",
+                    line_number=line_number,
+                    line_content=line_content
+                )
+            if reputation > DSLValidator.REPUTATION_MAX:
+                raise DSLParseError(
+                    f"REPUTATION value {reputation} exceeds maximum ({DSLValidator.REPUTATION_MAX}).",
+                    line_number=line_number,
+                    line_content=line_content
+                )
+            return reputation
+        except ValueError:
+            raise DSLParseError(
+                f"Invalid REPUTATION value: '{value}'. Must be an integer between {DSLValidator.REPUTATION_MIN} and {DSLValidator.REPUTATION_MAX}.",
+                line_number=line_number,
+                line_content=line_content
+            )
+    
+    @staticmethod
+    def validate_tokenized_value(value, line_number, line_content):
+        """Validate TOKENIZED field is a boolean"""
+        value_lower = value.lower()
+        if value_lower not in ['true', 'false']:
+            raise DSLParseError(
+                f"Invalid TOKENIZED value: '{value}'. Must be 'True' or 'False'.",
+                line_number=line_number,
+                line_content=line_content
+            )
+        return value_lower == 'true'
+    
+    @staticmethod
+    def validate_intent(intent, line_number, line_content):
+        """Validate INTENT field meets requirements"""
+        if not intent or not intent.strip():
+            raise DSLParseError(
+                "INTENT cannot be empty",
+                line_number=line_number,
+                line_content=line_content
+            )
+        
+        intent_length = len(intent)
+        if intent_length < DSLValidator.INTENT_MIN_LENGTH:
+            raise DSLParseError(
+                f"INTENT is too short ({intent_length} chars). Must be at least {DSLValidator.INTENT_MIN_LENGTH} characters for clarity.",
+                line_number=line_number,
+                line_content=line_content
+            )
+        
+        if intent_length > DSLValidator.INTENT_MAX_LENGTH:
+            raise DSLParseError(
+                f"INTENT is too long ({intent_length} chars). Must be at most {DSLValidator.INTENT_MAX_LENGTH} characters.",
+                line_number=line_number,
+                line_content=line_content
+            )
+        
+        return intent
+    
+    @staticmethod
+    def validate_mode(mode, line_number, line_content):
+        """Validate MODE is one of the accepted values"""
+        if mode not in DSLValidator.VALID_MODES:
+            raise DSLParseError(
+                f"Invalid MODE '{mode}'. Valid modes: {', '.join(sorted(DSLValidator.VALID_MODES))}",
+                line_number=line_number,
+                line_content=line_content
+            )
+        return mode
+    
+    @staticmethod
+    def validate_state(state, line_number, line_content):
+        """Validate STATE is one of the accepted values"""
+        if state not in DSLValidator.VALID_STATES:
+            # Issue warning but don't fail - allow custom states
+            print(f"[OAN WARNING] Uncommon STATE '{state}'. Standard states: {', '.join(sorted(DSLValidator.VALID_STATES))}")
+        return state
+    
+    @staticmethod
+    def validate_type(entity_type, line_number, line_content):
+        """Validate TYPE is one of the accepted values"""
+        if entity_type not in DSLValidator.VALID_TYPES:
+            # Issue warning but don't fail - allow custom types
+            print(f"[OAN WARNING] Uncommon TYPE '{entity_type}'. Standard types: {', '.join(sorted(DSLValidator.VALID_TYPES))}")
+        return entity_type
+    
+    @staticmethod
+    def validate_bind_count(binds_count):
+        """Validate number of BIND statements is reasonable"""
+        if binds_count > DSLValidator.MAX_BINDS:
+            print(f"[OAN WARNING] Entity has {binds_count} tool bindings. Consider if all are necessary (max recommended: {DSLValidator.MAX_BINDS})")
+    
+    @staticmethod
+    def validate_world_name(world, line_number, line_content):
+        """Validate WORLD name format"""
+        if not world:
+            return world
+        
+        # Check for valid characters
+        import re
+        if not re.match(r'^[a-zA-Z0-9_-]+$', world):
+            raise DSLParseError(
+                f"WORLD name '{world}' contains invalid characters. Only alphanumeric, underscore, and hyphen allowed.",
+                line_number=line_number,
+                line_content=line_content
+            )
+        return world
+    
+    @staticmethod
+    def validate_cross_field_logic(entity_data, filepath):
+        """Validate business logic across multiple fields"""
+        warnings = []
+        
+        # If tokenized, reputation should be set
+        if entity_data.get('tokenized') and entity_data.get('reputation') == 0:
+            warnings.append("TOKENIZED is True but REPUTATION is 0. Consider setting initial reputation for tokenized entities.")
+        
+        # If no intent but has binds, warn
+        if not entity_data.get('intent') and entity_data.get('binds'):
+            warnings.append("Entity has BIND statements but no INTENT. Consider defining what the entity aims to accomplish.")
+        
+        # If high energy but no binds, warn
+        if entity_data.get('energy', 0) > 100 and not entity_data.get('binds'):
+            warnings.append("Entity has high ENERGY but no tool bindings. Energy may be wasted without tools to execute.")
+        
+        # Production mode should have intent
+        if entity_data.get('mode') == 'Production' and not entity_data.get('intent'):
+            warnings.append("MODE is 'Production' but no INTENT defined. Production entities should have clear objectives.")
+        
+        # Display warnings
+        if warnings:
+            print(f"\n[OAN VALIDATION WARNINGS] File: {filepath}")
+            for i, warning in enumerate(warnings, 1):
+                print(f"  {i}. {warning}")
+            print()
+        
+        return True
+
+
+def parse_dsl(file_path):
+    """
+    Parses an OAN DSL (.ent) file into an Entity object with comprehensive error handling
+    """
+    
+    # Resolve absolute path
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    full_path = os.path.join(base_dir, file_path)
+    
+    # Check file existence
+    if not os.path.exists(full_path):
+        raise FileNotFoundError(
+            f"[OAN ERROR] DSL file not found → {full_path}\n"
+            f"  → Make sure the file exists and the path is correct."
+        )
+    
+    # Check file extension
+    if not full_path.endswith('.ent'):
+        print(f"[OAN WARNING] File '{full_path}' does not have .ent extension. Proceeding anyway...")
+    
+    # Read file with error handling
+    try:
+        with open(full_path, "r", encoding='utf-8') as f:
+            lines = f.readlines()
+    except UnicodeDecodeError:
+        raise DSLParseError(
+            f"File encoding error. Ensure '{full_path}' is UTF-8 encoded."
+        )
+    except Exception as e:
+        raise DSLParseError(
+            f"Failed to read file '{full_path}': {str(e)}"
+        )
+    
+    # Check if file is empty
+    if not lines or all(not line.strip() for line in lines):
+        raise DSLParseError(
+            f"DSL file is empty or contains only whitespace: {full_path}"
+        )
+    
+    # Default values (engine safety)
+    entity_data = {
+        "name": "Unknown Entity",
+        "type": "Undefined",
+        "state": "Idle",
+        "energy": 0,
+        "modules": [],
+        "intent": None,
+        "binds": [],
+        "mode": None,
+        "world": None,
+        "tokenized": False,
+        "reputation": 0
+    }
+    
+    # Track which fields were actually set
+    fields_set = set()
+    
+    # Multi-line value tracking
+    in_multiline = False
+    multiline_keyword = None
+    multiline_content = []
+    multiline_start_line = None
+    
+    # Parse each line
+    for line_number, line in enumerate(lines, start=1):
+        original_line = line
+        line_stripped = line.strip()
+        
+        # Handle multi-line values
+        if in_multiline:
+            # Check for closing delimiter
+            if '"""' in line or "'''" in line:
+                # End of multi-line value
+                in_multiline = False
+                
+                # Extract content before closing delimiter
+                if '"""' in line:
+                    before_delimiter = line.split('"""')[0]
+                else:
+                    before_delimiter = line.split("'''")[0]
+                
+                if before_delimiter.strip():
+                    multiline_content.append(before_delimiter.rstrip())
+                
+                # Join multi-line content
+                full_content = '\n'.join(multiline_content).strip()
+                
+                # Process the completed multi-line value
+                try:
+                    if multiline_keyword == "INTENT":
+                        entity_data["intent"] = DSLValidator.validate_intent(
+                            full_content, multiline_start_line, f"INTENT (multi-line)"
+                        )
+                        fields_set.add("INTENT")
+                    # Add support for other multi-line fields here if needed
+                    
+                except DSLParseError:
+                    raise
+                
+                # Reset multi-line tracking
+                multiline_keyword = None
+                multiline_content = []
+                multiline_start_line = None
+                continue
+            else:
+                # Continue collecting multi-line content
+                multiline_content.append(line.rstrip())
+                continue
+        
+        # Skip empty lines
+        if not line_stripped:
+            continue
+        
+        # Remove inline comments (everything after # that's not in quotes)
+        # Simple approach: if # appears outside quotes, remove everything after it
+        comment_pos = -1
+        in_quotes = False
+        quote_char = None
+        
+        for i, char in enumerate(line_stripped):
+            if char in ('"', "'") and (i == 0 or line_stripped[i-1] != '\\'):
+                if not in_quotes:
+                    in_quotes = True
+                    quote_char = char
+                elif char == quote_char:
+                    in_quotes = False
+                    quote_char = None
+            elif char == '#' and not in_quotes:
+                comment_pos = i
+                break
+        
+        if comment_pos >= 0:
+            line = line_stripped[:comment_pos].rstrip()
+        else:
+            line = line_stripped
+        
+        # Skip lines that are now empty after comment removal
+        if not line:
+            continue
+        
+        # Skip full-line comments
+        if line.startswith('#'):
+            continue
+        
+        # Try to parse the line
+        try:
+            # Split on first space to get keyword and value
+            parts = line.split(None, 1)  # Split on whitespace, max 1 split
+            
+            if len(parts) == 0:
+                continue
+            
+            if len(parts) == 1:
+                # Keyword with no value
+                keyword = parts[0]
+                raise DSLParseError(
+                    f"Keyword '{keyword}' requires a value",
+                    line_number=line_number,
+                    line_content=original_line.strip()
+                )
+            
+            keyword, value = parts
+            keyword = keyword.upper()  # Normalize to uppercase
+            value = value.strip()
+            
+            # Validate keyword
+            DSLValidator.validate_keyword(keyword, line_number, original_line.strip())
+            
+            # Parse based on keyword
+            if keyword == "ENTITY":
+                entity_data["name"] = DSLValidator.validate_entity_name(
+                    value, line_number, original_line.strip()
+                )
+                fields_set.add("ENTITY")
+            
+            elif keyword == "TYPE":
+                entity_data["type"] = DSLValidator.validate_type(
+                    value, line_number, original_line.strip()
+                )
+                fields_set.add("TYPE")
+            
+            elif keyword == "STATE":
+                entity_data["state"] = DSLValidator.validate_state(
+                    value, line_number, original_line.strip()
+                )
+                fields_set.add("STATE")
+            
+            elif keyword == "ENERGY":
+                entity_data["energy"] = DSLValidator.validate_energy_value(
+                    value, line_number, original_line.strip()
+                )
+                fields_set.add("ENERGY")
+            
+            elif keyword == "MODULES":
+                if value:
+                    modules_raw = value
+                    entity_data["modules"] = [m.strip() for m in modules_raw.split(",") if m.strip()]
+                    fields_set.add("MODULES")
+                else:
+                    raise DSLParseError(
+                        "MODULES keyword requires at least one module",
+                        line_number=line_number,
+                        line_content=original_line.strip()
+                    )
+            
+            elif keyword == "INTENT":
+                # Check for multi-line string delimiter
+                if value.startswith('"""') or value.startswith("'''"):
+                    delimiter = '"""' if value.startswith('"""') else "'''"
+                    
+                    # Check if it's a single-line multi-line string (opening and closing on same line)
+                    if value.count(delimiter) >= 2:
+                        # Extract content between delimiters
+                        intent_value = value.split(delimiter)[1].strip()
+                        entity_data["intent"] = DSLValidator.validate_intent(
+                            intent_value, line_number, original_line.strip()
+                        )
+                        fields_set.add("INTENT")
+                    else:
+                        # Start multi-line mode
+                        in_multiline = True
+                        multiline_keyword = "INTENT"
+                        multiline_start_line = line_number
+                        multiline_content = []
+                        
+                        # Check if there's content after opening delimiter
+                        after_delimiter = value.split(delimiter)[1] if len(value.split(delimiter)) > 1 else ""
+                        if after_delimiter.strip():
+                            multiline_content.append(after_delimiter.rstrip())
+                else:
+                    # Regular single-line intent
+                    intent_value = value.strip('"').strip("'")
+                    entity_data["intent"] = DSLValidator.validate_intent(
+                        intent_value, line_number, original_line.strip()
+                    )
+                    fields_set.add("INTENT")
+            
+            elif keyword == "BIND":
+                if not value:
+                    raise DSLParseError(
+                        "BIND keyword requires a tool name",
+                        line_number=line_number,
+                        line_content=original_line.strip()
+                    )
+                entity_data["binds"].append(value)
+                fields_set.add("BIND")
+            
+            elif keyword == "MODE":
+                entity_data["mode"] = DSLValidator.validate_mode(
+                    value, line_number, original_line.strip()
+                )
+                fields_set.add("MODE")
+            
+            elif keyword == "WORLD":
+                entity_data["world"] = DSLValidator.validate_world_name(
+                    value, line_number, original_line.strip()
+                )
+                fields_set.add("WORLD")
+            
+            elif keyword == "TOKENIZED":
+                entity_data["tokenized"] = DSLValidator.validate_tokenized_value(
+                    value, line_number, original_line.strip()
+                )
+                fields_set.add("TOKENIZED")
+            
+            elif keyword == "REPUTATION":
+                entity_data["reputation"] = DSLValidator.validate_reputation_value(
+                    value, line_number, original_line.strip()
+                )
+                fields_set.add("REPUTATION")
+        
+        except DSLParseError:
+            # Re-raise DSL parsing errors as-is
+            raise
+        
+        except Exception as e:
+            # Wrap unexpected errors
+            raise DSLParseError(
+                f"Unexpected error while parsing: {str(e)}",
+                line_number=line_number,
+                line_content=original_line.strip()
+            )
+    
+    # Check for unclosed multi-line strings
+    if in_multiline:
+        raise DSLParseError(
+            f"Unclosed multi-line string for {multiline_keyword}. Missing closing delimiter (\"\"\" or ''').",
+            line_number=multiline_start_line,
+            line_content=f"{multiline_keyword} ... (multi-line)"
+        )
+    
+    # Validate required fields
+    try:
+        DSLValidator.validate_required_fields(fields_set, full_path)
+    except DSLParseError:
+        raise
+    
+    # Validate BIND count
+    DSLValidator.validate_bind_count(len(entity_data["binds"]))
+    
+    # Validate cross-field business logic
+    DSLValidator.validate_cross_field_logic(entity_data, full_path)
+    
+    # Success messages
+    print(f"[OAN SYSTEM] DSL Loaded → {full_path}")
+    print(f"[OAN SYSTEM] Entity Parsed → {entity_data['name']}")
+    
+    # Show warnings for missing optional but recommended fields
+    missing_recommended = DSLValidator.RECOMMENDED_FIELDS - fields_set
+    if missing_recommended:
+        print(f"[OAN INFO] Recommended field(s) not set: {', '.join(missing_recommended)}")
+    
+    # Create Entity object
+    try:
+        entity = Entity(
+            name=entity_data["name"],
+            type=entity_data["type"],
+            state=entity_data["state"],
+            energy=entity_data["energy"],
+            modules=entity_data["modules"],
+            intent=entity_data["intent"],
+            binds=entity_data["binds"],
+            mode=entity_data["mode"],
+            world=entity_data["world"],
+            tokenized=entity_data["tokenized"],
+            reputation=entity_data["reputation"]
+        )
+    except Exception as e:
+        raise DSLParseError(
+            f"Failed to create Entity object: {str(e)}\n"
+            f"  → This is likely an internal error. Please check Entity class definition."
+        )
+    
+    return entity

@@ -1,0 +1,83 @@
+from engine.parser import parse_dsl
+from engine.logger import log_entity, log_system
+from tools.tools import Tool
+
+
+def execute_entity(file_path):
+    """
+    Execute an entity with behavioral intelligence support
+    
+    Enhanced to support:
+    - BEHAVIOR blocks (dynamic state transitions)
+    - EXECUTE blocks (conditional tool execution)
+    - Energy consumption and restoration
+    - State-based behavior
+    """
+    # Parse entity from DSL file
+    entity = parse_dsl(file_path)
+
+    log_system("Initializing Obsidian Arcadia Runtime...")
+    log_entity(entity)
+
+    # ============================================================================
+    # BEHAVIORAL INTELLIGENCE SYSTEM
+    # ============================================================================
+    
+    # Check if entity has behavioral rules
+    if entity.behavior_rules or entity.execute_rules:
+        log_system("🧠 Behavioral Intelligence: ACTIVE")
+        
+        # Apply behavior rules BEFORE tool execution
+        # This allows entity to adapt its state based on current conditions
+        entity.apply_behaviors()
+        
+        # Get tools to execute based on current state (conditional execution)
+        tool_names = entity.get_conditional_tools()
+        
+        if tool_names:
+            log_system(f"📋 Conditional Execution: {len(tool_names)} tool(s) selected")
+        else:
+            log_system("⚠️  No tools match current state conditions")
+    else:
+        # No behavioral rules - use all binds (backward compatible)
+        tool_names = entity.binds
+    
+    # ============================================================================
+    # TOOL EXECUTION
+    # ============================================================================
+    
+    # Create tool instances
+    tools = [Tool(name) for name in tool_names]
+
+    # Execute each tool
+    for tool in tools:
+        tool.execute(entity.intent)
+        
+        # Update reputation after each successful tool execution
+        entity.update_reputation(1)
+        
+        # Optional: Consume energy per tool execution
+        # Uncomment if you want energy to deplete with tool use
+        # entity.energy = max(0, entity.energy - 5)
+    
+    # ============================================================================
+    # POST-EXECUTION BEHAVIOR CHECK
+    # ============================================================================
+    
+    # Apply behaviors again after tool execution
+    # This allows entity to react to energy depletion or reputation changes
+    if entity.behavior_rules:
+        log_system("🔄 Post-execution behavior check...")
+        entity.apply_behaviors()
+
+    # ============================================================================
+    # FINAL STATUS
+    # ============================================================================
+    
+    log_system(f"Reputation Score → {entity.reputation}")
+    
+    # Display final state if it changed
+    if hasattr(entity, 'state'):
+        log_system(f"Final State → {entity.state}")
+    
+    return entity

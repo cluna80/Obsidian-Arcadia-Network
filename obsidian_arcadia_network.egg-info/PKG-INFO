@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: obsidian-arcadia-network
+Version: 1.0.0
+Summary: Autonomous AI agent network with behavioral intelligence
+Author: OAN Development Team
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich>=13.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Provides-Extra: web3
+Requires-Dist: web3>=6.0.0; extra == "web3"
+Requires-Dist: requests>=2.28.0; extra == "web3"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Obsidian Arcadia Network (OAN)
+
+**Autonomous AI agent network with behavioral intelligence**
+
+## Installation
+```bash
+pip install obsidian-arcadia-network
+```
+
+## Quick Start
+```python
+import oan
+
+entity = oan.execute_entity("my_entity.ent", cycles=10)
+```
+
+See full documentation at https://github.com/yourusername/obsidian-arcadia-network

@@ -1,0 +1,21 @@
+ENTITY AdaptiveBot
+STATE Active
+ENERGY 100
+REPUTATION 0
+
+BEHAVIOR
+  IF ENERGY < 30 THEN STATE Recovery
+  IF REPUTATION > 5 THEN STATE Overclocked
+END
+
+EXECUTE
+  IF STATE == Active THEN WebScanner
+  IF STATE == Active THEN MemoryArchive
+  IF STATE == Overclocked THEN DeepAnalyzer
+  IF STATE == Recovery THEN IdleMonitor
+END
+
+INTENT "Adapt behavior based on state"
+MODE Testing
+WORLD Lab_01
+TOKENIZED False

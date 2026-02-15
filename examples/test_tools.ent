@@ -1,0 +1,18 @@
+
+ENTITY ToolBot
+STATE Active
+ENERGY 100
+REPUTATION 0
+
+BEHAVIOR
+  IF REPUTATION > 3 THEN STATE Advanced
+END
+
+EXECUTE
+  IF STATE == Active THEN DataCollector
+  IF STATE == Advanced THEN SentimentAnalyzer
+  IF STATE == Advanced THEN DeepAnalyzer
+END
+
+INTENT "Test conditional tool execution"
+MODE Testing

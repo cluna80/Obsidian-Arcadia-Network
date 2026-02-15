@@ -1,0 +1,18 @@
+
+ENTITY OscillatorBot
+STATE Active
+ENERGY 25
+REPUTATION 10
+
+BEHAVIOR
+  IF ENERGY < 30 THEN STATE Recovery
+  IF REPUTATION > 5 THEN STATE Overclocked
+END
+
+EXECUTE
+  IF STATE == Recovery THEN Monitor
+  IF STATE == Overclocked THEN DeepAnalyzer
+END
+
+INTENT "Test competing behavioral rules"
+MODE Testing
