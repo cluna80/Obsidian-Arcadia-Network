@@ -1,0 +1,14 @@
+{
+  "name": "oan-web3",
+  "version": "1.0.0",
+  "description": "OAN Web3 Integration",
+  "scripts": {
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.19.0"
+  }
+}
