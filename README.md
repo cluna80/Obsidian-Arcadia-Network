@@ -1,4 +1,9 @@
-# í¼‘ Obsidian Arcadia Network
+
+<img width="1536" height="1024" alt="df55b630-e1ea-4745-abde-ca37a1aeb9f7" src="https://github.com/user-attachments/assets/48797542-9090-470f-b4ec-b2009323e6c1" />
+
+
+
+# ï¿½ï¿½ï¿½ Obsidian Arcadia Network
 
 **Autonomous AI agent network with behavioral intelligence + Web3 protocol**
 
@@ -11,28 +16,28 @@ Build autonomous AI agents that **think**, **adapt**, and **evolve** using **OBS
 
 ---
 
-## í¾¯ What is OAN?
+## ï¿½ï¿½ï¿½ What is OAN?
 
 The **Obsidian Arcadia Network** is a complete protocol for autonomous AI agents with:
 
 ### **Layer 1: Core Engine** âœ…
-- í·  Behavioral Intelligence
-- í¼Š Multi-Agent Coordination  
-- í´¥ Dynamic Entity Spawning
+- ï¿½ï¿½ï¿½ Behavioral Intelligence
+- ï¿½ï¿½ï¿½ Multi-Agent Coordination  
+- ï¿½ï¿½ï¿½ Dynamic Entity Spawning
 - âš¡ High Performance (180+ cycles/sec)
-- í¾¨ Cyberpunk Dashboard
+- ï¿½ï¿½ï¿½ Cyberpunk Dashboard
 
 ### **Layer 2: Web3 Protocol** âœ…
-- í² NFT Entities (ERC-721)
-- í¿›ï¸ Full DAO Governance
-- í²° $OAN Token Economy
-- í¶” Decentralized Identity (DID)
-- í¿… Soulbound Credentials
-- í»’ Entity + Tool Marketplaces
+- ï¿½ï¿½ï¿½ NFT Entities (ERC-721)
+- ï¿½ï¿½ï¿½ï¸ Full DAO Governance
+- ï¿½ï¿½ï¿½ $OAN Token Economy
+- ï¿½ï¿½ï¿½ Decentralized Identity (DID)
+- ï¿½ï¿½ï¿½ Soulbound Credentials
+- ï¿½ï¿½ï¿½ Entity + Tool Marketplaces
 
 ---
 
-## íº€ Quick Start
+## ï¿½ï¿½ï¿½ Quick Start
 
 ### Installation
 ```bash
@@ -49,7 +54,7 @@ result = oan.execute_entity(entity, cycles=10)
 
 ---
 
-## í¼‘ OBSIDIAN Language
+## ï¿½ï¿½ï¿½ OBSIDIAN Language
 
 **OBSIDIAN** - The Language of Autonomous Intelligence
 ```obsidian
@@ -78,7 +83,7 @@ TOKENIZED True
 
 ---
 
-## í³– Documentation
+## ï¿½ï¿½ï¿½ Documentation
 
 | Document | Description |
 |----------|-------------|
@@ -117,7 +122,7 @@ oan.comm_hub.send_to("Bot1", "Bot2", "Task complete")
 
 ---
 
-## í¼ Web3 Protocol
+## ï¿½ï¿½ï¿½ Web3 Protocol
 
 ### Layer 2: Complete Smart Contract System
 
@@ -171,7 +176,7 @@ oan.comm_hub.send_to("Bot1", "Bot2", "Task complete")
 
 ---
 
-## í·ª Testing
+## ï¿½ï¿½ï¿½ Testing
 ```bash
 python run_all_tests.py
 ```
@@ -182,12 +187,12 @@ Output:
 âœ… PASS - Entity Communication
 âœ… PASS - Entity Coordination
 âœ… PASS - Entity Spawning
-í¾‰ ALL SYSTEMS OPERATIONAL!
+ï¿½ï¿½ï¿½ ALL SYSTEMS OPERATIONAL!
 ```
 
 ---
 
-## í¾¨ Cyberpunk Dashboard
+## ï¿½ï¿½ï¿½ Cyberpunk Dashboard
 ```
 â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
 â•‘  OBSIDIAN ARCADIA NETWORK            â•‘
@@ -205,7 +210,7 @@ Output:
 
 ---
 
-## í³Š Performance
+## ï¿½ï¿½ï¿½ Performance
 
 - **Speed**: 180+ cycles/second
 - **Memory**: ~1KB per entity
@@ -214,7 +219,7 @@ Output:
 
 ---
 
-## í¿—ï¸ Architecture
+## ï¿½ï¿½ï¿½ï¸ Architecture
 ```
 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
 â”‚    LAYER 1: CORE ENGINE (v1.0.0)   â”‚
@@ -235,7 +240,7 @@ Output:
 
 ---
 
-## í¼ Use Cases
+## ï¿½ï¿½ï¿½ Use Cases
 
 - **Trading Bots** - Adaptive trading strategies
 - **Research Agents** - Autonomous research
@@ -246,7 +251,7 @@ Output:
 
 ---
 
-## í³¦ Installation Options
+## ï¿½ï¿½ï¿½ Installation Options
 ```bash
 # Core package
 pip install obsidian-arcadia-network
@@ -260,19 +265,19 @@ pip install obsidian-arcadia-network[dev]
 
 ---
 
-## í´ Contributing
+## ï¿½ï¿½ï¿½ Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
-## í³„ License
+## ï¿½ï¿½ï¿½ License
 
 MIT - see [LICENSE](LICENSE)
 
 ---
 
-## í´— Links
+## ï¿½ï¿½ï¿½ Links
 
 - **GitHub**: https://github.com/cluna80/Obsidian-Arcadia-Network
 - **PyPI**: https://pypi.org/project/obsidian-arcadia-network/
@@ -281,7 +286,7 @@ MIT - see [LICENSE](LICENSE)
 
 ---
 
-## í¾¯ Status
+## ï¿½ï¿½ï¿½ Status
 
 ### Layer 1: Core Engine âœ…
 - v1.0.0 Released on PyPI
@@ -293,10 +298,12 @@ MIT - see [LICENSE](LICENSE)
 - All Compiled & Ready
 - Ready for Testnet
 
-### Next: Production Deployment íº€
+### Next: Production Deployment ï¿½ï¿½ï¿½
 
 ---
 
-í¼‘ **Build agents that think, adapt, and evolve.** í´¥
+ï¿½ï¿½ï¿½ **Build agents that think, adapt, and evolve.** ï¿½ï¿½ï¿½
+
+More Layers are coming so stay tuned.
 
 â­ **Star us on GitHub!**
