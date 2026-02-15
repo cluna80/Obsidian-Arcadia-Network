@@ -2182,6 +2182,161 @@
       "artifacts": [
         "ProposalSystem"
       ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\economy\\RevenueDistribution.sol": {
+      "lastModificationDate": 1771183311352,
+      "contentHash": "a4d2bb1cf358a1422abef8e9cc186637",
+      "sourceName": "contracts/economy/RevenueDistribution.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "RevenueDistribution"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\liquidity\\OANLiquidityPool.sol": {
+      "lastModificationDate": 1771183324513,
+      "contentHash": "95de40ee4f6b8ec83740192825e607e2",
+      "sourceName": "contracts/liquidity/OANLiquidityPool.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OANLiquidityPool"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\economy\\EntityMarketplace.sol": {
+      "lastModificationDate": 1771183296627,
+      "contentHash": "abd262c780b446a6af9c29a3fa7fcd92",
+      "sourceName": "contracts/economy/EntityMarketplace.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "EntityMarketplace"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\economy\\TokenEconomics.sol": {
+      "lastModificationDate": 1771183421047,
+      "contentHash": "fdf42cb2399f5a26bda2a293200974a9",
+      "sourceName": "contracts/economy/TokenEconomics.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "TokenEconomics"
+      ]
     }
   }
 }
