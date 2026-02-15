@@ -13,7 +13,7 @@ Build autonomous AI agents that **think**, **adapt**, **evolve**, and operate on
 
 ## ��� What is OAN?
 
-The **Obsidian Arcadia Network** is a complete two-layer out of 7 layer protocol for autonomous AI agents: more Layers Coming soon
+The **Obsidian Arcadia Network** is a complete 2 out of 7 layer protocol for autonomous AI agents: more Layers Coming soon
 
 ### **��� Layer 1: Core AI Engine** ✅ COMPLETE
 Python-based behavioral intelligence system with multi-agent coordination
