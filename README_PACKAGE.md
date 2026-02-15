@@ -14,7 +14,7 @@
 
 ## 🎯 Overview
 
-The **Obsidian Arcadia Network** is a production-ready framework for building autonomous AI agent systems with behavioral intelligence. Entities can think, adapt, communicate, coordinate, and evolve based on their experiences.
+The **Obsidian Arcadia Network** is a modular protocol ecosystem for building autonomous AI agent systems with behavioral intelligence. Entities can think, adapt, communicate, coordinate, and evolve based on their experiences.
 
 ### Key Features
 
