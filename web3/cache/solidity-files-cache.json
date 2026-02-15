@@ -1107,6 +1107,121 @@
       "artifacts": [
         "EntitySpawning"
       ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\credentials\\SoulboundCredentials.sol": {
+      "lastModificationDate": 1771181125466,
+      "contentHash": "9c2f547bfc0956faabc69e9e05c01f49",
+      "sourceName": "contracts/credentials/SoulboundCredentials.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SoulboundCredentials"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\identity\\ReputationStaking.sol": {
+      "lastModificationDate": 1771181138840,
+      "contentHash": "230c2b3c7ba1e5da75a2eb3451727725",
+      "sourceName": "contracts/identity/ReputationStaking.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ReputationStaking"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\identity\\DecentralizedIdentity.sol": {
+      "lastModificationDate": 1771181112798,
+      "contentHash": "e3c522fff36d934f2c84458c758aa4bc",
+      "sourceName": "contracts/identity/DecentralizedIdentity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "DecentralizedIdentity"
+      ]
     }
   }
 }
