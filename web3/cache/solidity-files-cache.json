@@ -3108,6 +3108,158 @@
       "artifacts": [
         "RiskProfiles"
       ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\identity\\ReputationIdentity.sol": {
+      "lastModificationDate": 1771253313698,
+      "contentHash": "4f14f23ead0298feef52ddc05cf10168",
+      "sourceName": "contracts/layer3/identity/ReputationIdentity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ReputationIdentity"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\identity\\CrossWorldIdentity.sol": {
+      "lastModificationDate": 1771253329961,
+      "contentHash": "6fd8eca19d39a45f34b97d8c65063082",
+      "sourceName": "contracts/layer3/identity/CrossWorldIdentity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "CrossWorldIdentity"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\identity\\CognitiveFingerprint.sol": {
+      "lastModificationDate": 1771264891446,
+      "contentHash": "00d5e9bbdd94e935ba8ee46df0b9c2db",
+      "sourceName": "contracts/layer3/identity/CognitiveFingerprint.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "CognitiveFingerprint"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\identity\\BehavioralIdentity.sol": {
+      "lastModificationDate": 1771253274479,
+      "contentHash": "70b35acc69016207d78bdb7d57149b26",
+      "sourceName": "contracts/layer3/identity/BehavioralIdentity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BehavioralIdentity"
+      ]
     }
   }
 }
