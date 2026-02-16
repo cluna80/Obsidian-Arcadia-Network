@@ -2953,6 +2953,161 @@
       "artifacts": [
         "EmotionalState"
       ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\risk\\OptionsExchange.sol": {
+      "lastModificationDate": 1771252578807,
+      "contentHash": "c6741adbaf69ba9d4bf4ab3920d88c5b",
+      "sourceName": "contracts/layer3/risk/OptionsExchange.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OptionsExchange"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\risk\\InsuranceProtocol.sol": {
+      "lastModificationDate": 1771252564023,
+      "contentHash": "4f2a0d2ea9d662c2d3bc4aff0239d017",
+      "sourceName": "contracts/layer3/risk/InsuranceProtocol.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "InsuranceProtocol"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\risk\\DerivativeMarkets.sol": {
+      "lastModificationDate": 1771252547587,
+      "contentHash": "44f0853ec71a229de4dc05008c845de8",
+      "sourceName": "contracts/layer3/risk/DerivativeMarkets.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "DerivativeMarkets"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\risk\\RiskProfiles.sol": {
+      "lastModificationDate": 1771252687540,
+      "contentHash": "16ff202f8690def1090f21956b6f9e10",
+      "sourceName": "contracts/layer3/risk/RiskProfiles.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "RiskProfiles"
+      ]
     }
   }
 }
