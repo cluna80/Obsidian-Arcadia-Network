@@ -111,4 +111,4 @@ All 4 economy contracts compiled successfully!
 **Phase 2.4**: 5 contracts
 **Phase 2.5**: 4 contracts
 
-í¾‰ LAYER 2 WEB3 COMPLETE! í¾‰
+ï¿½ï¿½ï¿½ LAYER 2 WEB3 COMPLETE! ï¿½ï¿½ï¿½
