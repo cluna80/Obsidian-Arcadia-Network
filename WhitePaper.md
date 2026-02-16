@@ -1,4 +1,4 @@
-The White Paper
+
 
 
 # Obsidian Arcadia Network (OAN) White Paper
