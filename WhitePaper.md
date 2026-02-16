@@ -492,4 +492,4 @@ Join Obsidian-Arcadia-network AI Lab. 🌑
 **Date**: February 2026
 **Status**: Production Ready
 
-*Built with 🌑 by the OAN Development Team*
+*Built with POWER by the OAN Development Team*
