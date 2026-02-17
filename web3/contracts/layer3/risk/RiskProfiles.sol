@@ -23,7 +23,9 @@ contract RiskProfiles is Ownable {
     
     constructor() Ownable(msg.sender) {}
     
-    function createRiskProfile(uint256 entityId,uint256 volatility,uint256 stabilityScore,RiskTolerance tolerance) external returns (bool) {require(entityRiskProfiles[entityId].lastAssessment == 0);RiskRating rating = _calculateRiskRating(volatility, stabilityScore);entityRiskProfiles[entityId] = EntityRiskProfile(entityId,rating,volatility,stabilityScore,_calculateFailureProbability(volatility, stabilityScore),0,tolerance,block.timestamp);emit RiskProfileCreated(entityId, rating);return true;}
+    function createRiskProfile(uint256 entityId,uint256 volatility,uint256 stabilityScore,RiskTolerance tolerance) external returns (bool) {
+        require(entityRiskProfiles[entityId].lastAssessment == 0, "Profile exists"); // ✅ Fixed: added revert reason string
+        RiskRating rating = _calculateRiskRating(volatility, stabilityScore);entityRiskProfiles[entityId] = EntityRiskProfile(entityId,rating,volatility,stabilityScore,_calculateFailureProbability(volatility, stabilityScore),0,tolerance,block.timestamp);emit RiskProfileCreated(entityId, rating);return true;}
     
     function updateRiskProfile(uint256 entityId, uint256 newVolatility) public {EntityRiskProfile storage profile = entityRiskProfiles[entityId];require(profile.lastAssessment > 0);RiskRating oldRating = profile.riskRating;profile.volatility = newVolatility;profile.riskRating = _calculateRiskRating(newVolatility, profile.stabilityScore);profile.failureProbability = _calculateFailureProbability(newVolatility, profile.stabilityScore);profile.lastAssessment = block.timestamp;riskHistory[entityId].push(newVolatility);if(oldRating != profile.riskRating){emit RiskRatingUpdated(entityId, oldRating, profile.riskRating);}emit VolatilityCalculated(entityId, newVolatility);}
     

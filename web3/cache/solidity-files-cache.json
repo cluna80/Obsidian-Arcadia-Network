@@ -1949,8 +1949,8 @@
       ]
     },
     "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\token\\OANToken.sol": {
-      "lastModificationDate": 1771182207281,
-      "contentHash": "06ee1af3b03f929f43c06f484f440887",
+      "lastModificationDate": 1771337496092,
+      "contentHash": "e4b6402cae0dd56a787c8a1148237ab3",
       "sourceName": "contracts/token/OANToken.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -2069,8 +2069,8 @@
       ]
     },
     "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\dao\\DAOTreasury.sol": {
-      "lastModificationDate": 1771181846978,
-      "contentHash": "b06ca60bd71079056e2d88ef1ab45a64",
+      "lastModificationDate": 1771337648466,
+      "contentHash": "14a8f8b3e958f1baeb812814c93c7109",
       "sourceName": "contracts/dao/DAOTreasury.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -2098,7 +2098,8 @@
       },
       "imports": [
         "@openzeppelin/contracts/access/AccessControl.sol",
-        "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
@@ -2379,8 +2380,8 @@
       ]
     },
     "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\intelligence\\MemoryVault.sol": {
-      "lastModificationDate": 1771215358083,
-      "contentHash": "cbc67cee8a3bbc5fc661bf78581ddd30",
+      "lastModificationDate": 1771337934353,
+      "contentHash": "db6d161f816367f68c3f59de7e6a7054",
       "sourceName": "contracts/layer3/intelligence/MemoryVault.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -2533,8 +2534,8 @@
       ]
     },
     "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\temporal\\LegacySystem.sol": {
-      "lastModificationDate": 1771227110125,
-      "contentHash": "2462667f5ac02b3d1d4b702308119728",
+      "lastModificationDate": 1771343345050,
+      "contentHash": "03c7977fc3f2a4f0df3efd950c50ec94",
       "sourceName": "contracts/layer3/temporal/LegacySystem.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -3072,8 +3073,8 @@
       ]
     },
     "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\web3\\contracts\\layer3\\risk\\RiskProfiles.sol": {
-      "lastModificationDate": 1771252687540,
-      "contentHash": "16ff202f8690def1090f21956b6f9e10",
+      "lastModificationDate": 1771343646888,
+      "contentHash": "61386225fe493375bc7e37f62682731a",
       "sourceName": "contracts/layer3/risk/RiskProfiles.sol",
       "solcConfig": {
         "version": "0.8.20",
