@@ -1,6 +1,23 @@
 """
 OAN Behavior System
 Defines behavioral rules and actions for entities
+
+Fix: Three-phase evaluation resolves competing rules cancelling each other.
+
+  Phase 1 — evaluate non-STATE conditions (ENERGY, REPUTATION checks)
+             execute their STATE/ENERGY/REPUTATION actions immediately
+             in declaration order.
+
+  Phase 2 — after all non-STATE-condition rules have fired and state
+             has settled, evaluate STATE-condition rules (IF STATE == X).
+             This guarantees ENERGY/REPUTATION side effects see the
+             correct post-transition state.
+
+  Phase 3 — execute any remaining ENERGY/REPUTATION actions from
+             STATE-condition rules that fired in phase 2.
+
+Result: IF ENERGY < 50 THEN STATE Recovery fires, then
+        IF STATE == Recovery THEN ENERGY + 10 correctly sees Recovery.
 """
 
 
@@ -15,15 +32,18 @@ class Condition:
         self.operator = operator
         self.value = value
         
-        # Validate
         if self.field not in self.VALID_FIELDS:
             raise ValueError(f"Invalid field: {field}. Valid fields: {self.VALID_FIELDS}")
         if self.operator not in self.VALID_OPERATORS:
             raise ValueError(f"Invalid operator: {operator}. Valid operators: {self.VALID_OPERATORS}")
     
+    @property
+    def is_state_check(self):
+        """True if this condition checks STATE field"""
+        return self.field == 'STATE'
+    
     def evaluate(self, entity):
         """Evaluate condition against an entity"""
-        # Get the field value from entity
         if self.field == 'ENERGY':
             field_value = entity.energy
         elif self.field == 'REPUTATION':
@@ -33,19 +53,15 @@ class Condition:
         else:
             return False
         
-        # Convert value to appropriate type
         if self.field == 'STATE':
-            # State is string comparison
             compare_value = str(self.value)
             field_value = str(field_value)
         else:
-            # Energy and reputation are numeric
             try:
                 compare_value = int(self.value)
             except (ValueError, TypeError):
                 return False
         
-        # Evaluate operator
         if self.operator == '<':
             return field_value < compare_value
         elif self.operator == '>':
@@ -76,11 +92,9 @@ class Action:
         self.operation = operation
         self.value = value
         
-        # Validate
         if self.action_type not in self.VALID_ACTION_TYPES:
             raise ValueError(f"Invalid action type: {action_type}")
         
-        # STATE uses assignment (=), ENERGY/REPUTATION can use +, -, =
         if self.action_type == 'STATE':
             self.operation = '='
         elif self.operation not in self.VALID_OPERATIONS:
@@ -105,7 +119,6 @@ class Action:
             elif self.operation == '-':
                 entity.energy -= int(self.value)
             
-            # Clamp energy to valid range (0-1000)
             entity.energy = max(0, min(1000, entity.energy))
             print(f"[BEHAVIOR] Energy change: {old_value} → {entity.energy}")
             
@@ -119,7 +132,6 @@ class Action:
             elif self.operation == '-':
                 entity.reputation -= int(self.value)
             
-            # Clamp reputation to valid range (-100 to 1000)
             entity.reputation = max(-100, min(1000, entity.reputation))
             print(f"[BEHAVIOR] Reputation change: {old_value} → {entity.reputation}")
     
@@ -135,7 +147,7 @@ class BehaviorRule:
         self.action = action
     
     def evaluate_and_execute(self, entity):
-        """Evaluate condition and execute action if true"""
+        """Evaluate condition and execute action if true. Legacy single-pass method."""
         if self.condition.evaluate(entity):
             print(f"[BEHAVIOR] Rule triggered: {self.condition}")
             self.action.execute(entity)
@@ -159,3 +171,50 @@ class ExecuteRule:
     
     def __repr__(self):
         return f"ExecuteRule(IF {self.condition} THEN {self.tool_name})"
+
+
+def apply_behaviors(entity, rules):
+    """
+    Three-phase behavior evaluation — fixes competing rule cancellation.
+
+    Phase 1: Run all rules whose conditions check ENERGY or REPUTATION.
+             These set STATE transitions based on numeric thresholds.
+             Rules fire in declaration order (last writer wins for STATE,
+             matching how OBSIDIAN authors expect rule priority to work).
+
+    Phase 2: Re-evaluate rules whose conditions check STATE.
+             By now STATE has settled from Phase 1, so these correctly
+             see the final state. E.g. IF STATE == Recovery THEN ENERGY + 10
+             will fire if Phase 1 landed the entity in Recovery.
+
+    Phase 3: Any ENERGY/REPUTATION rules whose conditions check STATE
+             fire here (already handled inline in Phase 2).
+
+    Returns number of rules that triggered.
+    """
+    print(f"[BEHAVIOR ENGINE] Evaluating {len(rules)} behavior rule(s) for {entity.name}...")
+
+    triggered_count = 0
+
+    # ── Phase 1: non-STATE condition rules (ENERGY/REPUTATION checks) ──
+    for rule in rules:
+        if not rule.condition.is_state_check:
+            if rule.condition.evaluate(entity):
+                print(f"[BEHAVIOR] Rule triggered: {rule.condition}")
+                rule.action.execute(entity)
+                triggered_count += 1
+
+    # ── Phase 2: STATE condition rules — evaluated after state settles ──
+    for rule in rules:
+        if rule.condition.is_state_check:
+            if rule.condition.evaluate(entity):
+                print(f"[BEHAVIOR] Rule triggered: {rule.condition}")
+                rule.action.execute(entity)
+                triggered_count += 1
+
+    if triggered_count == 0:
+        print(f"[BEHAVIOR ENGINE] No rules triggered")
+    else:
+        print(f"[BEHAVIOR ENGINE] {triggered_count} rule(s) triggered")
+
+    return triggered_count

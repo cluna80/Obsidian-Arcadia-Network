@@ -1,0 +1,494 @@
+
+======================================================================
+TEST 7: MULTI-ENTITY BEHAVIORS
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+09:58:02.413 [SYSTEM] Multi-Entity Execution Mode
+09:58:02.414 [SYSTEM] Loading 3 entities...
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_multi_0.ent
+[OAN SYSTEM] Entity Parsed → MultiBot0
+[ENTITY MANAGER] Registered: MultiBot0 (ID: d36e8534...)
+09:58:02.415 [SYSTEM]   Loaded: MultiBot0
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_multi_1.ent
+[OAN SYSTEM] Entity Parsed → MultiBot1
+[ENTITY MANAGER] Registered: MultiBot1 (ID: 00927394...)
+09:58:02.416 [SYSTEM]   Loaded: MultiBot1
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_multi_2.ent
+[OAN SYSTEM] Entity Parsed → MultiBot2
+[ENTITY MANAGER] Registered: MultiBot2 (ID: 340d5097...)
+09:58:02.417 [SYSTEM]   Loaded: MultiBot2
+09:58:02.418 [SYSTEM] 
+Starting execution with 5 cycle(s)...
+
+
+═══ CYCLE 1/5 ═══
+09:58:02.419 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 1)
+★ REPUTATION MultiBot0: +1 → 1
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+09:58:02.423 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 3)
+★ REPUTATION MultiBot1: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR ENGINE] No rules triggered
+09:58:02.426 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Active → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+◆ STATE MultiBot2: Active → Elite
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 5)
+★ REPUTATION MultiBot2: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:58:02.429 [SYSTEM] 
+--- Cycle 1 Complete ---
+09:58:02.430 [SYSTEM]   MultiBot0: E:90 R:1 S:Active
+09:58:02.430 [SYSTEM]   MultiBot1: E:70 R:3 S:Active
+09:58:02.431 [SYSTEM]   MultiBot2: E:50 R:5 S:Elite
+
+═══ CYCLE 2/5 ═══
+09:58:02.432 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 2)
+★ REPUTATION MultiBot0: +1 → 2
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+09:58:02.435 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 4)
+★ REPUTATION MultiBot1: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Active → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+◆ STATE MultiBot1: Active → Elite
+09:58:02.438 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 6)
+★ REPUTATION MultiBot2: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:58:02.441 [SYSTEM] 
+--- Cycle 2 Complete ---
+09:58:02.442 [SYSTEM]   MultiBot0: E:80 R:2 S:Active
+09:58:02.442 [SYSTEM]   MultiBot1: E:60 R:4 S:Elite
+09:58:02.443 [SYSTEM]   MultiBot2: E:40 R:6 S:Elite
+
+═══ CYCLE 3/5 ═══
+09:58:02.444 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 3)
+★ REPUTATION MultiBot0: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+09:58:02.447 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 5)
+★ REPUTATION MultiBot1: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:58:02.450 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 7)
+★ REPUTATION MultiBot2: +1 → 7
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 4 rule(s) triggered
+09:58:02.452 [SYSTEM] 
+--- Cycle 3 Complete ---
+09:58:02.453 [SYSTEM]   MultiBot0: E:70 R:3 S:Active
+09:58:02.454 [SYSTEM]   MultiBot1: E:50 R:5 S:Elite
+09:58:02.454 [SYSTEM]   MultiBot2: E:30 R:7 S:Elite
+
+═══ CYCLE 4/5 ═══
+09:58:02.456 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 4)
+★ REPUTATION MultiBot0: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Active → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+◆ STATE MultiBot0: Active → Elite
+09:58:02.459 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 6)
+★ REPUTATION MultiBot1: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:58:02.462 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 4 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 8)
+★ REPUTATION MultiBot2: +1 → 8
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 4 rule(s) triggered
+09:58:02.464 [SYSTEM] 
+--- Cycle 4 Complete ---
+09:58:02.465 [SYSTEM]   MultiBot0: E:60 R:4 S:Elite
+09:58:02.466 [SYSTEM]   MultiBot1: E:40 R:6 S:Elite
+09:58:02.466 [SYSTEM]   MultiBot2: E:20 R:8 S:Elite
+
+═══ CYCLE 5/5 ═══
+09:58:02.468 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 5)
+★ REPUTATION MultiBot0: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:58:02.470 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 7)
+★ REPUTATION MultiBot1: +1 → 7
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 4 rule(s) triggered
+09:58:02.473 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 4 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 9)
+★ REPUTATION MultiBot2: +1 → 9
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 4 rule(s) triggered
+09:58:02.476 [SYSTEM] 
+--- Cycle 5 Complete ---
+09:58:02.477 [SYSTEM]   MultiBot0: E:50 R:5 S:Elite
+09:58:02.477 [SYSTEM]   MultiBot1: E:30 R:7 S:Elite
+09:58:02.478 [SYSTEM]   MultiBot2: E:10 R:9 S:Elite
+09:58:02.479 [SYSTEM] 
+MULTI-ENTITY EXECUTION COMPLETE
+
+
+         ◢ NETWORK TOPOLOGY ◣         
+┌─────────────┬───────┬────────┬─────┐
+│ NODE        │ STATE │ ENERGY │ REP │
+├─────────────┼───────┼────────┼─────┤
+│ ● MultiBot0 │ Elite │ 50     │ 5   │
+│ ● MultiBot1 │ Elite │ 30     │ 7   │
+│ ● MultiBot2 │ Elite │ 10     │ 9   │
+└─────────────┴───────┴────────┴─────┘
+Total: 3 | Active: 3
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.stdout.reconfigure(encoding='utf-8'); from tests.test_behavior import test_multi_entity_behaviors; [test_multi_entity_behaviors()]
+                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\tests\test_behavior.py", line 307, in test_multi_entity_behaviors
+    assert len(set(states)) > 1, "Entities should have different states"
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: Entities should have different states
+
+Executed 3 entities
+  Entity 0: State=Elite E=50 R=5
+  Entity 1: State=Elite E=30 R=7
+  Entity 2: State=Elite E=10 R=9

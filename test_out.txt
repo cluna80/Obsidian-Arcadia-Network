@@ -1,0 +1,4132 @@
+
+======================================================================
+🧠 OAN BEHAVIORAL INTELLIGENCE TEST SUITE
+======================================================================
+
+======================================================================
+TEST 1: BASIC BEHAVIORAL RULES
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_behavior_basic.ent
+[OAN SYSTEM] Entity Parsed → TestBot
+09:52:59.032 [SYSTEM] Initializing Obsidian Arcadia Runtime...
+╔════════════════════════════ ◢ ENTITY MANIFEST ◣ ════════════════════════════╗
+║ ┌────────────┬──────────────────────────────┐                               ║
+║ │ ENTITY_ID  │ TestBot                      │                               ║
+║ │ TYPE       │ Undefined                    │                               ║
+║ │ STATE      │ ► Active                     │                               ║
+║ │ ENERGY     │ ████████████████████ 100/100 │                               ║
+║ │ REPUTATION │ 0                            │                               ║
+║ └────────────┴──────────────────────────────┘                               ║
+╚═══════════════════════ Neural threads stabilizing... ═══════════════════════╝
+[ENTITY MANAGER] Registered: TestBot (ID: 29d2c8bd...)
+09:52:59.038 [SYSTEM] Behavioral Intelligence: ACTIVE
+
+═══ CYCLE 1/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test basic behavioral transitions
+[OAN SYSTEM] TestBot's reputation updated: +1 (Total: 1)
+★ REPUTATION TestBot: +1 → 1
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.043 [SYSTEM] Cycle 1 Complete:
+09:52:59.043 [SYSTEM]   State: Active
+09:52:59.044 [SYSTEM]   Energy: 85
+09:52:59.045 [SYSTEM]   Reputation: 1
+
+═══ CYCLE 2/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test basic behavioral transitions
+[OAN SYSTEM] TestBot's reputation updated: +1 (Total: 2)
+★ REPUTATION TestBot: +1 → 2
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.048 [SYSTEM] Cycle 2 Complete:
+09:52:59.048 [SYSTEM]   State: Active
+09:52:59.049 [SYSTEM]   Energy: 70
+09:52:59.050 [SYSTEM]   Reputation: 2
+
+═══ CYCLE 3/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test basic behavioral transitions
+[OAN SYSTEM] TestBot's reputation updated: +1 (Total: 3)
+★ REPUTATION TestBot: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.053 [SYSTEM] Cycle 3 Complete:
+09:52:59.054 [SYSTEM]   State: Active
+09:52:59.054 [SYSTEM]   Energy: 55
+09:52:59.055 [SYSTEM]   Reputation: 3
+
+═══ CYCLE 4/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test basic behavioral transitions
+[OAN SYSTEM] TestBot's reputation updated: +1 (Total: 4)
+★ REPUTATION TestBot: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.058 [SYSTEM] Cycle 4 Complete:
+09:52:59.059 [SYSTEM]   State: Active
+09:52:59.060 [SYSTEM]   Energy: 40
+09:52:59.060 [SYSTEM]   Reputation: 4
+
+═══ CYCLE 5/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test basic behavioral transitions
+[OAN SYSTEM] TestBot's reputation updated: +1 (Total: 5)
+★ REPUTATION TestBot: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Active → Recovery
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE TestBot: Active → Recovery
+09:52:59.064 [SYSTEM] Cycle 5 Complete:
+09:52:59.065 [SYSTEM]   State: Recovery
+09:52:59.066 [SYSTEM]   Energy: 25
+09:52:59.066 [SYSTEM]   Reputation: 5
+
+═══ CYCLE 6/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Recovery → Recovery
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✓ Monitor (condition met)
+⚡ EXECUTE → Monitor
+⚡ TOOL → Monitor
+   Test basic behavioral transitions
+[OAN SYSTEM] TestBot's reputation updated: +1 (Total: 6)
+★ REPUTATION TestBot: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Recovery → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+◆ STATE TestBot: Recovery → Overclocked
+09:52:59.070 [SYSTEM] Cycle 6 Complete:
+09:52:59.071 [SYSTEM]   State: Overclocked
+09:52:59.071 [SYSTEM]   Energy: 10
+09:52:59.072 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 7/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+09:52:59.073 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.074 [SYSTEM] Cycle 7 Complete:
+09:52:59.075 [SYSTEM]   State: Overclocked
+09:52:59.075 [SYSTEM]   Energy: 10
+09:52:59.076 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 8/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+09:52:59.077 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.078 [SYSTEM] Cycle 8 Complete:
+09:52:59.078 [SYSTEM]   State: Overclocked
+09:52:59.079 [SYSTEM]   Energy: 10
+09:52:59.080 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 9/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+09:52:59.081 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.081 [SYSTEM] Cycle 9 Complete:
+09:52:59.082 [SYSTEM]   State: Overclocked
+09:52:59.083 [SYSTEM]   Energy: 10
+09:52:59.083 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 10/10 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+09:52:59.085 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for TestBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.085 [SYSTEM] Cycle 10 Complete:
+09:52:59.086 [SYSTEM]   State: Overclocked
+09:52:59.087 [SYSTEM]   Energy: 10
+09:52:59.087 [SYSTEM]   Reputation: 6
+
+
+╔══════════════════════════ ◢ EXECUTION COMPLETE ◣ ═══════════════════════════╗
+║ ╔═════════════╤═════════════════════════════╗                               ║
+║ ║ ENTITY      │ TestBot                     ║                               ║
+║ ║ FINAL STATE │ Overclocked                 ║                               ║
+║ ║ ENERGY      │ ██░░░░░░░░░░░░░░░░░░ 10/100 ║                               ║
+║ ║ REPUTATION  │ 6                           ║                               ║
+║ ║ TIME        │ 0.07s                       ║                               ║
+║ ╚═════════════╧═════════════════════════════╝                               ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+
+           ◢ NETWORK TOPOLOGY ◣           
+┌───────────┬─────────────┬────────┬─────┐
+│ NODE      │ STATE       │ ENERGY │ REP │
+├───────────┼─────────────┼────────┼─────┤
+│ ● TestBot │ Overclocked │ 10     │ 6   │
+└───────────┴─────────────┴────────┴─────┘
+Total: 1 | Active: 1
+
+
+Final Results:
+  State: Overclocked
+  Energy: 10
+  Reputation: 6
+
+✅ Basic behavior test PASSED!
+
+======================================================================
+TEST 2: ENERGY RESTORATION
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_recovery.ent
+[OAN SYSTEM] Entity Parsed → RecoveryBot
+09:52:59.103 [SYSTEM] Initializing Obsidian Arcadia Runtime...
+╔════════════════════════════ ◢ ENTITY MANIFEST ◣ ════════════════════════════╗
+║ ┌────────────┬──────────────────────────────┐                               ║
+║ │ ENTITY_ID  │ RecoveryBot                  │                               ║
+║ │ TYPE       │ Undefined                    │                               ║
+║ │ STATE      │ ► Active                     │                               ║
+║ │ ENERGY     │ ████████████████████ 100/100 │                               ║
+║ │ REPUTATION │ 0                            │                               ║
+║ └────────────┴──────────────────────────────┘                               ║
+╚═══════════════════════ Neural threads stabilizing... ═══════════════════════╝
+[ENTITY MANAGER] Registered: RecoveryBot (ID: 99ee7b13...)
+09:52:59.108 [SYSTEM] Behavioral Intelligence: ACTIVE
+
+═══ CYCLE 1/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY > 80)
+[BEHAVIOR] State transition: Active → Active
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 1)
+★ REPUTATION RecoveryBot: +1 → 1
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY > 80)
+[BEHAVIOR] State transition: Active → Active
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.112 [SYSTEM] Cycle 1 Complete:
+09:52:59.112 [SYSTEM]   State: Active
+09:52:59.113 [SYSTEM]   Energy: 90
+09:52:59.114 [SYSTEM]   Reputation: 1
+
+═══ CYCLE 2/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY > 80)
+[BEHAVIOR] State transition: Active → Active
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 2)
+★ REPUTATION RecoveryBot: +1 → 2
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.117 [SYSTEM] Cycle 2 Complete:
+09:52:59.117 [SYSTEM]   State: Active
+09:52:59.118 [SYSTEM]   Energy: 80
+09:52:59.118 [SYSTEM]   Reputation: 2
+
+═══ CYCLE 3/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 3)
+★ REPUTATION RecoveryBot: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.122 [SYSTEM] Cycle 3 Complete:
+09:52:59.122 [SYSTEM]   State: Active
+09:52:59.123 [SYSTEM]   Energy: 70
+09:52:59.124 [SYSTEM]   Reputation: 3
+
+═══ CYCLE 4/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 4)
+★ REPUTATION RecoveryBot: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.127 [SYSTEM] Cycle 4 Complete:
+09:52:59.127 [SYSTEM]   State: Active
+09:52:59.128 [SYSTEM]   Energy: 60
+09:52:59.128 [SYSTEM]   Reputation: 4
+
+═══ CYCLE 5/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 5)
+★ REPUTATION RecoveryBot: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.132 [SYSTEM] Cycle 5 Complete:
+09:52:59.132 [SYSTEM]   State: Active
+09:52:59.133 [SYSTEM]   Energy: 50
+09:52:59.134 [SYSTEM]   Reputation: 5
+
+═══ CYCLE 6/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 6)
+★ REPUTATION RecoveryBot: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.137 [SYSTEM] Cycle 6 Complete:
+09:52:59.137 [SYSTEM]   State: Active
+09:52:59.138 [SYSTEM]   Energy: 40
+09:52:59.139 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 7/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 7)
+★ REPUTATION RecoveryBot: +1 → 7
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.142 [SYSTEM] Cycle 7 Complete:
+09:52:59.142 [SYSTEM]   State: Active
+09:52:59.143 [SYSTEM]   Energy: 30
+09:52:59.144 [SYSTEM]   Reputation: 7
+
+═══ CYCLE 8/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 8)
+★ REPUTATION RecoveryBot: +1 → 8
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Active → Recovery
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 20 → 35
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+◆ STATE RecoveryBot: Active → Recovery
+09:52:59.147 [SYSTEM] Cycle 8 Complete:
+09:52:59.148 [SYSTEM]   State: Recovery
+09:52:59.149 [SYSTEM]   Energy: 35
+09:52:59.149 [SYSTEM]   Reputation: 8
+
+═══ CYCLE 9/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 35 → 50
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ Monitor (condition met)
+⚡ EXECUTE → Monitor
+⚡ TOOL → Monitor
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 9)
+★ REPUTATION RecoveryBot: +1 → 9
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 40 → 55
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.152 [SYSTEM] Cycle 9 Complete:
+09:52:59.153 [SYSTEM]   State: Recovery
+09:52:59.154 [SYSTEM]   Energy: 55
+09:52:59.154 [SYSTEM]   Reputation: 9
+
+═══ CYCLE 10/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 55 → 70
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ Monitor (condition met)
+⚡ EXECUTE → Monitor
+⚡ TOOL → Monitor
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 10)
+★ REPUTATION RecoveryBot: +1 → 10
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 60 → 75
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.157 [SYSTEM] Cycle 10 Complete:
+09:52:59.158 [SYSTEM]   State: Recovery
+09:52:59.158 [SYSTEM]   Energy: 75
+09:52:59.159 [SYSTEM]   Reputation: 10
+
+═══ CYCLE 11/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 75 → 90
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ Monitor (condition met)
+⚡ EXECUTE → Monitor
+⚡ TOOL → Monitor
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 11)
+★ REPUTATION RecoveryBot: +1 → 11
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 80 → 95
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.162 [SYSTEM] Cycle 11 Complete:
+09:52:59.163 [SYSTEM]   State: Recovery
+09:52:59.163 [SYSTEM]   Energy: 95
+09:52:59.164 [SYSTEM]   Reputation: 11
+
+═══ CYCLE 12/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY > 80)
+[BEHAVIOR] State transition: Recovery → Active
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE RecoveryBot: Recovery → Active
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 12)
+★ REPUTATION RecoveryBot: +1 → 12
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY > 80)
+[BEHAVIOR] State transition: Active → Active
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.168 [SYSTEM] Cycle 12 Complete:
+09:52:59.168 [SYSTEM]   State: Active
+09:52:59.169 [SYSTEM]   Energy: 85
+09:52:59.169 [SYSTEM]   Reputation: 12
+
+═══ CYCLE 13/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY > 80)
+[BEHAVIOR] State transition: Active → Active
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 13)
+★ REPUTATION RecoveryBot: +1 → 13
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.172 [SYSTEM] Cycle 13 Complete:
+09:52:59.173 [SYSTEM]   State: Active
+09:52:59.174 [SYSTEM]   Energy: 75
+09:52:59.174 [SYSTEM]   Reputation: 13
+
+═══ CYCLE 14/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 14)
+★ REPUTATION RecoveryBot: +1 → 14
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.177 [SYSTEM] Cycle 14 Complete:
+09:52:59.178 [SYSTEM]   State: Active
+09:52:59.179 [SYSTEM]   Energy: 65
+09:52:59.179 [SYSTEM]   Reputation: 14
+
+═══ CYCLE 15/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 15)
+★ REPUTATION RecoveryBot: +1 → 15
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.182 [SYSTEM] Cycle 15 Complete:
+09:52:59.183 [SYSTEM]   State: Active
+09:52:59.183 [SYSTEM]   Energy: 55
+09:52:59.184 [SYSTEM]   Reputation: 15
+
+═══ CYCLE 16/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 16)
+★ REPUTATION RecoveryBot: +1 → 16
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.187 [SYSTEM] Cycle 16 Complete:
+09:52:59.188 [SYSTEM]   State: Active
+09:52:59.188 [SYSTEM]   Energy: 45
+09:52:59.189 [SYSTEM]   Reputation: 16
+
+═══ CYCLE 17/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 17)
+★ REPUTATION RecoveryBot: +1 → 17
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.192 [SYSTEM] Cycle 17 Complete:
+09:52:59.193 [SYSTEM]   State: Active
+09:52:59.193 [SYSTEM]   Energy: 35
+09:52:59.194 [SYSTEM]   Reputation: 17
+
+═══ CYCLE 18/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 18)
+★ REPUTATION RecoveryBot: +1 → 18
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Active → Recovery
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 25 → 40
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+◆ STATE RecoveryBot: Active → Recovery
+09:52:59.197 [SYSTEM] Cycle 18 Complete:
+09:52:59.198 [SYSTEM]   State: Recovery
+09:52:59.199 [SYSTEM]   Energy: 40
+09:52:59.199 [SYSTEM]   Reputation: 18
+
+═══ CYCLE 19/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 40 → 55
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ Monitor (condition met)
+⚡ EXECUTE → Monitor
+⚡ TOOL → Monitor
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 19)
+★ REPUTATION RecoveryBot: +1 → 19
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 45 → 60
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.202 [SYSTEM] Cycle 19 Complete:
+09:52:59.203 [SYSTEM]   State: Recovery
+09:52:59.204 [SYSTEM]   Energy: 60
+09:52:59.204 [SYSTEM]   Reputation: 19
+
+═══ CYCLE 20/20 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 60 → 75
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ Monitor (condition met)
+⚡ EXECUTE → Monitor
+⚡ TOOL → Monitor
+   Test energy restoration mechanics
+[OAN SYSTEM] RecoveryBot's reputation updated: +1 (Total: 20)
+★ REPUTATION RecoveryBot: +1 → 20
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for RecoveryBot...
+[BEHAVIOR] Rule triggered: Condition(STATE == Recovery)
+[BEHAVIOR] Energy change: 65 → 80
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.207 [SYSTEM] Cycle 20 Complete:
+09:52:59.208 [SYSTEM]   State: Recovery
+09:52:59.209 [SYSTEM]   Energy: 80
+09:52:59.209 [SYSTEM]   Reputation: 20
+
+
+╔══════════════════════════ ◢ EXECUTION COMPLETE ◣ ═══════════════════════════╗
+║ ╔═════════════╤═════════════════════════════╗                               ║
+║ ║ ENTITY      │ RecoveryBot                 ║                               ║
+║ ║ FINAL STATE │ Recovery                    ║                               ║
+║ ║ ENERGY      │ ████████████████░░░░ 80/100 ║                               ║
+║ ║ REPUTATION  │ 20                          ║                               ║
+║ ║ TIME        │ 0.11s                       ║                               ║
+║ ╚═════════════╧═════════════════════════════╝                               ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+
+             ◢ NETWORK TOPOLOGY ◣             
+┌───────────────┬─────────────┬────────┬─────┐
+│ NODE          │ STATE       │ ENERGY │ REP │
+├───────────────┼─────────────┼────────┼─────┤
+│ ● TestBot     │ Overclocked │ 10     │ 6   │
+│ ● RecoveryBot │ Recovery    │ 80     │ 20  │
+└───────────────┴─────────────┴────────┴─────┘
+Total: 2 | Active: 2
+
+
+Final Results:
+  State: Recovery
+  Energy: 80
+
+✅ Energy restoration test PASSED!
+
+======================================================================
+TEST 3: REPUTATION-BASED BEHAVIOR
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_reputation.ent
+[OAN SYSTEM] Entity Parsed → ReputationBot
+09:52:59.226 [SYSTEM] Initializing Obsidian Arcadia Runtime...
+╔════════════════════════════ ◢ ENTITY MANIFEST ◣ ════════════════════════════╗
+║ ┌────────────┬──────────────────────────────┐                               ║
+║ │ ENTITY_ID  │ ReputationBot                │                               ║
+║ │ TYPE       │ Undefined                    │                               ║
+║ │ STATE      │ ► Active                     │                               ║
+║ │ ENERGY     │ ████████████████████ 100/100 │                               ║
+║ │ REPUTATION │ 0                            │                               ║
+║ └────────────┴──────────────────────────────┘                               ║
+╚═══════════════════════ Neural threads stabilizing... ═══════════════════════╝
+[ENTITY MANAGER] Registered: ReputationBot (ID: 69524342...)
+09:52:59.232 [SYSTEM] Behavioral Intelligence: ACTIVE
+
+═══ CYCLE 1/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 1)
+★ REPUTATION ReputationBot: +1 → 1
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.235 [SYSTEM] Cycle 1 Complete:
+09:52:59.236 [SYSTEM]   State: Active
+09:52:59.236 [SYSTEM]   Energy: 95
+09:52:59.237 [SYSTEM]   Reputation: 1
+
+═══ CYCLE 2/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 2)
+★ REPUTATION ReputationBot: +1 → 2
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.240 [SYSTEM] Cycle 2 Complete:
+09:52:59.241 [SYSTEM]   State: Active
+09:52:59.242 [SYSTEM]   Energy: 90
+09:52:59.242 [SYSTEM]   Reputation: 2
+
+═══ CYCLE 3/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 3)
+★ REPUTATION ReputationBot: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.245 [SYSTEM] Cycle 3 Complete:
+09:52:59.246 [SYSTEM]   State: Active
+09:52:59.246 [SYSTEM]   Energy: 85
+09:52:59.247 [SYSTEM]   Reputation: 3
+
+═══ CYCLE 4/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 4)
+★ REPUTATION ReputationBot: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.250 [SYSTEM] Cycle 4 Complete:
+09:52:59.251 [SYSTEM]   State: Active
+09:52:59.252 [SYSTEM]   Energy: 80
+09:52:59.252 [SYSTEM]   Reputation: 4
+
+═══ CYCLE 5/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 5)
+★ REPUTATION ReputationBot: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.255 [SYSTEM] Cycle 5 Complete:
+09:52:59.256 [SYSTEM]   State: Active
+09:52:59.257 [SYSTEM]   Energy: 75
+09:52:59.257 [SYSTEM]   Reputation: 5
+
+═══ CYCLE 6/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 6)
+★ REPUTATION ReputationBot: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Active → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE ReputationBot: Active → Experienced
+09:52:59.261 [SYSTEM] Cycle 6 Complete:
+09:52:59.262 [SYSTEM]   State: Experienced
+09:52:59.262 [SYSTEM]   Energy: 70
+09:52:59.263 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 7/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 7)
+★ REPUTATION ReputationBot: +1 → 7
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.266 [SYSTEM] Cycle 7 Complete:
+09:52:59.267 [SYSTEM]   State: Experienced
+09:52:59.267 [SYSTEM]   Energy: 65
+09:52:59.268 [SYSTEM]   Reputation: 7
+
+═══ CYCLE 8/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 8)
+★ REPUTATION ReputationBot: +1 → 8
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.271 [SYSTEM] Cycle 8 Complete:
+09:52:59.271 [SYSTEM]   State: Experienced
+09:52:59.272 [SYSTEM]   Energy: 60
+09:52:59.273 [SYSTEM]   Reputation: 8
+
+═══ CYCLE 9/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 9)
+★ REPUTATION ReputationBot: +1 → 9
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.276 [SYSTEM] Cycle 9 Complete:
+09:52:59.277 [SYSTEM]   State: Experienced
+09:52:59.277 [SYSTEM]   Energy: 55
+09:52:59.278 [SYSTEM]   Reputation: 9
+
+═══ CYCLE 10/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 10)
+★ REPUTATION ReputationBot: +1 → 10
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.281 [SYSTEM] Cycle 10 Complete:
+09:52:59.282 [SYSTEM]   State: Experienced
+09:52:59.282 [SYSTEM]   Energy: 50
+09:52:59.283 [SYSTEM]   Reputation: 10
+
+═══ CYCLE 11/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Experienced → Experienced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 11)
+★ REPUTATION ReputationBot: +1 → 11
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.286 [SYSTEM] Cycle 11 Complete:
+09:52:59.287 [SYSTEM]   State: Experienced
+09:52:59.287 [SYSTEM]   Energy: 45
+09:52:59.288 [SYSTEM]   Reputation: 11
+
+═══ CYCLE 12/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 12)
+★ REPUTATION ReputationBot: +1 → 12
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.291 [SYSTEM] Cycle 12 Complete:
+09:52:59.291 [SYSTEM]   State: Experienced
+09:52:59.292 [SYSTEM]   Energy: 40
+09:52:59.293 [SYSTEM]   Reputation: 12
+
+═══ CYCLE 13/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 13)
+★ REPUTATION ReputationBot: +1 → 13
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.296 [SYSTEM] Cycle 13 Complete:
+09:52:59.296 [SYSTEM]   State: Experienced
+09:52:59.297 [SYSTEM]   Energy: 35
+09:52:59.298 [SYSTEM]   Reputation: 13
+
+═══ CYCLE 14/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 14)
+★ REPUTATION ReputationBot: +1 → 14
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.301 [SYSTEM] Cycle 14 Complete:
+09:52:59.301 [SYSTEM]   State: Experienced
+09:52:59.302 [SYSTEM]   Energy: 30
+09:52:59.303 [SYSTEM]   Reputation: 14
+
+═══ CYCLE 15/15 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test reputation-driven behaviors
+[OAN SYSTEM] ReputationBot's reputation updated: +1 (Total: 15)
+★ REPUTATION ReputationBot: +1 → 15
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ReputationBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 10)
+[BEHAVIOR] State transition: Experienced → Elite
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Experienced
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.306 [SYSTEM] Cycle 15 Complete:
+09:52:59.306 [SYSTEM]   State: Experienced
+09:52:59.307 [SYSTEM]   Energy: 25
+09:52:59.308 [SYSTEM]   Reputation: 15
+
+
+╔══════════════════════════ ◢ EXECUTION COMPLETE ◣ ═══════════════════════════╗
+║ ╔═════════════╤═════════════════════════════╗                               ║
+║ ║ ENTITY      │ ReputationBot               ║                               ║
+║ ║ FINAL STATE │ Experienced                 ║                               ║
+║ ║ ENERGY      │ █████░░░░░░░░░░░░░░░ 25/100 ║                               ║
+║ ║ REPUTATION  │ 15                          ║                               ║
+║ ║ TIME        │ 0.09s                       ║                               ║
+║ ╚═════════════╧═════════════════════════════╝                               ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+
+              ◢ NETWORK TOPOLOGY ◣              
+┌─────────────────┬─────────────┬────────┬─────┐
+│ NODE            │ STATE       │ ENERGY │ REP │
+├─────────────────┼─────────────┼────────┼─────┤
+│ ● TestBot       │ Overclocked │ 10     │ 6   │
+│ ● RecoveryBot   │ Recovery    │ 80     │ 20  │
+│ ● ReputationBot │ Experienced │ 25     │ 15  │
+└─────────────────┴─────────────┴────────┴─────┘
+Total: 3 | Active: 3
+
+
+Final Results:
+  State: Experienced
+  Reputation: 15
+
+✅ Reputation behavior test PASSED!
+
+======================================================================
+TEST 4: COMPLEX CONDITIONS
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_complex.ent
+[OAN SYSTEM] Entity Parsed → ComplexBot
+09:52:59.326 [SYSTEM] Initializing Obsidian Arcadia Runtime...
+╔════════════════════════════ ◢ ENTITY MANIFEST ◣ ════════════════════════════╗
+║ ┌────────────┬──────────────────────────────┐                               ║
+║ │ ENTITY_ID  │ ComplexBot                   │                               ║
+║ │ TYPE       │ Undefined                    │                               ║
+║ │ STATE      │ ► Active                     │                               ║
+║ │ ENERGY     │ ████████████████████ 100/100 │                               ║
+║ │ REPUTATION │ 0                            │                               ║
+║ └────────────┴──────────────────────────────┘                               ║
+╚═══════════════════════ Neural threads stabilizing... ═══════════════════════╝
+[ENTITY MANAGER] Registered: ComplexBot (ID: fdafb332...)
+09:52:59.331 [SYSTEM] Behavioral Intelligence: ACTIVE
+
+═══ CYCLE 1/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 1)
+★ REPUTATION ComplexBot: +1 → 1
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.334 [SYSTEM] Cycle 1 Complete:
+09:52:59.335 [SYSTEM]   State: Active
+09:52:59.336 [SYSTEM]   Energy: 92
+09:52:59.336 [SYSTEM]   Reputation: 1
+
+═══ CYCLE 2/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 2)
+★ REPUTATION ComplexBot: +1 → 2
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.339 [SYSTEM] Cycle 2 Complete:
+09:52:59.340 [SYSTEM]   State: Active
+09:52:59.341 [SYSTEM]   Energy: 84
+09:52:59.341 [SYSTEM]   Reputation: 2
+
+═══ CYCLE 3/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 3)
+★ REPUTATION ComplexBot: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.345 [SYSTEM] Cycle 3 Complete:
+09:52:59.345 [SYSTEM]   State: Active
+09:52:59.346 [SYSTEM]   Energy: 76
+09:52:59.346 [SYSTEM]   Reputation: 3
+
+═══ CYCLE 4/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 4)
+★ REPUTATION ComplexBot: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.350 [SYSTEM] Cycle 4 Complete:
+09:52:59.350 [SYSTEM]   State: Active
+09:52:59.351 [SYSTEM]   Energy: 68
+09:52:59.352 [SYSTEM]   Reputation: 4
+
+═══ CYCLE 5/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 5)
+★ REPUTATION ComplexBot: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.355 [SYSTEM] Cycle 5 Complete:
+09:52:59.355 [SYSTEM]   State: Active
+09:52:59.356 [SYSTEM]   Energy: 60
+09:52:59.356 [SYSTEM]   Reputation: 5
+
+═══ CYCLE 6/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 6)
+★ REPUTATION ComplexBot: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.360 [SYSTEM] Cycle 6 Complete:
+09:52:59.360 [SYSTEM]   State: Active
+09:52:59.361 [SYSTEM]   Energy: 52
+09:52:59.362 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 7/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 7)
+★ REPUTATION ComplexBot: +1 → 7
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.365 [SYSTEM] Cycle 7 Complete:
+09:52:59.366 [SYSTEM]   State: Active
+09:52:59.366 [SYSTEM]   Energy: 44
+09:52:59.367 [SYSTEM]   Reputation: 7
+
+═══ CYCLE 8/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 8)
+★ REPUTATION ComplexBot: +1 → 8
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.370 [SYSTEM] Cycle 8 Complete:
+09:52:59.370 [SYSTEM]   State: Active
+09:52:59.371 [SYSTEM]   Energy: 36
+09:52:59.372 [SYSTEM]   Reputation: 8
+
+═══ CYCLE 9/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 9)
+★ REPUTATION ComplexBot: +1 → 9
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.375 [SYSTEM] Cycle 9 Complete:
+09:52:59.376 [SYSTEM]   State: Active
+09:52:59.376 [SYSTEM]   Energy: 28
+09:52:59.377 [SYSTEM]   Reputation: 9
+
+═══ CYCLE 10/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 10)
+★ REPUTATION ComplexBot: +1 → 10
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.380 [SYSTEM] Cycle 10 Complete:
+09:52:59.380 [SYSTEM]   State: Active
+09:52:59.381 [SYSTEM]   Energy: 20
+09:52:59.383 [SYSTEM]   Reputation: 10
+
+═══ CYCLE 11/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ IdleMonitor (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 11)
+★ REPUTATION ComplexBot: +1 → 11
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 20)
+[BEHAVIOR] State transition: Active → Emergency
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE ComplexBot: Active → Emergency
+09:52:59.386 [SYSTEM] Cycle 11 Complete:
+09:52:59.387 [SYSTEM]   State: Emergency
+09:52:59.387 [SYSTEM]   Energy: 12
+09:52:59.388 [SYSTEM]   Reputation: 11
+
+═══ CYCLE 12/12 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 20)
+[BEHAVIOR] State transition: Emergency → Emergency
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 4 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+[EXECUTE ENGINE] ✓ IdleMonitor (condition met)
+⚡ EXECUTE → IdleMonitor
+⚡ TOOL → IdleMonitor
+   Test complex conditional logic
+[OAN SYSTEM] ComplexBot's reputation updated: +1 (Total: 12)
+★ REPUTATION ComplexBot: +1 → 12
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for ComplexBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 20)
+[BEHAVIOR] State transition: Emergency → Emergency
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.391 [SYSTEM] Cycle 12 Complete:
+09:52:59.392 [SYSTEM]   State: Emergency
+09:52:59.393 [SYSTEM]   Energy: 4
+09:52:59.393 [SYSTEM]   Reputation: 12
+
+
+╔══════════════════════════ ◢ EXECUTION COMPLETE ◣ ═══════════════════════════╗
+║ ╔═════════════╤════════════════════════════╗                                ║
+║ ║ ENTITY      │ ComplexBot                 ║                                ║
+║ ║ FINAL STATE │ Emergency                  ║                                ║
+║ ║ ENERGY      │ ░░░░░░░░░░░░░░░░░░░░ 4/100 ║                                ║
+║ ║ REPUTATION  │ 12                         ║                                ║
+║ ║ TIME        │ 0.07s                      ║                                ║
+║ ╚═════════════╧════════════════════════════╝                                ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+
+              ◢ NETWORK TOPOLOGY ◣              
+┌─────────────────┬─────────────┬────────┬─────┐
+│ NODE            │ STATE       │ ENERGY │ REP │
+├─────────────────┼─────────────┼────────┼─────┤
+│ ● TestBot       │ Overclocked │ 10     │ 6   │
+│ ● RecoveryBot   │ Recovery    │ 80     │ 20  │
+│ ● ReputationBot │ Experienced │ 25     │ 15  │
+│ ● ComplexBot    │ Emergency   │ 4      │ 12  │
+└─────────────────┴─────────────┴────────┴─────┘
+Total: 4 | Active: 4
+
+
+Final Results:
+  State: Emergency
+  Energy: 4
+  Reputation: 12
+
+✅ Complex conditions test PASSED!
+
+======================================================================
+TEST 5: STATE OSCILLATION
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_oscillation.ent
+[OAN SYSTEM] Entity Parsed → OscillatorBot
+09:52:59.412 [SYSTEM] Initializing Obsidian Arcadia Runtime...
+╔════════════════════════════ ◢ ENTITY MANIFEST ◣ ════════════════════════════╗
+║ ┌────────────┬─────────────────────────────┐                                ║
+║ │ ENTITY_ID  │ OscillatorBot               │                                ║
+║ │ TYPE       │ Undefined                   │                                ║
+║ │ STATE      │ ► Active                    │                                ║
+║ │ ENERGY     │ █████░░░░░░░░░░░░░░░ 25/100 │                                ║
+║ │ REPUTATION │ 10                          │                                ║
+║ └────────────┴─────────────────────────────┘                                ║
+╚═══════════════════════ Neural threads stabilizing... ═══════════════════════╝
+[ENTITY MANAGER] Registered: OscillatorBot (ID: 5316f6b1...)
+09:52:59.417 [SYSTEM] Behavioral Intelligence: ACTIVE
+
+═══ CYCLE 1/5 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Active → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+◆ STATE OscillatorBot: Active → Overclocked
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Test competing behavioral rules
+[OAN SYSTEM] OscillatorBot's reputation updated: +1 (Total: 11)
+★ REPUTATION OscillatorBot: +1 → 11
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.421 [SYSTEM] Cycle 1 Complete:
+09:52:59.421 [SYSTEM]   State: Overclocked
+09:52:59.422 [SYSTEM]   Energy: 25
+09:52:59.423 [SYSTEM]   Reputation: 11
+
+═══ CYCLE 2/5 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Test competing behavioral rules
+[OAN SYSTEM] OscillatorBot's reputation updated: +1 (Total: 12)
+★ REPUTATION OscillatorBot: +1 → 12
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.426 [SYSTEM] Cycle 2 Complete:
+09:52:59.427 [SYSTEM]   State: Overclocked
+09:52:59.427 [SYSTEM]   Energy: 25
+09:52:59.428 [SYSTEM]   Reputation: 12
+
+═══ CYCLE 3/5 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Test competing behavioral rules
+[OAN SYSTEM] OscillatorBot's reputation updated: +1 (Total: 13)
+★ REPUTATION OscillatorBot: +1 → 13
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.431 [SYSTEM] Cycle 3 Complete:
+09:52:59.432 [SYSTEM]   State: Overclocked
+09:52:59.432 [SYSTEM]   Energy: 25
+09:52:59.433 [SYSTEM]   Reputation: 13
+
+═══ CYCLE 4/5 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Test competing behavioral rules
+[OAN SYSTEM] OscillatorBot's reputation updated: +1 (Total: 14)
+★ REPUTATION OscillatorBot: +1 → 14
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.436 [SYSTEM] Cycle 4 Complete:
+09:52:59.437 [SYSTEM]   State: Overclocked
+09:52:59.437 [SYSTEM]   Energy: 25
+09:52:59.438 [SYSTEM]   Reputation: 14
+
+═══ CYCLE 5/5 ═══
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 2 execute rule(s)...
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Test competing behavioral rules
+[OAN SYSTEM] OscillatorBot's reputation updated: +1 (Total: 15)
+★ REPUTATION OscillatorBot: +1 → 15
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for OscillatorBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 30)
+[BEHAVIOR] State transition: Overclocked → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Overclocked
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.441 [SYSTEM] Cycle 5 Complete:
+09:52:59.442 [SYSTEM]   State: Overclocked
+09:52:59.442 [SYSTEM]   Energy: 25
+09:52:59.443 [SYSTEM]   Reputation: 15
+
+
+╔══════════════════════════ ◢ EXECUTION COMPLETE ◣ ═══════════════════════════╗
+║ ╔═════════════╤═════════════════════════════╗                               ║
+║ ║ ENTITY      │ OscillatorBot               ║                               ║
+║ ║ FINAL STATE │ Overclocked                 ║                               ║
+║ ║ ENERGY      │ █████░░░░░░░░░░░░░░░ 25/100 ║                               ║
+║ ║ REPUTATION  │ 15                          ║                               ║
+║ ║ TIME        │ 0.04s                       ║                               ║
+║ ╚═════════════╧═════════════════════════════╝                               ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+
+              ◢ NETWORK TOPOLOGY ◣              
+┌─────────────────┬─────────────┬────────┬─────┐
+│ NODE            │ STATE       │ ENERGY │ REP │
+├─────────────────┼─────────────┼────────┼─────┤
+│ ● TestBot       │ Overclocked │ 10     │ 6   │
+│ ● RecoveryBot   │ Recovery    │ 80     │ 20  │
+│ ● ReputationBot │ Experienced │ 25     │ 15  │
+│ ● ComplexBot    │ Emergency   │ 4      │ 12  │
+│ ● OscillatorBot │ Overclocked │ 25     │ 15  │
+└─────────────────┴─────────────┴────────┴─────┘
+Total: 5 | Active: 5
+
+
+Final Results:
+  State: Overclocked
+  Energy: 25
+  Reputation: 15
+
+✅ State oscillation test PASSED!
+
+======================================================================
+TEST 6: CONDITIONAL TOOL EXECUTION
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_tools.ent
+[OAN SYSTEM] Entity Parsed → ToolBot
+09:52:59.462 [SYSTEM] Initializing Obsidian Arcadia Runtime...
+╔════════════════════════════ ◢ ENTITY MANIFEST ◣ ════════════════════════════╗
+║ ┌────────────┬──────────────────────────────┐                               ║
+║ │ ENTITY_ID  │ ToolBot                      │                               ║
+║ │ TYPE       │ Undefined                    │                               ║
+║ │ STATE      │ ► Active                     │                               ║
+║ │ ENERGY     │ ████████████████████ 100/100 │                               ║
+║ │ REPUTATION │ 0                            │                               ║
+║ └────────────┴──────────────────────────────┘                               ║
+╚═══════════════════════ Neural threads stabilizing... ═══════════════════════╝
+[ENTITY MANAGER] Registered: ToolBot (ID: d8ce77a1...)
+09:52:59.467 [SYSTEM] Behavioral Intelligence: ACTIVE
+
+═══ CYCLE 1/8 ═══
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 1)
+★ REPUTATION ToolBot: +1 → 1
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.471 [SYSTEM] Cycle 1 Complete:
+09:52:59.471 [SYSTEM]   State: Active
+09:52:59.472 [SYSTEM]   Energy: 90
+09:52:59.472 [SYSTEM]   Reputation: 1
+
+═══ CYCLE 2/8 ═══
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 2)
+★ REPUTATION ToolBot: +1 → 2
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.475 [SYSTEM] Cycle 2 Complete:
+09:52:59.476 [SYSTEM]   State: Active
+09:52:59.476 [SYSTEM]   Energy: 80
+09:52:59.477 [SYSTEM]   Reputation: 2
+
+═══ CYCLE 3/8 ═══
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 3)
+★ REPUTATION ToolBot: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.480 [SYSTEM] Cycle 3 Complete:
+09:52:59.481 [SYSTEM]   State: Active
+09:52:59.481 [SYSTEM]   Energy: 70
+09:52:59.482 [SYSTEM]   Reputation: 3
+
+═══ CYCLE 4/8 ═══
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ SentimentAnalyzer (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 4)
+★ REPUTATION ToolBot: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Active → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE ToolBot: Active → Advanced
+09:52:59.485 [SYSTEM] Cycle 4 Complete:
+09:52:59.486 [SYSTEM]   State: Advanced
+09:52:59.486 [SYSTEM]   Energy: 60
+09:52:59.487 [SYSTEM]   Reputation: 4
+
+═══ CYCLE 5/8 ═══
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Advanced → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 5)
+★ REPUTATION ToolBot: +1 → 5
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 6)
+★ REPUTATION ToolBot: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Advanced → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.492 [SYSTEM] Cycle 5 Complete:
+09:52:59.492 [SYSTEM]   State: Advanced
+09:52:59.493 [SYSTEM]   Energy: 40
+09:52:59.494 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 6/8 ═══
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Advanced → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 7)
+★ REPUTATION ToolBot: +1 → 7
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 8)
+★ REPUTATION ToolBot: +1 → 8
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Advanced → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.498 [SYSTEM] Cycle 6 Complete:
+09:52:59.499 [SYSTEM]   State: Advanced
+09:52:59.500 [SYSTEM]   Energy: 20
+09:52:59.500 [SYSTEM]   Reputation: 8
+
+═══ CYCLE 7/8 ═══
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Advanced → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → SentimentAnalyzer
+⚡ TOOL → SentimentAnalyzer
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 9)
+★ REPUTATION ToolBot: +1 → 9
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Test conditional tool execution
+[OAN SYSTEM] ToolBot's reputation updated: +1 (Total: 10)
+★ REPUTATION ToolBot: +1 → 10
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Advanced → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.505 [SYSTEM] Cycle 7 Complete:
+09:52:59.506 [SYSTEM]   State: Advanced
+09:52:59.506 [SYSTEM]   Energy: 0
+09:52:59.507 [SYSTEM]   Reputation: 10
+
+═══ CYCLE 8/8 ═══
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Advanced → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.508 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✓ SentimentAnalyzer (condition met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.509 [SYSTEM] Insufficient energy for SentimentAnalyzer
+09:52:59.509 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 1 behavior rule(s) for ToolBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Advanced → Advanced
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.510 [SYSTEM] Cycle 8 Complete:
+09:52:59.510 [SYSTEM]   State: Advanced
+09:52:59.511 [SYSTEM]   Energy: 0
+09:52:59.512 [SYSTEM]   Reputation: 10
+
+
+╔══════════════════════════ ◢ EXECUTION COMPLETE ◣ ═══════════════════════════╗
+║ ╔═════════════╤════════════════════════════╗                                ║
+║ ║ ENTITY      │ ToolBot                    ║                                ║
+║ ║ FINAL STATE │ Advanced                   ║                                ║
+║ ║ ENERGY      │ ░░░░░░░░░░░░░░░░░░░░ 0/100 ║                                ║
+║ ║ REPUTATION  │ 10                         ║                                ║
+║ ║ TIME        │ 0.06s                      ║                                ║
+║ ╚═════════════╧════════════════════════════╝                                ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+
+              ◢ NETWORK TOPOLOGY ◣              
+┌─────────────────┬─────────────┬────────┬─────┐
+│ NODE            │ STATE       │ ENERGY │ REP │
+├─────────────────┼─────────────┼────────┼─────┤
+│ ● TestBot       │ Overclocked │ 10     │ 6   │
+│ ● RecoveryBot   │ Recovery    │ 80     │ 20  │
+│ ● ReputationBot │ Experienced │ 25     │ 15  │
+│ ● ComplexBot    │ Emergency   │ 4      │ 12  │
+│ ● OscillatorBot │ Overclocked │ 25     │ 15  │
+│ ● ToolBot       │ Advanced    │ 0      │ 10  │
+└─────────────────┴─────────────┴────────┴─────┘
+Total: 6 | Active: 6
+
+
+Final Results:
+  State: Advanced
+  Reputation: 10
+
+✅ Conditional tool execution test PASSED!
+
+======================================================================
+TEST 7: MULTI-ENTITY BEHAVIORS
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+09:52:59.532 [SYSTEM] Multi-Entity Execution Mode
+09:52:59.533 [SYSTEM] Loading 3 entities...
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_multi_0.ent
+[OAN SYSTEM] Entity Parsed → MultiBot0
+[ENTITY MANAGER] Registered: MultiBot0 (ID: b7bc8937...)
+09:52:59.534 [SYSTEM]   Loaded: MultiBot0
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_multi_1.ent
+[OAN SYSTEM] Entity Parsed → MultiBot1
+[ENTITY MANAGER] Registered: MultiBot1 (ID: cbaf57c8...)
+09:52:59.535 [SYSTEM]   Loaded: MultiBot1
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_multi_2.ent
+[OAN SYSTEM] Entity Parsed → MultiBot2
+[ENTITY MANAGER] Registered: MultiBot2 (ID: f99453c3...)
+09:52:59.536 [SYSTEM]   Loaded: MultiBot2
+09:52:59.536 [SYSTEM] 
+Starting execution with 5 cycle(s)...
+
+
+═══ CYCLE 1/5 ═══
+09:52:59.538 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 1)
+★ REPUTATION MultiBot0: +1 → 1
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.541 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 3)
+★ REPUTATION MultiBot1: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.544 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Active → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE MultiBot2: Active → Elite
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 5)
+★ REPUTATION MultiBot2: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.547 [SYSTEM] 
+--- Cycle 1 Complete ---
+09:52:59.548 [SYSTEM]   MultiBot0: E:90 R:1 S:Active
+09:52:59.549 [SYSTEM]   MultiBot1: E:70 R:3 S:Active
+09:52:59.550 [SYSTEM]   MultiBot2: E:50 R:5 S:Elite
+
+═══ CYCLE 2/5 ═══
+09:52:59.551 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 2)
+★ REPUTATION MultiBot0: +1 → 2
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.553 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 4)
+★ REPUTATION MultiBot1: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Active → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE MultiBot1: Active → Elite
+09:52:59.556 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 6)
+★ REPUTATION MultiBot2: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.559 [SYSTEM] 
+--- Cycle 2 Complete ---
+09:52:59.560 [SYSTEM]   MultiBot0: E:80 R:2 S:Active
+09:52:59.560 [SYSTEM]   MultiBot1: E:60 R:4 S:Elite
+09:52:59.561 [SYSTEM]   MultiBot2: E:40 R:6 S:Elite
+
+═══ CYCLE 3/5 ═══
+09:52:59.562 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 3)
+★ REPUTATION MultiBot0: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.565 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 5)
+★ REPUTATION MultiBot1: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.568 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 7)
+★ REPUTATION MultiBot2: +1 → 7
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.571 [SYSTEM] 
+--- Cycle 3 Complete ---
+09:52:59.571 [SYSTEM]   MultiBot0: E:70 R:3 S:Active
+09:52:59.572 [SYSTEM]   MultiBot1: E:50 R:5 S:Elite
+09:52:59.573 [SYSTEM]   MultiBot2: E:30 R:7 S:Elite
+
+═══ CYCLE 4/5 ═══
+09:52:59.574 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 4)
+★ REPUTATION MultiBot0: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Active → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE MultiBot0: Active → Elite
+09:52:59.578 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 6)
+★ REPUTATION MultiBot1: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.580 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 8)
+★ REPUTATION MultiBot2: +1 → 8
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.583 [SYSTEM] 
+--- Cycle 4 Complete ---
+09:52:59.584 [SYSTEM]   MultiBot0: E:60 R:4 S:Elite
+09:52:59.585 [SYSTEM]   MultiBot1: E:40 R:6 S:Elite
+09:52:59.585 [SYSTEM]   MultiBot2: E:20 R:8 S:Elite
+
+═══ CYCLE 5/5 ═══
+09:52:59.587 [SYSTEM] 
+--- Executing: MultiBot0 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 0
+[OAN SYSTEM] MultiBot0's reputation updated: +1 (Total: 5)
+★ REPUTATION MultiBot0: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot0...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.589 [SYSTEM] 
+--- Executing: MultiBot1 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 1
+[OAN SYSTEM] MultiBot1's reputation updated: +1 (Total: 7)
+★ REPUTATION MultiBot1: +1 → 7
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot1...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.593 [SYSTEM] 
+--- Executing: MultiBot2 ---
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Multi-entity behavior test 2
+[OAN SYSTEM] MultiBot2's reputation updated: +1 (Total: 9)
+★ REPUTATION MultiBot2: +1 → 9
+
+[BEHAVIOR ENGINE] Evaluating 2 behavior rule(s) for MultiBot2...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 40)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 3)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.596 [SYSTEM] 
+--- Cycle 5 Complete ---
+09:52:59.597 [SYSTEM]   MultiBot0: E:50 R:5 S:Elite
+09:52:59.598 [SYSTEM]   MultiBot1: E:30 R:7 S:Elite
+09:52:59.598 [SYSTEM]   MultiBot2: E:10 R:9 S:Elite
+09:52:59.599 [SYSTEM] 
+MULTI-ENTITY EXECUTION COMPLETE
+
+
+              ◢ NETWORK TOPOLOGY ◣              
+┌─────────────────┬─────────────┬────────┬─────┐
+│ NODE            │ STATE       │ ENERGY │ REP │
+├─────────────────┼─────────────┼────────┼─────┤
+│ ● TestBot       │ Overclocked │ 10     │ 6   │
+│ ● RecoveryBot   │ Recovery    │ 80     │ 20  │
+│ ● ReputationBot │ Experienced │ 25     │ 15  │
+│ ● ComplexBot    │ Emergency   │ 4      │ 12  │
+│ ● OscillatorBot │ Overclocked │ 25     │ 15  │
+│ ● ToolBot       │ Advanced    │ 0      │ 10  │
+│ ● MultiBot0     │ Elite       │ 50     │ 5   │
+│ ● MultiBot1     │ Elite       │ 30     │ 7   │
+│ ● MultiBot2     │ Elite       │ 10     │ 9   │
+└─────────────────┴─────────────┴────────┴─────┘
+Total: 9 | Active: 9
+
+
+Executed 3 entities
+  Entity 0: State=Elite E=50 R=5
+  Entity 1: State=Elite E=30 R=7
+  Entity 2: State=Elite E=10 R=9
+
+❌ Multi-Entity FAILED: Entities should have different states
+
+======================================================================
+TEST 8: PERFORMANCE TEST
+======================================================================
+
+
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║     ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗    ║
+║    ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║    ║
+║    ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║    ║
+║    ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║    ║
+║    ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║    ║
+║     ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ║
+║                                                                   ║
+║      █████╗ ██████╗  ██████╗ █████╗ ██████╗ ██╗ █████╗          ║
+║     ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗         ║
+║     ███████║██████╔╝██║     ███████║██║  ██║██║███████║         ║
+║     ██╔══██║██╔══██╗██║     ██╔══██║██║  ██║██║██╔══██║         ║
+║     ██║  ██║██║  ██║╚██████╗██║  ██║██████╔╝██║██║  ██║         ║
+║     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝         ║
+║                                                                   ║
+║                 ███╗   ██╗███████╗████████╗                      ║
+║                 ████╗  ██║██╔════╝╚══██╔══╝                      ║
+║                 ██╔██╗ ██║█████╗     ██║                         ║
+║                 ██║╚██╗██║██╔══╝     ██║                         ║
+║                 ██║ ╚████║███████╗   ██║                         ║
+║                 ╚═╝  ╚═══╝╚══════╝   ╚═╝                         ║
+║                                                                   ║
+║               R O G U E   A I   L A B                      ║
+║           >> Autonomous Entity Network v1.0 <<           ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+                         ▓▒░ NEURAL NETWORK ACTIVE ░▒▓                         
+
+[OAN SYSTEM] DSL Loaded → C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\entities/test_performance.ent
+[OAN SYSTEM] Entity Parsed → PerfBot
+09:52:59.623 [SYSTEM] Initializing Obsidian Arcadia Runtime...
+╔════════════════════════════ ◢ ENTITY MANIFEST ◣ ════════════════════════════╗
+║ ┌────────────┬──────────────────────────────┐                               ║
+║ │ ENTITY_ID  │ PerfBot                      │                               ║
+║ │ TYPE       │ Undefined                    │                               ║
+║ │ STATE      │ ► Active                     │                               ║
+║ │ ENERGY     │ ████████████████████ 100/100 │                               ║
+║ │ REPUTATION │ 0                            │                               ║
+║ └────────────┴──────────────────────────────┘                               ║
+╚═══════════════════════ Neural threads stabilizing... ═══════════════════════╝
+[ENTITY MANAGER] Registered: PerfBot (ID: c273b0ef...)
+09:52:59.628 [SYSTEM] Behavioral Intelligence: ACTIVE
+
+═══ CYCLE 1/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 1)
+★ REPUTATION PerfBot: +1 → 1
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.632 [SYSTEM] Cycle 1 Complete:
+09:52:59.632 [SYSTEM]   State: Active
+09:52:59.633 [SYSTEM]   Energy: 95
+09:52:59.633 [SYSTEM]   Reputation: 1
+
+═══ CYCLE 2/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 2)
+★ REPUTATION PerfBot: +1 → 2
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.636 [SYSTEM] Cycle 2 Complete:
+09:52:59.637 [SYSTEM]   State: Active
+09:52:59.638 [SYSTEM]   Energy: 90
+09:52:59.638 [SYSTEM]   Reputation: 2
+
+═══ CYCLE 3/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 3)
+★ REPUTATION PerfBot: +1 → 3
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.641 [SYSTEM] Cycle 3 Complete:
+09:52:59.642 [SYSTEM]   State: Active
+09:52:59.643 [SYSTEM]   Energy: 85
+09:52:59.643 [SYSTEM]   Reputation: 3
+
+═══ CYCLE 4/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 4)
+★ REPUTATION PerfBot: +1 → 4
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.646 [SYSTEM] Cycle 4 Complete:
+09:52:59.647 [SYSTEM]   State: Active
+09:52:59.648 [SYSTEM]   Energy: 80
+09:52:59.648 [SYSTEM]   Reputation: 4
+
+═══ CYCLE 5/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 5)
+★ REPUTATION PerfBot: +1 → 5
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+09:52:59.651 [SYSTEM] Cycle 5 Complete:
+09:52:59.652 [SYSTEM]   State: Active
+09:52:59.653 [SYSTEM]   Energy: 75
+09:52:59.653 [SYSTEM]   Reputation: 5
+
+═══ CYCLE 6/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR ENGINE] No rules triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✓ DataCollector (condition met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✗ DeepAnalyzer (condition not met)
+⚡ EXECUTE → DataCollector
+⚡ TOOL → DataCollector
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 6)
+★ REPUTATION PerfBot: +1 → 6
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Active → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+◆ STATE PerfBot: Active → Elite
+09:52:59.657 [SYSTEM] Cycle 6 Complete:
+09:52:59.658 [SYSTEM]   State: Elite
+09:52:59.658 [SYSTEM]   Energy: 70
+09:52:59.659 [SYSTEM]   Reputation: 6
+
+═══ CYCLE 7/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 7)
+★ REPUTATION PerfBot: +1 → 7
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.662 [SYSTEM] Cycle 7 Complete:
+09:52:59.663 [SYSTEM]   State: Elite
+09:52:59.663 [SYSTEM]   Energy: 65
+09:52:59.664 [SYSTEM]   Reputation: 7
+
+═══ CYCLE 8/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 8)
+★ REPUTATION PerfBot: +1 → 8
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.667 [SYSTEM] Cycle 8 Complete:
+09:52:59.668 [SYSTEM]   State: Elite
+09:52:59.668 [SYSTEM]   Energy: 60
+09:52:59.669 [SYSTEM]   Reputation: 8
+
+═══ CYCLE 9/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 9)
+★ REPUTATION PerfBot: +1 → 9
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.672 [SYSTEM] Cycle 9 Complete:
+09:52:59.673 [SYSTEM]   State: Elite
+09:52:59.673 [SYSTEM]   Energy: 55
+09:52:59.674 [SYSTEM]   Reputation: 9
+
+═══ CYCLE 10/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 10)
+★ REPUTATION PerfBot: +1 → 10
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+09:52:59.677 [SYSTEM] Cycle 10 Complete:
+09:52:59.678 [SYSTEM]   State: Elite
+09:52:59.678 [SYSTEM]   Energy: 50
+09:52:59.679 [SYSTEM]   Reputation: 10
+
+═══ CYCLE 11/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Elite → Elite
+[BEHAVIOR ENGINE] 1 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 11)
+★ REPUTATION PerfBot: +1 → 11
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.682 [SYSTEM] Cycle 11 Complete:
+09:52:59.683 [SYSTEM]   State: Elite
+09:52:59.683 [SYSTEM]   Energy: 45
+09:52:59.684 [SYSTEM]   Reputation: 11
+
+═══ CYCLE 12/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 12)
+★ REPUTATION PerfBot: +1 → 12
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.687 [SYSTEM] Cycle 12 Complete:
+09:52:59.687 [SYSTEM]   State: Elite
+09:52:59.688 [SYSTEM]   Energy: 40
+09:52:59.689 [SYSTEM]   Reputation: 12
+
+═══ CYCLE 13/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 13)
+★ REPUTATION PerfBot: +1 → 13
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.692 [SYSTEM] Cycle 13 Complete:
+09:52:59.692 [SYSTEM]   State: Elite
+09:52:59.693 [SYSTEM]   Energy: 35
+09:52:59.694 [SYSTEM]   Reputation: 13
+
+═══ CYCLE 14/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 14)
+★ REPUTATION PerfBot: +1 → 14
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.697 [SYSTEM] Cycle 14 Complete:
+09:52:59.697 [SYSTEM]   State: Elite
+09:52:59.698 [SYSTEM]   Energy: 30
+09:52:59.699 [SYSTEM]   Reputation: 14
+
+═══ CYCLE 15/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 15)
+★ REPUTATION PerfBot: +1 → 15
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.702 [SYSTEM] Cycle 15 Complete:
+09:52:59.702 [SYSTEM]   State: Elite
+09:52:59.703 [SYSTEM]   Energy: 25
+09:52:59.703 [SYSTEM]   Reputation: 15
+
+═══ CYCLE 16/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 16)
+★ REPUTATION PerfBot: +1 → 16
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.707 [SYSTEM] Cycle 16 Complete:
+09:52:59.707 [SYSTEM]   State: Elite
+09:52:59.708 [SYSTEM]   Energy: 20
+09:52:59.708 [SYSTEM]   Reputation: 16
+
+═══ CYCLE 17/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 17)
+★ REPUTATION PerfBot: +1 → 17
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.711 [SYSTEM] Cycle 17 Complete:
+09:52:59.712 [SYSTEM]   State: Elite
+09:52:59.713 [SYSTEM]   Energy: 15
+09:52:59.713 [SYSTEM]   Reputation: 17
+
+═══ CYCLE 18/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 18)
+★ REPUTATION PerfBot: +1 → 18
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.716 [SYSTEM] Cycle 18 Complete:
+09:52:59.717 [SYSTEM]   State: Elite
+09:52:59.718 [SYSTEM]   Energy: 10
+09:52:59.718 [SYSTEM]   Reputation: 18
+
+═══ CYCLE 19/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 19)
+★ REPUTATION PerfBot: +1 → 19
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.721 [SYSTEM] Cycle 19 Complete:
+09:52:59.722 [SYSTEM]   State: Elite
+09:52:59.723 [SYSTEM]   Energy: 5
+09:52:59.723 [SYSTEM]   Reputation: 19
+
+═══ CYCLE 20/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.724 [SYSTEM] Low Energy Warning: 5
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+⚡ EXECUTE → DeepAnalyzer
+⚡ TOOL → DeepAnalyzer
+   Performance testing
+[OAN SYSTEM] PerfBot's reputation updated: +1 (Total: 20)
+★ REPUTATION PerfBot: +1 → 20
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.727 [SYSTEM] Cycle 20 Complete:
+09:52:59.727 [SYSTEM]   State: Elite
+09:52:59.728 [SYSTEM]   Energy: 0
+09:52:59.729 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 21/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.730 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.730 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.731 [SYSTEM] Cycle 21 Complete:
+09:52:59.732 [SYSTEM]   State: Elite
+09:52:59.733 [SYSTEM]   Energy: 0
+09:52:59.733 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 22/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.734 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.735 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.736 [SYSTEM] Cycle 22 Complete:
+09:52:59.736 [SYSTEM]   State: Elite
+09:52:59.737 [SYSTEM]   Energy: 0
+09:52:59.737 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 23/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.739 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.739 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.740 [SYSTEM] Cycle 23 Complete:
+09:52:59.741 [SYSTEM]   State: Elite
+09:52:59.741 [SYSTEM]   Energy: 0
+09:52:59.742 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 24/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.743 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.744 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.744 [SYSTEM] Cycle 24 Complete:
+09:52:59.745 [SYSTEM]   State: Elite
+09:52:59.746 [SYSTEM]   Energy: 0
+09:52:59.746 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 25/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.747 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.748 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.749 [SYSTEM] Cycle 25 Complete:
+09:52:59.749 [SYSTEM]   State: Elite
+09:52:59.750 [SYSTEM]   Energy: 0
+09:52:59.751 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 26/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.752 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.752 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.753 [SYSTEM] Cycle 26 Complete:
+09:52:59.754 [SYSTEM]   State: Elite
+09:52:59.754 [SYSTEM]   Energy: 0
+09:52:59.755 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 27/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.756 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.757 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.757 [SYSTEM] Cycle 27 Complete:
+09:52:59.758 [SYSTEM]   State: Elite
+09:52:59.759 [SYSTEM]   Energy: 0
+09:52:59.759 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 28/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.760 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.761 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.762 [SYSTEM] Cycle 28 Complete:
+09:52:59.762 [SYSTEM]   State: Elite
+09:52:59.763 [SYSTEM]   Energy: 0
+09:52:59.763 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 29/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.765 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.765 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.766 [SYSTEM] Cycle 29 Complete:
+09:52:59.766 [SYSTEM]   State: Elite
+09:52:59.767 [SYSTEM]   Energy: 0
+09:52:59.768 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 30/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.769 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.769 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.770 [SYSTEM] Cycle 30 Complete:
+09:52:59.771 [SYSTEM]   State: Elite
+09:52:59.771 [SYSTEM]   Energy: 0
+09:52:59.772 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 31/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.773 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.774 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.774 [SYSTEM] Cycle 31 Complete:
+09:52:59.775 [SYSTEM]   State: Elite
+09:52:59.775 [SYSTEM]   Energy: 0
+09:52:59.776 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 32/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.777 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.778 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.778 [SYSTEM] Cycle 32 Complete:
+09:52:59.779 [SYSTEM]   State: Elite
+09:52:59.780 [SYSTEM]   Energy: 0
+09:52:59.780 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 33/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.781 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.782 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.783 [SYSTEM] Cycle 33 Complete:
+09:52:59.783 [SYSTEM]   State: Elite
+09:52:59.784 [SYSTEM]   Energy: 0
+09:52:59.784 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 34/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.785 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.786 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.787 [SYSTEM] Cycle 34 Complete:
+09:52:59.787 [SYSTEM]   State: Elite
+09:52:59.788 [SYSTEM]   Energy: 0
+09:52:59.788 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 35/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.790 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.790 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.791 [SYSTEM] Cycle 35 Complete:
+09:52:59.791 [SYSTEM]   State: Elite
+09:52:59.792 [SYSTEM]   Energy: 0
+09:52:59.793 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 36/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.794 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.794 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.795 [SYSTEM] Cycle 36 Complete:
+09:52:59.796 [SYSTEM]   State: Elite
+09:52:59.796 [SYSTEM]   Energy: 0
+09:52:59.797 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 37/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.798 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.799 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.799 [SYSTEM] Cycle 37 Complete:
+09:52:59.800 [SYSTEM]   State: Elite
+09:52:59.800 [SYSTEM]   Energy: 0
+09:52:59.801 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 38/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.802 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.803 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.803 [SYSTEM] Cycle 38 Complete:
+09:52:59.804 [SYSTEM]   State: Elite
+09:52:59.805 [SYSTEM]   Energy: 0
+09:52:59.805 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 39/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.806 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.807 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.808 [SYSTEM] Cycle 39 Complete:
+09:52:59.808 [SYSTEM]   State: Elite
+09:52:59.809 [SYSTEM]   Energy: 0
+09:52:59.809 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 40/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.810 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.811 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.812 [SYSTEM] Cycle 40 Complete:
+09:52:59.812 [SYSTEM]   State: Elite
+09:52:59.813 [SYSTEM]   Energy: 0
+09:52:59.814 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 41/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.815 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.815 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.816 [SYSTEM] Cycle 41 Complete:
+09:52:59.817 [SYSTEM]   State: Elite
+09:52:59.817 [SYSTEM]   Energy: 0
+09:52:59.818 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 42/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.819 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.819 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.820 [SYSTEM] Cycle 42 Complete:
+09:52:59.821 [SYSTEM]   State: Elite
+09:52:59.821 [SYSTEM]   Energy: 0
+09:52:59.822 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 43/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.823 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.824 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.824 [SYSTEM] Cycle 43 Complete:
+09:52:59.825 [SYSTEM]   State: Elite
+09:52:59.826 [SYSTEM]   Energy: 0
+09:52:59.826 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 44/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.827 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.828 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.829 [SYSTEM] Cycle 44 Complete:
+09:52:59.829 [SYSTEM]   State: Elite
+09:52:59.830 [SYSTEM]   Energy: 0
+09:52:59.830 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 45/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.831 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.832 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.833 [SYSTEM] Cycle 45 Complete:
+09:52:59.833 [SYSTEM]   State: Elite
+09:52:59.834 [SYSTEM]   Energy: 0
+09:52:59.834 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 46/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.836 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.836 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.837 [SYSTEM] Cycle 46 Complete:
+09:52:59.838 [SYSTEM]   State: Elite
+09:52:59.838 [SYSTEM]   Energy: 0
+09:52:59.839 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 47/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.840 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.840 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.841 [SYSTEM] Cycle 47 Complete:
+09:52:59.842 [SYSTEM]   State: Elite
+09:52:59.842 [SYSTEM]   Energy: 0
+09:52:59.843 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 48/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.844 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.845 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.845 [SYSTEM] Cycle 48 Complete:
+09:52:59.846 [SYSTEM]   State: Elite
+09:52:59.846 [SYSTEM]   Energy: 0
+09:52:59.847 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 49/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.848 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.849 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.849 [SYSTEM] Cycle 49 Complete:
+09:52:59.850 [SYSTEM]   State: Elite
+09:52:59.851 [SYSTEM]   Energy: 0
+09:52:59.851 [SYSTEM]   Reputation: 20
+
+═══ CYCLE 50/50 ═══
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.852 [SYSTEM] Low Energy Warning: 0
+
+[EXECUTE ENGINE] Evaluating 3 execute rule(s)...
+[EXECUTE ENGINE] ✗ DataCollector (condition not met)
+[EXECUTE ENGINE] ✗ Monitor (condition not met)
+[EXECUTE ENGINE] ✓ DeepAnalyzer (condition met)
+09:52:59.853 [SYSTEM] Insufficient energy for DeepAnalyzer
+
+[BEHAVIOR ENGINE] Evaluating 3 behavior rule(s) for PerfBot...
+[BEHAVIOR] Rule triggered: Condition(ENERGY < 50)
+[BEHAVIOR] State transition: Elite → Recovery
+[BEHAVIOR] Rule triggered: Condition(REPUTATION > 5)
+[BEHAVIOR] State transition: Recovery → Elite
+[BEHAVIOR ENGINE] 2 rule(s) triggered
+09:52:59.854 [SYSTEM] Cycle 50 Complete:
+09:52:59.854 [SYSTEM]   State: Elite
+09:52:59.855 [SYSTEM]   Energy: 0
+09:52:59.855 [SYSTEM]   Reputation: 20
+
+
+╔══════════════════════════ ◢ EXECUTION COMPLETE ◣ ═══════════════════════════╗
+║ ╔═════════════╤════════════════════════════╗                                ║
+║ ║ ENTITY      │ PerfBot                    ║                                ║
+║ ║ FINAL STATE │ Elite                      ║                                ║
+║ ║ ENERGY      │ ░░░░░░░░░░░░░░░░░░░░ 0/100 ║                                ║
+║ ║ REPUTATION  │ 20                         ║                                ║
+║ ║ TIME        │ 0.24s                      ║                                ║
+║ ╚═════════════╧════════════════════════════╝                                ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+
+              ◢ NETWORK TOPOLOGY ◣              
+┌─────────────────┬─────────────┬────────┬─────┐
+│ NODE            │ STATE       │ ENERGY │ REP │
+├─────────────────┼─────────────┼────────┼─────┤
+│ ● TestBot       │ Overclocked │ 10     │ 6   │
+│ ● RecoveryBot   │ Recovery    │ 80     │ 20  │
+│ ● ReputationBot │ Experienced │ 25     │ 15  │
+│ ● ComplexBot    │ Emergency   │ 4      │ 12  │
+│ ● OscillatorBot │ Overclocked │ 25     │ 15  │
+│ ● ToolBot       │ Advanced    │ 0      │ 10  │
+│ ● MultiBot0     │ Elite       │ 50     │ 5   │
+│ ● MultiBot1     │ Elite       │ 30     │ 7   │
+│ ● MultiBot2     │ Elite       │ 10     │ 9   │
+│ ● PerfBot       │ Elite       │ 0      │ 20  │
+└─────────────────┴─────────────┴────────┴─────┘
+Total: 10 | Active: 10
+
+
+Performance Results:
+  Total time: 0.26s
+  Cycles per second: 193.02
+  Average cycle time: 5.18ms
+
+✅ Performance test PASSED!
+
+======================================================================
+TEST SUITE COMPLETE
+======================================================================
+
+✅ Passed: 7/8
+❌ Failed: 1/8
+
+======================================================================
