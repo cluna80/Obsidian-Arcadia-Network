@@ -1,0 +1,16 @@
+
+ENTITY champion_ShadowStrike_1771793044 {
+    METADATA {
+        name: "ShadowStrike - Battle Champion"
+        ai_type: "openclaw"
+        wins: 1
+        final_health: 50
+        minted_at: "2026-02-22T13:44:04.437714"
+    }
+    
+    STATE {
+        champion_tier: "Legendary"
+        ai_powered_by: "openclaw"
+        combat_rating: 50
+    }
+}

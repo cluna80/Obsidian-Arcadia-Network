@@ -1,0 +1,16 @@
+
+ENTITY champion_thunderfist_1771784415 {
+    METADATA {
+        name: "Thunderfist - Battle Champion"
+        ai_type: "OLLAMA"
+        wins: 1
+        final_health: 100
+        final_energy: 20
+        minted_at: "2026-02-22T11:20:15.622854"
+    }
+    STATE {
+        champion_tier: "Legendary"
+        ai_powered_by: "ollama"
+        combat_rating: 120
+    }
+}
