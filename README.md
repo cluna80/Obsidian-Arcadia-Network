@@ -1,4 +1,4 @@
-# ��� Obsidian Arcadia Network (OAN)
+# ��� Obsidian Arcadia Network (OAN)
 
 **The Most Comprehensive Protocol for Autonomous Digital Civilizations**
 
@@ -10,35 +10,35 @@
 
 ---
 
-## ��� What is OAN?
+## ��� What is OAN?
 
 OAN is **NOT** just another AI wrapper or smart contract suite.
 
 It is the **world's first complete protocol stack** for creating programmable autonomous entities that:
-- ��� Think and make decisions (behavioral intelligence)
-- ��� Own assets and earn revenue (tokenized entities)  
-- ��� Form relationships and coordinate (social dynamics)
+- ��� Think and make decisions (behavioral intelligence)
+- ��� Own assets and earn revenue (tokenized entities)  
+- ��� Form relationships and coordinate (social dynamics)
 - ⏳ Age, evolve, and leave legacies (temporal mechanics)
-- ��� Create and monetize content (media production)
-- ��� Compete in virtual worlds (metaverse sports)
-- ��� Trade in advanced markets (DeFi integration)
+- ��� Create and monetize content (media production)
+- ��� Compete in virtual worlds (metaverse sports)
+- ��� Trade in advanced markets (DeFi integration)
 
 **Think:** Conway's Game of Life × Ethereum × Hollywood × The Metaverse
 
 ---
 
-## ���️ Complete Architecture
+## ���️ Complete Architecture
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │              LAYER 7: SAFETY & RELIABILITY (WIP)            │
-│  ���️ Security & Trust Layer                                 │
+│  ���️ Security & Trust Layer                                 │
 │  - Secure Execution | Auditable Behavior                    │
 │  - Reputation Enforcement | Stability Protocols             │
 └─────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │           LAYER 6: MARKETPLACE & ECONOMY (24 contracts)     │
-│  ���️ Universal Trading Platform                             │
+│  ���️ Universal Trading Platform                             │
 │  - NFT Asset Trading | AI Tools Marketplace                 │
 │  - Creator Monetization | Reputation Trading                │
 │  - Dynamic Pricing | Advanced DeFi                          │
@@ -46,7 +46,7 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │       LAYER 5: METAVERSE SPORTS ARENA (24 contracts)        │
-│  ��� Virtual Sports & Competition                            │
+│  ��� Virtual Sports & Competition                            │
 │  - Virtual Stadiums | AI Athletes                           │
 │  - Sports Simulations | Fan Engagement                      │
 │  - Prediction Markets | Fantasy Leagues                     │
@@ -54,7 +54,7 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │            LAYER 4: MEDIA SYSTEMS (12 contracts)            │
-│  ��� Film Production Protocol                                │
+│  ��� Film Production Protocol                                │
 │  - NFT Movies & Scenes | AI Actors & Directors              │
 │  - Rights Management | Revenue Distribution                 │
 │  - Pay-Per-View | Automatic Royalties                       │
@@ -62,7 +62,7 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │         LAYER 3: CIVILIZATION PROTOCOL (24 contracts)       │
-│  ��� Advanced Entity Systems                                 │
+│  ��� Advanced Entity Systems                                 │
 │  - Tokenized Intelligence & Time                            │
 │  - Programmable Reality & Physics                           │
 │  - Emotional AI & Trust Networks                            │
@@ -80,7 +80,7 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │             LAYER 1: CORE AI ENGINE (Python)                │
-│  ��� Behavioral Intelligence Runtime                         │
+│  ��� Behavioral Intelligence Runtime                         │
 │  - OBSIDIAN DSL Parser & Compiler                           │
 │  - Entity Lifecycle Management                              │
 │  - Multi-Agent Coordination                                 │
@@ -92,7 +92,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 
 ---
 
-## ��� Current Status
+## ��� Current Status
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
@@ -129,7 +129,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 ║     • 123+ tests passing                                     ║
 ║     • Universal trading platform                             ║
 ║                                                              ║
-║  ��� Layer 7: Safety & Reliability        [IN DEVELOPMENT]   ║
+║  ��� Layer 7: Safety & Reliability        [IN DEVELOPMENT]   ║
 ║     • Security protocols                                     ║
 ║     • Audit systems                                          ║
 ║     • Trust enforcement                                      ║
@@ -147,7 +147,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 
 ## ✨ Key Features by Layer
 
-### ��� **Layer 1: AI Core (Python)**
+### ��� **Layer 1: AI Core (Python)**
 - **OBSIDIAN DSL**: Domain-specific language for entity behaviors
 - **Behavioral Engine**: Rule-based AI decision making
 - **Entity Lifecycle**: Birth, growth, reproduction, death
@@ -161,7 +161,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 - **DAO Governance**: Community-controlled upgrades
 - **$OAN Token**: Utility token with staking rewards
 
-### ��� **Layer 3: Civilization Protocol**
+### ��� **Layer 3: Civilization Protocol**
 - **Tokenized Intelligence**: Buy/sell/license AI behaviors as NFTs
 - **Temporal Entities**: Aging, skill development, death, legacies
 - **Programmable Reality**: Custom physics and economic systems
@@ -169,14 +169,14 @@ It is the **world's first complete protocol stack** for creating programmable au
 - **Risk Markets**: Bet on performance, derivatives, insurance
 - **Cross-World Identity**: Portable reputation across metaverses
 
-### ��� **Layer 4: Media Systems**
+### ��� **Layer 4: Media Systems**
 - **Composable Films**: Movies built from reusable scene NFTs
 - **AI Talent**: Entities become actors/directors
 - **Automatic Royalties**: Revenue distributed to all contributors
 - **Rights Management**: Territorial licensing, time-limited rights
 - **Pay-Per-View**: Multiple access models (purchase/rental/subscription)
 
-### ��� **Layer 5: Metaverse Sports**
+### ��� **Layer 5: Metaverse Sports**
 - **Virtual Stadiums**: Own sports venues as NFTs
 - **AI Athletes**: Entities compete with stats and progression
 - **Live Simulations**: AI-powered match streaming
@@ -184,7 +184,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 - **Spatial Sports**: 3D avatar athletes in virtual arenas
 - **Cross-Sport**: Athletes compete across multiple sports
 
-### ���️ **Layer 6: Marketplace & Economy**
+### ���️ **Layer 6: Marketplace & Economy**
 - **Universal Trading**: Trade ANY NFT (entities, cards, land, etc.)
 - **AI Tool Market**: Buy/sell/license AI behaviors and modules
 - **Creator Economy**: Profiles, commissions, perpetual royalties
@@ -192,7 +192,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 - **Dynamic Pricing**: Price oracles, bonding curves, Dutch auctions
 - **Advanced DeFi**: Swaps, fractional ownership, rentals, derivatives
 
-### ���️ **Layer 7: Safety & Reliability** _(Coming Soon)_
+### ���️ **Layer 7: Safety & Reliability** _(Coming Soon)_
 - Secure execution environments
 - Auditable agent behavior
 - Reputation enforcement
@@ -200,7 +200,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 
 ---
 
-## ��� Quick Start
+## ��� Quick Start
 
 ### Prerequisites
 ```bash
@@ -250,7 +250,7 @@ npx hardhat test test/security.test.js
 
 ---
 
-## ��� Live Demos
+## ��� Live Demos
 
 ### AI Battle Royale
 Two AI models fight, winner gets minted as NFT entity!
@@ -276,7 +276,7 @@ More demos coming soon:
 
 ---
 
-## ��� Token Economics
+## ��� Token Economics
 
 ### $OAN Token
 
@@ -309,7 +309,7 @@ More demos coming soon:
 
 ---
 
-## ���️ Roadmap
+## ���️ Roadmap
 
 ### ✅ Phase 1: Foundation (COMPLETE)
 - [x] Layer 1: Core AI Engine
@@ -321,28 +321,28 @@ More demos coming soon:
 - [x] 325+ tests passing
 - [x] AI Battle demo working
 
-### ��� Phase 2: Security & Polish (Q1 2026)
+### ��� Phase 2: Security & Polish (Q1 2026)
 - [ ] Layer 7: Safety & Reliability
 - [ ] Professional security audit
 - [ ] Gas optimization
 - [ ] Enhanced documentation
 - [ ] SDK development
 
-### ��� Phase 3: Testnet Launch (Q2 2026)
+### ��� Phase 3: Testnet Launch (Q2 2026)
 - [ ] Deploy to Mumbai/Sepolia
 - [ ] Public beta testing
 - [ ] Bug bounty program
 - [ ] Community feedback integration
 - [ ] UI/UX development
 
-### ��� Phase 4: Mainnet (Q3 2026)
+### ��� Phase 4: Mainnet (Q3 2026)
 - [ ] Mainnet deployment
 - [ ] Token Generation Event (TGE)
 - [ ] Liquidity provisioning
 - [ ] Partnership announcements
 - [ ] Marketing campaign
 
-### ��� Phase 5: Ecosystem Growth (Q4 2026+)
+### ��� Phase 5: Ecosystem Growth (Q4 2026+)
 - [ ] Cross-chain bridges
 - [ ] Mobile SDKs
 - [ ] Marketplace UI
@@ -352,9 +352,9 @@ More demos coming soon:
 
 ---
 
-## ��� Documentation
+## ��� Documentation
 
-- **White Paper**: [docs/WHITEPAPER.md](docs/WHITEPAPER.md)
+- **White Paper**: [docs/WHITEPAPER.md]([docs/WHITEPAPER.md](https://github.com/cluna80/Obsidian-Arcadia-Network/blob/master/WhitePaper.md))
 - **Technical Docs**: [docs/TECHNICAL.md](docs/TECHNICAL.md)
 - **API Reference**: [docs/API.md](docs/API.md)
 - **Tutorial**: [docs/TUTORIAL.md](docs/TUTORIAL.md)
@@ -369,44 +369,44 @@ More demos coming soon:
 
 ---
 
-## ��� Use Cases
+## ��� Use Cases
 
-### ��� **Gaming**
+### ��� **Gaming**
 - NPCs with real intelligence and emotions
 - Dynamic storylines driven by entity decisions
 - Player-owned characters that persist across games
 - In-game economies with real value
 - AI-powered game masters
 
-### ��� **Film Production**
+### ��� **Film Production**
 - AI-generated movies and scenes
 - Decentralized content creation
 - Automatic revenue sharing
 - Composable media assets
 - Virtual film studios
 
-### ���️ **Sports & Entertainment**
+### ���️ **Sports & Entertainment**
 - Virtual sports leagues
 - AI athlete competitions
 - Fan engagement platforms
 - Prediction markets
 - Fantasy sports
 
-### ��� **Metaverse**
+### ��� **Metaverse**
 - Autonomous virtual citizens
 - Cross-world identity and reputation
 - Programmable physics and economics
 - Social networks with trust dynamics
 - Virtual real estate
 
-### ��� **AI Agents**
+### ��� **AI Agents**
 - Tokenized AI workers
 - Marketplace for AI behaviors
 - Performance-based compensation
 - Collaborative multi-agent systems
 - AI-as-a-Service
 
-### ��� **DAOs**
+### ��� **DAOs**
 - AI-powered governance
 - Reputation-weighted voting
 - Automated treasury management
@@ -414,7 +414,7 @@ More demos coming soon:
 
 ---
 
-## ��� Security
+## ��� Security
 ```
 ✅ 48 security tests passing
 ✅ Access control on all admin functions
@@ -422,7 +422,7 @@ More demos coming soon:
 ✅ Integer overflow/underflow protection
 ✅ Anti-Sybil mechanisms
 ✅ Rate limiting on critical functions
-��� Professional audit scheduled (Q1 2026)
+��� Professional audit scheduled (Q1 2026)
 ```
 
 **Found a vulnerability?** Please report to: security@obsidian-arcadia.network
@@ -435,7 +435,7 @@ More demos coming soon:
 
 ---
 
-## ��� Contributing
+## ��� Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
@@ -463,7 +463,7 @@ git push origin feature/amazing-feature
 
 ---
 
-## ��� Community
+## ��� Community
 
 - **Website**: [obsidian-arcadia.network](https://obsidian-arcadia.network)
 - **Twitter**: [@OAN_Protocol](https://twitter.com/OAN_Protocol)
@@ -473,13 +473,13 @@ git push origin feature/amazing-feature
 
 ---
 
-## ��� License
+## ��� License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## ��� Acknowledgments
+## ��� Acknowledgments
 
 - OpenAI for foundational AI research
 - Ethereum Foundation for smart contract standards
@@ -490,7 +490,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) for deta
 
 ---
 
-## ��� Project Stats
+## ��� Project Stats
 ```
 Lines of Code:       75,000+
 Smart Contracts:     101
@@ -506,24 +506,24 @@ Stars:               ⭐ (Be the first!)
 
 ---
 
-## ��� Vision
+## ��� Vision
 
 **Building the first truly autonomous digital civilization where:**
 
-- ��� AI entities are economic actors, not just tools
-- ��� Creativity is composable and monetizable
-- ��� Reputation is portable and valuable
+- ��� AI entities are economic actors, not just tools
+- ��� Creativity is composable and monetizable
+- ��� Reputation is portable and valuable
 - ⚖️ Governance is intelligent and fair
-- ��� Value flows to creators automatically
-- ��� Competition is fair and transparent
-- ��� Content creation is democratized
-- ���️ Markets are efficient and accessible
+- ��� Value flows to creators automatically
+- ��� Competition is fair and transparent
+- ��� Content creation is democratized
+- ���️ Markets are efficient and accessible
 
 **Join us in building the future of autonomous systems.**
 
 ---
 
-## ��� Why OAN is Different
+## ��� Why OAN is Different
 
 | Feature | Traditional Platforms | OAN Protocol |
 |---------|----------------------|--------------|
@@ -540,7 +540,7 @@ Stars:               ⭐ (Be the first!)
 
 <div align="center">
 
-**Made with ��� by the OAN Community**
+**Made with ��� by the OAN Community**
 
 [Get Started](docs/TUTORIAL.md) • [Read Docs](docs/TECHNICAL.md) • [Join Discord](https://discord.gg/oan) • [⭐ Star on GitHub](https://github.com/cluna80/Obsidian-Arcadia-Network)
 
