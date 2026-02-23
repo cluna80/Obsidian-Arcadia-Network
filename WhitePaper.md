@@ -112,10 +112,11 @@ OAN is the **first protocol** where:
 
 ## 6. Current Status & Roadmap
 ### ✅ COMPLETED (February 23, 2026)
-- **Layer 1**: Published on PyPI
-- **Layer 2–6**: 154 contracts compiled
-- **Layer 6**: **132 passing tests** (full coverage)
-- **Layer 5**: 10+ passing tests (StadiumNFT fully green)
+- **Layer 1: Published on PyPI
+- **Layer 2: 154 contracts compiled
+- **Layer 5: 10+ passing tests (StadiumNFT fully green)
+- **Layer 6: **132 passing tests** (full coverage)
+
 
 ### 🚀 IMMEDIATE NEXT STEPS (Q1 2026)
 **Layer 7: OAN Integrity Layer** – Implementation starting now  
