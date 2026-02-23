@@ -1,0 +1,214 @@
+// ================================================================
+// OAN Layer 5: Metaverse Sports Arena - Complete Test Suite
+// ================================================================
+
+const { expect } = require("chai");
+
+// ─────────────────────────────────────────────────────────────
+// HELPERS (shared)
+// ─────────────────────────────────────────────────────────────
+const toWei = (eth) => ethers.parseEther(eth.toString());
+const SportType = { Boxing: 0, MMA: 1, Racing: 2, Soccer: 3, Basketball: 4, Esports: 5, Tennis: 6, Wrestling: 7 };
+const StadiumTier = { Community: 0, Regional: 1, National: 2, Global: 3, Legendary: 4 };
+const SeatTier = { Standard: 0, Premium: 1, VIP: 2, Skybox: 3, Ringside: 4 };
+const SeatType = { Permanent: 0, Seasonal: 1, SingleEvent: 2 };
+const CardRarity = { Common: 0, Uncommon: 1, Rare: 2, Epic: 3, Legendary: 4, Mythic: 5 };
+const CardType = { Base: 0, Rookie: 1, Champion: 2 };
+const FinishType = { Decision: 0, KO: 1, TKO: 2, Submission: 3, Disqualification: 4, Draw: 5 };
+const AccessTier = { Free: 0, Standard: 1, Premium: 2, VIP: 3 };
+
+// Default athlete stats
+const defaultStats = () => ({
+  strength: 75, speed: 70, endurance: 80,
+  technique: 65, intelligence: 60, charisma: 55,
+  defense: 70, aggression: 65
+});
+
+// ─────────────────────────────────────────────────────────────
+// PHASE 5.1: Virtual Stadiums & Venues
+// ─────────────────────────────────────────────────────────────
+describe("Phase 5.1: Virtual Stadiums & Venues", function () {
+  const { ethers } = require("hardhat"); // ← local import
+
+  let StadiumNFT, VenueRegistry, SeatingNFT, VenueMarketplace;
+  let stadium, registry, seating, marketplace;
+  let owner, treasury, user1, user2, user3;
+
+  beforeEach(async function () {
+    [owner, treasury, user1, user2, user3] = await ethers.getSigners();
+
+    StadiumNFT = await ethers.getContractFactory("StadiumNFT");
+    stadium = await StadiumNFT.deploy(treasury.address);
+
+    VenueRegistry = await ethers.getContractFactory("VenueRegistry");
+    registry = await VenueRegistry.deploy();
+
+    SeatingNFT = await ethers.getContractFactory("SeatingNFT");
+    seating = await SeatingNFT.deploy(treasury.address);
+
+    VenueMarketplace = await ethers.getContractFactory("VenueMarketplace");
+    marketplace = await VenueMarketplace.deploy(treasury.address);
+  });
+
+  // ── StadiumNFT tests (your original 27 passing ones go here unchanged)
+  describe("StadiumNFT", function () {
+    it("should mint a stadium NFT with correct data", async function () {
+      // ... your original test code ...
+    });
+    // ... all other StadiumNFT tests ...
+  });
+
+  // ... VenueRegistry, SeatingNFT, VenueMarketplace describe blocks ...
+});
+
+// ─────────────────────────────────────────────────────────────
+// PHASE 5.2: Sports Cards & Athletes
+// ─────────────────────────────────────────────────────────────
+describe("Phase 5.2: Sports Cards & Athletes", function () {
+  const { ethers } = require("hardhat");
+
+  let AthleteNFT, SportsCardNFT, TeamNFT, CardMarketplace;
+  let athlete, cards, team, cardMarket;
+  let owner, treasury, user1, user2, user3;
+
+  beforeEach(async function () {
+    [owner, treasury, user1, user2, user3] = await ethers.getSigners();
+
+    AthleteNFT = await ethers.getContractFactory("AthleteNFT");
+    athlete = await AthleteNFT.deploy(treasury.address);
+
+    SportsCardNFT = await ethers.getContractFactory("SportsCardNFT");
+    cards = await SportsCardNFT.deploy(treasury.address);
+
+    TeamNFT = await ethers.getContractFactory("TeamNFT");
+    team = await TeamNFT.deploy(treasury.address);
+
+    CardMarketplace = await ethers.getContractFactory("CardMarketplace");
+    cardMarket = await CardMarketplace.deploy(treasury.address);
+  });
+
+  // ... your AthleteNFT, SportsCardNFT, TeamNFT tests ...
+});
+
+// ─────────────────────────────────────────────────────────────
+// PHASE 5.3: Competitive Simulations
+// ─────────────────────────────────────────────────────────────
+describe("Phase 5.3: Competitive Simulations", function () {
+  const { ethers } = require("hardhat");
+
+  let MatchSimulator, TournamentBrackets, LiveEvents, PerformanceMetrics;
+  let simulator, tournament, liveEvent, perfMetrics;
+  let owner, treasury, user1, user2, user3;
+
+  beforeEach(async function () {
+    [owner, treasury, user1, user2, user3] = await ethers.getSigners();
+
+    MatchSimulator = await ethers.getContractFactory("MatchSimulator");
+    simulator = await MatchSimulator.deploy(treasury.address, ethers.ZeroAddress);
+
+    TournamentBrackets = await ethers.getContractFactory("TournamentBrackets");
+    tournament = await TournamentBrackets.deploy(treasury.address);
+
+    LiveEvents = await ethers.getContractFactory("LiveEvents");
+    liveEvent = await LiveEvents.deploy(treasury.address);
+
+    PerformanceMetrics = await ethers.getContractFactory("PerformanceMetrics");
+    perfMetrics = await PerformanceMetrics.deploy();
+  });
+
+  // ... your MatchSimulator etc. tests ...
+});
+
+// ─────────────────────────────────────────────────────────────
+// PHASE 5.4: Fan Engagement
+// ─────────────────────────────────────────────────────────────
+describe("Phase 5.4: Fan Engagement", function () {
+  const { ethers } = require("hardhat");
+
+  let FanTokens, PredictionMarkets, FantasyLeagues, FanRewards;
+  let fanTokens, prediction, fantasy, rewards;
+  let owner, treasury, user1, user2, user3;
+
+  beforeEach(async function () {
+    [owner, treasury, user1, user2, user3] = await ethers.getSigners();
+
+    FanTokens = await ethers.getContractFactory("FanTokens");
+    fanTokens = await FanTokens.deploy(treasury.address);
+
+    PredictionMarkets = await ethers.getContractFactory("PredictionMarkets");
+    prediction = await PredictionMarkets.deploy(treasury.address);
+
+    FantasyLeagues = await ethers.getContractFactory("FantasyLeagues");
+    fantasy = await FantasyLeagues.deploy(treasury.address);
+
+    FanRewards = await ethers.getContractFactory("FanRewards");
+    rewards = await FanRewards.deploy(treasury.address);
+  });
+
+  // ... your FanTokens etc. tests ...
+});
+
+// ─────────────────────────────────────────────────────────────
+// INTEGRATION TESTS
+// ─────────────────────────────────────────────────────────────
+describe("Integration: Full Sports Flow", function () {
+  const { ethers } = require("hardhat");
+
+  let stadium, athlete, simulator, perfMetrics, prediction, rewards;
+  let owner, treasury, user1, user2;
+
+  beforeEach(async function () {
+    [owner, treasury, user1, user2] = await ethers.getSigners();
+
+    const StadiumNFT = await ethers.getContractFactory("StadiumNFT");
+    stadium = await StadiumNFT.deploy(treasury.address);
+
+    const AthleteNFT = await ethers.getContractFactory("AthleteNFT");
+    athlete = await AthleteNFT.deploy(treasury.address);
+
+    const MatchSimulator = await ethers.getContractFactory("MatchSimulator");
+    simulator = await MatchSimulator.deploy(treasury.address, athlete.target);
+
+    const PerformanceMetrics = await ethers.getContractFactory("PerformanceMetrics");
+    perfMetrics = await PerformanceMetrics.deploy();
+
+    const PredictionMarkets = await ethers.getContractFactory("PredictionMarkets");
+    prediction = await PredictionMarkets.deploy(treasury.address);
+
+    const FanRewards = await ethers.getContractFactory("FanRewards");
+    rewards = await FanRewards.deploy(treasury.address);
+  });
+
+  // ... your integration tests ...
+});
+
+// ─────────────────────────────────────────────────────────────
+// SECURITY TESTS
+// ─────────────────────────────────────────────────────────────
+describe("Security: Layer 5 Access Control & Edge Cases", function () {
+  const { ethers } = require("hardhat");
+
+  let stadium, athlete, simulator, prediction, rewards;
+  let owner, treasury, attacker, user1;
+
+  beforeEach(async function () {
+    [owner, treasury, attacker, user1] = await ethers.getSigners();
+
+    const StadiumNFT = await ethers.getContractFactory("StadiumNFT");
+    stadium = await StadiumNFT.deploy(treasury.address);
+
+    const AthleteNFT = await ethers.getContractFactory("AthleteNFT");
+    athlete = await AthleteNFT.deploy(treasury.address);
+
+    const MatchSimulator = await ethers.getContractFactory("MatchSimulator");
+    simulator = await MatchSimulator.deploy(treasury.address, ethers.ZeroAddress);
+
+    const PredictionMarkets = await ethers.getContractFactory("PredictionMarkets");
+    prediction = await PredictionMarkets.deploy(treasury.address);
+
+    const FanRewards = await ethers.getContractFactory("FanRewards");
+    rewards = await FanRewards.deploy(treasury.address);
+  });
+
+  // ... your security tests ...
+});
