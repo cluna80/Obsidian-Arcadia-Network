@@ -440,13 +440,6 @@ More demos coming soon:
 
 **Found a vulnerability?** Please report to: security@obsidian-arcadia.network
 
-### Bug Bounty Program
-- Critical: Up to $50,000
-- High: Up to $10,000
-- Medium: Up to $2,000
-- Low: Up to $500
-
----
 
 ## ��� Contributing
 
