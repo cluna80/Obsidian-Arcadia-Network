@@ -438,7 +438,7 @@ More demos coming soon:
 ��� Professional audit scheduled (Q1 2026)
 ```
 
-**Found a vulnerability?** Please report to: security@obsidian-arcadia.network
+**Found a vulnerability?** Please report to: obsidianarcadian@atomicmail.io
 
 
 ## ��� Contributing
@@ -472,10 +472,11 @@ git push origin feature/amazing-feature
 ## ��� Community
 
 - **Website**: [obsidian-arcadia.network](https://obsidian-arcadia.network)
-- **Twitter**: [@OAN_Protocol](https://twitter.com/OAN_Protocol)
-- **Discord**: [discord.gg/oan](https://discord.gg/oan)
-- **Telegram**: [t.me/oan_protocol](https://t.me/oan_protocol)
+- **Twitter**: [@OAN_Protocol](https://x.com/ObsidianArcadia))
+- **Discord**: [discord.gg/oan](https://discord.gg/oan) Coming Soon
+- **Telegram**: [t.me/oan_protocol](https://t.me/oan_protocol) Coming Soon
 - **GitHub**: [github.com/cluna80/Obsidian-Arcadia-Network](https://github.com/cluna80/Obsidian-Arcadia-Network)
+- **Eamil**: obsidianarcadian@atomicmail.io
 
 ---
 
