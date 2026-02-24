@@ -226,17 +226,21 @@ git --version
 git clone https://github.com/cluna80/Obsidian-Arcadia-Network.git
 cd Obsidian-Arcadia-Network
 
-# Install Python dependencies
+# Check what we got
+ls -la
+
+# Install Python package
+pip3 install -e .
 pip3 install requests  # Required for demos
-pip3 install -e .      # Install OAN package
+
+# Test the CLI
+oan
 
 # Install Solidity dependencies (Layers 2-6)
 cd web3
 npm install
-```````````
 
-### Run Tests
-```````````bash
+Run Tests
 # Python tests (Layer 1)
 python3 run_all_tests.py
 
@@ -256,8 +260,8 @@ npx hardhat test test/security.test.js
 
 ---
 
-## 🎮 Live Demos
-
+## 🎮 Live Demos ( YUo need your own AI key's or ues Ollama for Open Source)
+Original Test done using Open Claw and Ollama on same machine.
 ### AI Battle Royale
 Two AI models fight, winner gets minted as NFT entity!
 ```````````bash
