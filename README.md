@@ -367,7 +367,7 @@ More demos coming soon:
 
 ## ��� Documentation
 
-- **White Paper**: [[docs/WHITEPAPER.md](docs/WHITEPAPER.md)](https://github.com/cluna80/Obsidian-Arcadia-Network/blob/master/WhitePaper.md)
+- **White Paper**:(https://github.com/cluna80/Obsidian-Arcadia-Network/blob/master/WhitePaper.md)
 - **Technical Docs**: [docs/TECHNICAL.md](docs/TECHNICAL.md)
 - **API Reference**: [docs/API.md](docs/API.md)
 - **Tutorial**: [docs/TUTORIAL.md](docs/TUTORIAL.md)
