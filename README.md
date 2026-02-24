@@ -221,8 +221,7 @@ node --version
 # Git
 git --version
 
-### Installation
-```````````bash
+ Installation
 # Clone repository
 git clone https://github.com/cluna80/Obsidian-Arcadia-Network.git
 cd Obsidian-Arcadia-Network
