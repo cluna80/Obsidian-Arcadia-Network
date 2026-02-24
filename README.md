@@ -471,7 +471,7 @@ git push origin feature/amazing-feature
 
 ## ��� Community
 
-- **Website**: [obsidian-arcadia.network](https://obsidian-arcadia.network)
+- **Website**: [obsidian-arcadia.network](https://obsidian-arcadia.network) Coming Soon
 - **Twitter**: [@OAN_Protocol](https://x.com/ObsidianArcadia))
 - **Discord**: [discord.gg/oan](https://discord.gg/oan) Coming Soon
 - **Telegram**: [t.me/oan_protocol](https://t.me/oan_protocol) Coming Soon
