@@ -10,7 +10,6 @@ import time
 from datetime import datetime
 import os
 import asyncio
-from telegram import Bot
 
 class AIAgent:
     """Base class for AI agents"""
