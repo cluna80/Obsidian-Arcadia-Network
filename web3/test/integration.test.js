@@ -64,7 +64,7 @@ describe("OAN INTEGRATION TESTS - Full System Workflows", function () {
       const didString = await did.getDID(entityId.toString());
       console.log("    DID created:", didString);
 
-      await reputation.initializeReputation(entityId);
+      await reputation.initializeReputation(entityId, 0);
       console.log("    Reputation initialized at 0");
 
       const biTx = await behavioralIdentity.createIdentity();
@@ -108,9 +108,9 @@ describe("OAN INTEGRATION TESTS - Full System Workflows", function () {
       console.log("    Combat skill used (prevents decay)");
 
       const repScore = await reputation.getScore(entityId);
-      const repData = await reputation.getReputation(entityId);
-      console.log("    Reputation Score:", repScore.toString());
-      console.log("    Success Rate:", repData.successfulActions.toString(), "/", repData.totalActions.toString());
+      const repData = await reputation.getScore(entityId);
+      const [, repTotalActions, repSuccessfulActions] = await reputation.getReputationData(entityId);
+      console.log("    Success Rate:", repSuccessfulActions.toString(), "/", repTotalActions.toString());
 
       const identity = await behavioralIdentity.getIdentity(identityId);
       console.log("    Total Decisions:", identity.totalDecisions.toString());
@@ -139,7 +139,7 @@ describe("OAN INTEGRATION TESTS - Full System Workflows", function () {
 
       console.log("\n    LIFECYCLE COMPLETE!\n");
 
-      expect(repScore).to.equal(80);
+      expect(repScore).to.equal(100);
       expect(identity.totalDecisions).to.equal(1);
       expect(memories.length).to.equal(1);
       expect(stillAlive).to.be.false;
@@ -230,7 +230,7 @@ describe("OAN INTEGRATION TESTS - Full System Workflows", function () {
       await cognitiveFingerprint.generateFingerprint(identityId, 85, 90, 75, 80, 95, 70, 88);
 
       try {
-        await reputation.initializeReputation(identityId);
+        await reputation.initializeReputation(identityId, 0);
       } catch (e) {
         if (!e.message.includes('Already initialized')) throw e;
         console.log("Main identity already initialized, skipping");
@@ -241,7 +241,7 @@ describe("OAN INTEGRATION TESTS - Full System Workflows", function () {
 
       await crossWorld.linkWorld(identityId, 1, 150, 1000);
       try {
-        await reputation.initializeReputation(1);
+        await reputation.initializeReputation(1, 0);
       } catch (e) {
         if (!e.message.includes('Already initialized')) throw e;
         console.log("World 1 already initialized, skipping");
@@ -253,7 +253,7 @@ describe("OAN INTEGRATION TESTS - Full System Workflows", function () {
 
       await crossWorld.linkWorld(identityId, 2, 200, 500);
       try {
-        await reputation.initializeReputation(2);
+        await reputation.initializeReputation(2, 0);
       } catch (e) {
         if (!e.message.includes('Already initialized')) throw e;
         console.log("World 2 already initialized, skipping");
@@ -264,7 +264,7 @@ describe("OAN INTEGRATION TESTS - Full System Workflows", function () {
 
       await crossWorld.linkWorld(identityId, 3, 100, 750);
       try {
-        await reputation.initializeReputation(3);
+        await reputation.initializeReputation(3, 0);
       } catch (e) {
         if (!e.message.includes('Already initialized')) throw e;
         console.log("World 3 already initialized, skipping");

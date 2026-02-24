@@ -110,7 +110,7 @@ describe("í¼‘ OAN LAYER 2: WEB3 FOUNDATION TESTS", function () {
 
     it("âœ… Should initialize reputation", async function () {
       // FIX: needs ORACLE_ROLE - owner has it by default
-      await oracle.initializeReputation(1);
+      await oracle.initializeReputation(1, 0);
       // FIX: use getReputation() or getScore() functions
       const score = await oracle.getScore(1);
       expect(score).to.equal(0);
@@ -118,7 +118,7 @@ describe("í¼‘ OAN LAYER 2: WEB3 FOUNDATION TESTS", function () {
     });
 
     it("âœ… Should update reputation", async function () {
-      await oracle.initializeReputation(1);
+      await oracle.initializeReputation(1, 0);
       // FIX: updateReputation takes delta not absolute value
       await oracle.updateReputation(1, 50);
       const score = await oracle.getScore(1);

@@ -15,7 +15,7 @@ describe("🛡️ OAN SECURITY TESTS", function () {
         [owner, hacker, addr1] = await ethers.getSigners();
         const ReputationOracle = await ethers.getContractFactory("ReputationOracle");
         oracle = await ReputationOracle.deploy();
-        await oracle.initializeReputation(1);
+        await oracle.initializeReputation(1, 0);
       });
 
       it("🚫 Should BLOCK unauthorized reputation updates", async function () {
@@ -27,7 +27,7 @@ describe("🛡️ OAN SECURITY TESTS", function () {
 
       it("🚫 Should BLOCK unauthorized reputation initialization", async function () {
         await expect(
-          oracle.connect(hacker).initializeReputation(99)
+          oracle.connect(hacker).initializeReputation(99, 0)
         ).to.be.reverted;
         console.log("    ✓ Hacker BLOCKED from initializing reputation");
       });

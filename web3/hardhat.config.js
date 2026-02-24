@@ -18,7 +18,7 @@ module.exports = {
     parallel: false,         // disables parallel execution → fixes Windows async crash
     bail: false,             // keep running even if one test fails
     slow: 20000,             // mark tests slower than 20s
-    reporter: "spec",        // clean, readable console output
+    reporter: "./oan-reporter.js",  // OAN hacker CLI visuals
     exit: true,              // force clean process exit
     ui: "bdd",               // standard describe/it style
     fullTrace: true,         // show full stack traces on failures
