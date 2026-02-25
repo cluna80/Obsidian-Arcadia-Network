@@ -1,0 +1,421 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\zksync\\contracts\\ZKBehaviorAuditor.sol": {
+      "lastModificationDate": 1772029515915,
+      "contentHash": "9e3555fb5ab9a6ea61acb39db066aa55",
+      "sourceName": "contracts/ZKBehaviorAuditor.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "C:\\Users\\krizz\\AppData\\Local\\hardhat-nodejs\\Cache\\compilers-v2\\zksolc\\zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {},
+            "enableEraVMExtensions": false,
+            "forceEVMLA": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZKBehaviorAuditor"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\zksync\\contracts\\ZKEmergencyShutdown.sol": {
+      "lastModificationDate": 1772029515545,
+      "contentHash": "a3aed54b45f993065906ffd3a08bb174",
+      "sourceName": "contracts/ZKEmergencyShutdown.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "C:\\Users\\krizz\\AppData\\Local\\hardhat-nodejs\\Cache\\compilers-v2\\zksolc\\zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {},
+            "enableEraVMExtensions": false,
+            "forceEVMLA": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZKEmergencyShutdown"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\zksync\\contracts\\ZKEntityBridge.sol": {
+      "lastModificationDate": 1772029452072,
+      "contentHash": "6ef764cbf43bf9b12cfcb530abde7705",
+      "sourceName": "contracts/ZKEntityBridge.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "C:\\Users\\krizz\\AppData\\Local\\hardhat-nodejs\\Cache\\compilers-v2\\zksolc\\zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {},
+            "enableEraVMExtensions": false,
+            "forceEVMLA": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZKEntityBridge"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\zksync\\contracts\\ZKLayer7Integration.sol": {
+      "lastModificationDate": 1772029515154,
+      "contentHash": "35d270d33d85cc2bab14c38140fb0f04",
+      "sourceName": "contracts/ZKLayer7Integration.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "C:\\Users\\krizz\\AppData\\Local\\hardhat-nodejs\\Cache\\compilers-v2\\zksolc\\zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {},
+            "enableEraVMExtensions": false,
+            "forceEVMLA": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZKLayer7Integration"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\zksync\\contracts\\ZKMarketplace.sol": {
+      "lastModificationDate": 1772029452882,
+      "contentHash": "a332a81342a2e3d179b622867b72b5a5",
+      "sourceName": "contracts/ZKMarketplace.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "C:\\Users\\krizz\\AppData\\Local\\hardhat-nodejs\\Cache\\compilers-v2\\zksolc\\zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {},
+            "enableEraVMExtensions": false,
+            "forceEVMLA": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZKMarketplace"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\zksync\\contracts\\ZKReputationOracle.sol": {
+      "lastModificationDate": 1772029452457,
+      "contentHash": "96b159a3aac88ff2693bb255f9cf15f2",
+      "sourceName": "contracts/ZKReputationOracle.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "C:\\Users\\krizz\\AppData\\Local\\hardhat-nodejs\\Cache\\compilers-v2\\zksolc\\zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {},
+            "enableEraVMExtensions": false,
+            "forceEVMLA": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZKReputationOracle"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\zksync\\contracts\\ZKSlashing.sol": {
+      "lastModificationDate": 1772029516292,
+      "contentHash": "8342d4e252e4c9e26f5177409a5467c4",
+      "sourceName": "contracts/ZKSlashing.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "C:\\Users\\krizz\\AppData\\Local\\hardhat-nodejs\\Cache\\compilers-v2\\zksolc\\zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {},
+            "enableEraVMExtensions": false,
+            "forceEVMLA": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZKSlashing"
+      ]
+    },
+    "C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\zksync\\contracts\\ZKVoting.sol": {
+      "lastModificationDate": 1772029453334,
+      "contentHash": "c6e7d077533b9a47f5b77830086552eb",
+      "sourceName": "contracts/ZKVoting.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "C:\\Users\\krizz\\AppData\\Local\\hardhat-nodejs\\Cache\\compilers-v2\\zksolc\\zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {},
+            "enableEraVMExtensions": false,
+            "forceEVMLA": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZKVoting"
+      ]
+    }
+  }
+}

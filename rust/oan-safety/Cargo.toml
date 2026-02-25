@@ -1,0 +1,11 @@
+[package]
+name = "oan-safety"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+js-sys = "0.3.90"
+serde = { workspace = true, features = ["derive"] }
+serde-wasm-bindgen = "0.6.5"
+serde_json.workspace = true
+wasm-bindgen = "0.2.113"

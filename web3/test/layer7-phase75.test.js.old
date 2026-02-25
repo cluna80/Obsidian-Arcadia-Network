@@ -1,0 +1,320 @@
+const { expect } = require("chai");
+const { ethers }  = require("hardhat");
+
+describe("Layer 7 — Phase 7.5: Trust Verification", function () {
+  let trustOracle, identityVerifier, behaviorValidator, consensusChecker;
+  let owner, oracle, validator, kyc, reporter, analyst, signer1, signer2, signer3;
+  let subject, subject2;
+
+  beforeEach(async () => {
+    [owner, oracle, validator, kyc, reporter, analyst,
+     signer1, signer2, signer3, subject, subject2] = await ethers.getSigners();
+
+    const TrustOracle       = await ethers.getContractFactory("TrustOracle");
+    const IdentityVerifier  = await ethers.getContractFactory("IdentityVerifier");
+    const BehaviorValidator = await ethers.getContractFactory("BehaviorValidator");
+    const ConsensusChecker  = await ethers.getContractFactory("ConsensusChecker");
+
+    trustOracle       = await TrustOracle.deploy();
+    identityVerifier  = await IdentityVerifier.deploy();
+    behaviorValidator = await BehaviorValidator.deploy();
+    consensusChecker  = await ConsensusChecker.deploy(2);
+
+    // Grant roles
+    const ORACLE_ROLE     = await trustOracle.ORACLE_ROLE();
+    const VALIDATOR_ROLE  = await trustOracle.VALIDATOR_ROLE();
+    const KYC_ROLE        = await identityVerifier.KYC_PROVIDER_ROLE();
+    const REPORTER_ROLE   = await behaviorValidator.REPORTER_ROLE();
+    const ANALYST_ROLE    = await behaviorValidator.ANALYST_ROLE();
+    const SIGNER_ROLE     = await consensusChecker.SIGNER_ROLE();
+    const PROPOSER_ROLE   = await consensusChecker.PROPOSER_ROLE();
+
+    await trustOracle.grantRole(ORACLE_ROLE,    oracle.address);
+    await trustOracle.grantRole(VALIDATOR_ROLE, validator.address);
+    await identityVerifier.grantRole(KYC_ROLE,  kyc.address);
+    await behaviorValidator.grantRole(REPORTER_ROLE, reporter.address);
+    await behaviorValidator.grantRole(ANALYST_ROLE,  analyst.address);
+    await consensusChecker.grantRole(SIGNER_ROLE,   signer1.address);
+    await consensusChecker.grantRole(SIGNER_ROLE,   signer2.address);
+    await consensusChecker.grantRole(SIGNER_ROLE,   signer3.address);
+    await consensusChecker.grantRole(PROPOSER_ROLE, oracle.address);
+  });
+
+  // ── TrustOracle ─────────────────────────────────────────────────────────────
+
+  describe("TrustOracle", () => {
+    it("should submit a trust claim", async () => {
+      const dataHash = ethers.keccak256(ethers.toUtf8Bytes("identity-proof-1"));
+      await expect(
+        trustOracle.connect(oracle).submitClaim(subject.address, 0, dataHash, "ipfs://meta1")
+      ).to.emit(trustOracle, "ClaimSubmitted").withArgs(1, subject.address, 0);
+
+      const claim = await trustOracle.claims(1);
+      expect(claim.subject).to.equal(subject.address);
+      expect(claim.status).to.equal(0); // Pending
+    });
+
+    it("should directly verify a claim", async () => {
+      const dataHash = ethers.keccak256(ethers.toUtf8Bytes("proof-1"));
+      await trustOracle.connect(oracle).submitClaim(subject.address, 0, dataHash, "ipfs://1");
+      await expect(
+        trustOracle.connect(oracle).verifyClaim(1, 800)
+      ).to.emit(trustOracle, "ClaimVerified").withArgs(1, subject.address, 800);
+
+      expect(await trustOracle.getTrustScore(subject.address)).to.equal(800);
+    });
+
+    it("should reach consensus via validator voting", async () => {
+      const dataHash = ethers.keccak256(ethers.toUtf8Bytes("proof-2"));
+      await trustOracle.connect(oracle).submitClaim(subject.address, 1, dataHash, "ipfs://2");
+      await trustOracle.connect(validator).voteClaim(1, true, 700);
+      await trustOracle.connect(oracle).voteClaim(1, true, 900);
+
+      const claim = await trustOracle.claims(1);
+      expect(claim.status).to.equal(1); // Verified
+    });
+
+    it("should reject claim on validator consensus", async () => {
+      const dataHash = ethers.keccak256(ethers.toUtf8Bytes("proof-3"));
+      await trustOracle.connect(oracle).submitClaim(subject.address, 2, dataHash, "ipfs://3");
+      await trustOracle.connect(validator).voteClaim(1, false, 0);
+      await trustOracle.connect(oracle).voteClaim(1, false, 0);
+
+      const claim = await trustOracle.claims(1);
+      expect(claim.status).to.equal(2); // Rejected
+    });
+
+    it("should recalculate trust score across multiple claims", async () => {
+      const h1 = ethers.keccak256(ethers.toUtf8Bytes("p1"));
+      const h2 = ethers.keccak256(ethers.toUtf8Bytes("p2"));
+      await trustOracle.connect(oracle).submitClaim(subject.address, 0, h1, "ipfs://1");
+      await trustOracle.connect(oracle).submitClaim(subject.address, 1, h2, "ipfs://2");
+      await trustOracle.connect(oracle).verifyClaim(1, 600);
+      await trustOracle.connect(oracle).verifyClaim(2, 800);
+
+      const score = await trustOracle.getTrustScore(subject.address);
+      expect(score).to.be.greaterThan(0);
+    });
+
+    it("should return valid claim status correctly", async () => {
+      const h = ethers.keccak256(ethers.toUtf8Bytes("p"));
+      await trustOracle.connect(oracle).submitClaim(subject.address, 0, h, "ipfs://x");
+      await trustOracle.connect(oracle).verifyClaim(1, 500);
+      expect(await trustOracle.isClaimValid(1)).to.be.true;
+    });
+
+    it("should return all claims for a subject", async () => {
+      const h1 = ethers.keccak256(ethers.toUtf8Bytes("a"));
+      const h2 = ethers.keccak256(ethers.toUtf8Bytes("b"));
+      await trustOracle.connect(oracle).submitClaim(subject.address, 0, h1, "ipfs://a");
+      await trustOracle.connect(oracle).submitClaim(subject.address, 1, h2, "ipfs://b");
+      const claims = await trustOracle.getSubjectClaims(subject.address);
+      expect(claims.length).to.equal(2);
+    });
+
+    it("should revert on score exceeding max", async () => {
+      const h = ethers.keccak256(ethers.toUtf8Bytes("x"));
+      await trustOracle.connect(oracle).submitClaim(subject.address, 0, h, "ipfs://x");
+      await expect(
+        trustOracle.connect(oracle).verifyClaim(1, 1001)
+      ).to.be.revertedWith("Score exceeds max");
+    });
+  });
+
+  // ── IdentityVerifier ────────────────────────────────────────────────────────
+
+  describe("IdentityVerifier", () => {
+    it("should issue a Basic identity proof", async () => {
+      const proofHash = ethers.keccak256(ethers.toUtf8Bytes("kyc-doc-1"));
+      await expect(
+        identityVerifier.connect(kyc).issueProof(subject.address, 0, 1, proofHash, "US")
+      ).to.emit(identityVerifier, "ProofIssued");
+
+      expect(await identityVerifier.getVerificationLevel(subject.address)).to.equal(1);
+    });
+
+    it("should upgrade verification level with higher proof", async () => {
+      const h1 = ethers.keccak256(ethers.toUtf8Bytes("doc1"));
+      const h2 = ethers.keccak256(ethers.toUtf8Bytes("doc2"));
+      await identityVerifier.connect(kyc).issueProof(subject.address, 0, 1, h1, "US");
+      await identityVerifier.connect(kyc).issueProof(subject.address, 1, 3, h2, "US");
+      expect(await identityVerifier.getVerificationLevel(subject.address)).to.equal(3);
+    });
+
+    it("should revoke a proof and downgrade level", async () => {
+      const h1 = ethers.keccak256(ethers.toUtf8Bytes("r1"));
+      const h2 = ethers.keccak256(ethers.toUtf8Bytes("r2"));
+      await identityVerifier.connect(kyc).issueProof(subject.address, 0, 1, h1, "US");
+      await identityVerifier.connect(kyc).issueProof(subject.address, 1, 3, h2, "US");
+      await identityVerifier.connect(kyc).revokeProof(2, "Expired");
+      expect(await identityVerifier.getVerificationLevel(subject.address)).to.equal(1);
+    });
+
+    it("should sanction a subject", async () => {
+      await identityVerifier.sanctionSubject(subject.address);
+      expect(await identityVerifier.meetsLevel(subject.address, 0)).to.be.false;
+    });
+
+    it("should block proof issuance for sanctioned subject", async () => {
+      await identityVerifier.sanctionSubject(subject.address);
+      const h = ethers.keccak256(ethers.toUtf8Bytes("s1"));
+      await expect(
+        identityVerifier.connect(kyc).issueProof(subject.address, 0, 1, h, "US")
+      ).to.be.revertedWith("Subject is sanctioned");
+    });
+
+    it("should clear sanction and allow new proofs", async () => {
+      const h = ethers.keccak256(ethers.toUtf8Bytes("c1"));
+      await identityVerifier.sanctionSubject(subject.address);
+      await identityVerifier.clearSanction(subject.address);
+      await expect(
+        identityVerifier.connect(kyc).issueProof(subject.address, 0, 1, h, "US")
+      ).to.not.be.reverted;
+    });
+
+    it("should reject duplicate proof hashes", async () => {
+      const h = ethers.keccak256(ethers.toUtf8Bytes("dup"));
+      await identityVerifier.connect(kyc).issueProof(subject.address, 0, 1, h, "US");
+      await expect(
+        identityVerifier.connect(kyc).issueProof(subject2.address, 0, 1, h, "US")
+      ).to.be.revertedWith("Proof hash already used");
+    });
+
+    it("should check meetsLevel correctly", async () => {
+      const h = ethers.keccak256(ethers.toUtf8Bytes("ml1"));
+      await identityVerifier.connect(kyc).issueProof(subject.address, 0, 2, h, "EU");
+      expect(await identityVerifier.meetsLevel(subject.address, 1)).to.be.true;
+      expect(await identityVerifier.meetsLevel(subject.address, 3)).to.be.false;
+    });
+  });
+
+  // ── BehaviorValidator ───────────────────────────────────────────────────────
+
+  describe("BehaviorValidator", () => {
+    it("should report a behavior violation", async () => {
+      const evHash = ethers.keccak256(ethers.toUtf8Bytes("evidence-1"));
+      await expect(
+        behaviorValidator.connect(reporter).reportBehavior(
+          subject.address, 1, 2, evHash, "Suspicious trading pattern"
+        )
+      ).to.emit(behaviorValidator, "BehaviorReported").withArgs(1, subject.address, 1, 2);
+
+      const profile = await behaviorValidator.profiles(subject.address);
+      expect(profile.totalReports).to.equal(1);
+    });
+
+    it("should confirm violation and increase risk score", async () => {
+      const evHash = ethers.keccak256(ethers.toUtf8Bytes("ev2"));
+      await behaviorValidator.connect(reporter).reportBehavior(
+        subject.address, 1, 1, evHash, "Manipulation"
+      );
+      await expect(
+        behaviorValidator.connect(analyst).confirmViolation(1)
+      ).to.emit(behaviorValidator, "ViolationConfirmed");
+
+      const profile = await behaviorValidator.profiles(subject.address);
+      expect(profile.riskScore).to.be.greaterThan(0);
+    });
+
+    it("should auto-flag entity at threshold", async () => {
+      // Fraud + Critical = 300 * 4 = 1200 → capped at 1000 > 500 threshold
+      const evHash = ethers.keccak256(ethers.toUtf8Bytes("ev3"));
+      await behaviorValidator.connect(reporter).reportBehavior(
+        subject.address, 1, 3, evHash, "Critical fraud"
+      );
+      await behaviorValidator.connect(analyst).confirmViolation(1);
+      const profile = await behaviorValidator.profiles(subject.address);
+      expect(profile.riskScore).to.be.greaterThanOrEqual(500);
+    });
+
+    it("should suspend a subject", async () => {
+      await expect(
+        behaviorValidator.connect(analyst).suspendSubject(subject.address, 86400)
+      ).to.emit(behaviorValidator, "SubjectSuspended");
+
+      const profile = await behaviorValidator.profiles(subject.address);
+      expect(profile.status).to.equal(2); // Suspended
+    });
+
+    it("should clear a subject with score reduction", async () => {
+      const evHash = ethers.keccak256(ethers.toUtf8Bytes("ev4"));
+      await behaviorValidator.connect(reporter).reportBehavior(
+        subject.address, 0, 0, evHash, "Spam"
+      );
+      await behaviorValidator.connect(analyst).confirmViolation(1);
+      await behaviorValidator.clearSubject(subject.address, 1000);
+      const profile = await behaviorValidator.profiles(subject.address);
+      expect(profile.riskScore).to.equal(0);
+      expect(profile.status).to.equal(0); // Clean
+    });
+
+    it("should check isAllowed correctly", async () => {
+      expect(await behaviorValidator.isAllowed(subject.address)).to.be.true;
+      await behaviorValidator.connect(analyst).suspendSubject(subject.address, 86400 * 365);
+      expect(await behaviorValidator.isAllowed(subject.address)).to.be.false;
+    });
+
+    it("should update violation weights", async () => {
+      await behaviorValidator.setViolationWeight(0, 25); // Spam → 25
+      expect(await behaviorValidator.violationWeights(0)).to.equal(25);
+    });
+  });
+
+  // ── ConsensusChecker ────────────────────────────────────────────────────────
+
+  describe("ConsensusChecker", () => {
+    it("should create a proposal", async () => {
+      await expect(
+        consensusChecker.connect(oracle).createProposal(
+          0, subject.address, "0x", ethers.keccak256(ethers.toUtf8Bytes("desc1"))
+        )
+      ).to.emit(consensusChecker, "ProposalCreated").withArgs(1, 0, subject.address);
+    });
+
+    it("should reach consensus after enough votes", async () => {
+      await consensusChecker.connect(oracle).createProposal(
+        0, subject.address, "0x", ethers.keccak256(ethers.toUtf8Bytes("desc2"))
+      );
+      await consensusChecker.connect(signer1).castVote(1, true);
+      await expect(
+        consensusChecker.connect(signer2).castVote(1, true)
+      ).to.emit(consensusChecker, "ProposalApproved");
+    });
+
+    it("should reject proposal on negative votes", async () => {
+      await consensusChecker.connect(oracle).createProposal(
+        0, subject.address, "0x", ethers.keccak256(ethers.toUtf8Bytes("desc3"))
+      );
+      await consensusChecker.connect(signer1).castVote(1, false);
+      await expect(
+        consensusChecker.connect(signer2).castVote(1, false)
+      ).to.emit(consensusChecker, "ProposalRejected");
+    });
+
+    it("should prevent double voting", async () => {
+      await consensusChecker.connect(oracle).createProposal(
+        0, subject.address, "0x", ethers.keccak256(ethers.toUtf8Bytes("desc4"))
+      );
+      await consensusChecker.connect(signer1).castVote(1, true);
+      await expect(
+        consensusChecker.connect(signer1).castVote(1, true)
+      ).to.be.revertedWith("Already voted");
+    });
+
+    it("should check hasConsensus", async () => {
+      await consensusChecker.connect(oracle).createProposal(
+        0, subject.address, "0x", ethers.keccak256(ethers.toUtf8Bytes("desc5"))
+      );
+      expect(await consensusChecker.hasConsensus(1)).to.be.false;
+      await consensusChecker.connect(signer1).castVote(1, true);
+      await consensusChecker.connect(signer2).castVote(1, true);
+      expect(await consensusChecker.hasConsensus(1)).to.be.true;
+    });
+
+    it("should configure per-type consensus requirements", async () => {
+      await consensusChecker.setTypeConfig(1, 3, 14 * 24 * 3600);
+      const config = await consensusChecker.typeConfigs(1);
+      expect(config.requiredSignatures).to.equal(3);
+    });
+  });
+});

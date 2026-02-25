@@ -1,0 +1,26 @@
+{
+  "name": "oan-zksync",
+  "version": "1.0.0",
+  "description": "OAN Protocol ZKSync Integration",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:testnet": "hardhat deploy-zksync --network zkSyncTestnet",
+    "deploy:mainnet": "hardhat deploy-zksync --network zkSyncMainnet",
+    "test": "hardhat test"
+  },
+  "dependencies": {
+    "@matterlabs/hardhat-zksync-deploy": "^1.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.19.0",
+    "zksync-ethers": "^6.0.0"
+  },
+  "devDependencies": {
+    "@matterlabs/hardhat-zksync-node": "^1.0.0",
+    "@matterlabs/hardhat-zksync-solc": "^1.5.1",
+    "@matterlabs/hardhat-zksync-verify": "^1.9.1",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "chai": "^4.3.10"
+  }
+}

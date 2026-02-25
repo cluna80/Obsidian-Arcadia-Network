@@ -1,4 +1,4 @@
-# í¼‘ LAYER 1: CORE ENGINE - COMPLETE DOCUMENTATION
+# ï¿½ï¿½ï¿½ LAYER 1: CORE ENGINE - COMPLETE DOCUMENTATION
 
 **Obsidian Arcadia Network - Core AI Agent System**
 
@@ -502,7 +502,7 @@ All spawning tests passed! (3/3)
 
 **Output**:
 ```
-í¼‘ OBSIDIAN ARCADIA NETWORK - COMPLETE TEST SUITE
+ï¿½ï¿½ï¿½ OBSIDIAN ARCADIA NETWORK - COMPLETE TEST SUITE
 ======================================================================
 
 RUNNING: LAYER 1: Behavioral Intelligence
@@ -535,7 +535,7 @@ RUNNING: LAYER 3: Entity Spawning
 âœ… Energy Cost test PASSED!
 âœ… Hierarchy Tracking test PASSED!
 
-í³Š FINAL TEST REPORT
+ï¿½ï¿½ï¿½ FINAL TEST REPORT
 ======================================================================
 âœ… PASS - LAYER 1: Behavioral Intelligence (8/8 tests)
 âœ… PASS - LAYER 3: Entity Communication (3/3 tests)
@@ -544,7 +544,7 @@ RUNNING: LAYER 3: Entity Spawning
 
 Total: 18/18 tests passed
 Total time: 3.42 seconds
-í¾‰ ALL SYSTEMS OPERATIONAL! í¾‰
+ï¿½ï¿½ï¿½ ALL SYSTEMS OPERATIONAL! ï¿½ï¿½ï¿½
 ```
 
 ---
@@ -783,7 +783,7 @@ With Layer 1 complete:
 
 ## Summary
 
-**Layer 1: Core Engine Status** í¾‰
+**Layer 1: Core Engine Status** ï¿½ï¿½ï¿½
 
 âœ… **Complete** - All components implemented  
 âœ… **Tested** - 100% test coverage  
@@ -799,4 +799,4 @@ With Layer 1 complete:
 - 100% pass rate
 - <5 second test suite
 
-**The foundation is solid. Layer 2 Web3 integration is next!** íº€
+**The foundation is solid. Layer 2 Web3 integration is next!** ï¿½ï¿½ï¿½

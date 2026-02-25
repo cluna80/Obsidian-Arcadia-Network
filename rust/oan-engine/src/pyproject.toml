@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "rust-engine"           # can be anything; used for packaging metadata
+version = "0.1.0"
+
+[tool.maturin]
+# The name Python sees when doing `import ...`
+module-name = "rust_engine"
+
+# Points to the actual Cargo.toml of your extension crate
+manifest-path = "python_bridge/Cargo.toml"

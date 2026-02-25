@@ -1,0 +1,623 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ResourceLimiter",
+  "sourceName": "contracts/layer7/execution/ResourceLimiter.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "AccessControlBadConfirmation",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "neededRole",
+          "type": "bytes32"
+        }
+      ],
+      "name": "AccessControlUnauthorizedAccount",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "entityId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "resourceType",
+          "type": "string"
+        }
+      ],
+      "name": "QuotaExceeded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "entityId",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "gasPerAction",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "gasPerDay",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "storagePerEntity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsPerHour",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsPerDay",
+              "type": "uint256"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct ResourceLimiter.ResourceQuota",
+          "name": "quota",
+          "type": "tuple"
+        }
+      ],
+      "name": "QuotaSet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "previousAdminRole",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "newAdminRole",
+          "type": "bytes32"
+        }
+      ],
+      "name": "RoleAdminChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        }
+      ],
+      "name": "RoleGranted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        }
+      ],
+      "name": "RoleRevoked",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_ADMIN_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LIMITER_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entityId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "estimatedGas",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkResourceAvailability",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "allowed",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "reason",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "defaultQuota",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "gasPerAction",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gasPerDay",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "storagePerEntity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actionsPerHour",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actionsPerDay",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getRoleAdmin",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entityId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getUsage",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "gasUsedToday",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "storageUsed",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsThisHour",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsToday",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "hourResetTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "dayResetTime",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ResourceLimiter.ResourceUsage",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "grantRole",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "hasRole",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "quotas",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "gasPerAction",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gasPerDay",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "storagePerEntity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actionsPerHour",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actionsPerDay",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entityId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gasUsed",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "storageAdded",
+          "type": "uint256"
+        }
+      ],
+      "name": "recordResourceUsage",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "callerConfirmation",
+          "type": "address"
+        }
+      ],
+      "name": "renounceRole",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "revokeRole",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "gasPerAction",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "gasPerDay",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "storagePerEntity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsPerHour",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsPerDay",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ResourceLimiter.ResourceQuota",
+          "name": "quota",
+          "type": "tuple"
+        }
+      ],
+      "name": "setDefaultQuota",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entityId",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "gasPerAction",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "gasPerDay",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "storagePerEntity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsPerHour",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsPerDay",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ResourceLimiter.ResourceQuota",
+          "name": "quota",
+          "type": "tuple"
+        }
+      ],
+      "name": "setEntityQuota",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "usage",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "gasUsedToday",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "storageUsed",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actionsThisHour",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "actionsToday",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "hourResetTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "dayResetTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040523461009f57610012336100a4565b5061001c33610122565b5060405160a08101906001600160401b03821181831017610089576080916040526207a1208082526298968090816020840152620186a092836040820152606460608201526103e894859101526003556004556005556064600655600755604051610ec590816101c38239f35b634e487b7160e01b600052604160045260246000fd5b600080fd5b6001600160a01b031660008181527fad3228b676f7d3cd4284a5443f17f1962b36e491b30a40b2405849e597ba5fb5602052604081205490919060ff1661011e57818052816020526040822081835260205260408220600160ff1982541617905533916000805160206110888339815191528180a4600190565b5090565b6001600160a01b031660008181527f5fd6a7d52a124dba1daa3d033799972a5420d7d387145fab1c33aef3e344354560205260408120549091907ff7b34cf87af24ce01c1aff9f518b133989851466d994e0016fc14651fa02826c9060ff166101bd57808352826020526040832082845260205260408320600160ff19825416179055600080516020611088833981519152339380a4600190565b50509056fe608060408181526004918236101561001657600080fd5b600090813560e01c90816301ffc9a71461066557508063248a9ca31461063b57806324ae7892146105d6578063259039f4146105785780632f2ff15d1461055a57806336568abe146104f957806337fa15a71461045f578063561f30d91461041957806391d14854146103d3578063a217fddf146103b8578063aeaa8966146102c8578063b3de42141461028d578063d547741f14610254578063e013fa0a1461019e578063e5435dce1461012f5763fb20d172146100d457600080fd5b3461012c57602060031936011261012c5782358152600160208181529183902080549181015460028201546003830154929096015494519283529282019290925260408101939093526060830152608082015260a090f35b80fd5b5091903461019a57606060031936011261019a5760039161014e61083c565b358352600260205282206101656024358254610a09565b8155600181016101786044358254610a09565b9055600281016101888154610e62565b9055016101958154610e62565b905580f35b8280fd5b50913461019a57602060031936011261019a57818360c09460a06101c0610704565b82815282602082015282858201528260608201528260808201520152823581526002602052206101ee610704565b9181549384845260018301546020850190815260028401549082860191825260a0600560038701549560608901968752870154966080890197885201549601958652825196875251602087015251908501525160608401525160808301525160a0820152f35b5090346102895760016102859161028061026d36610793565b9390928387528660205286200154610898565b610968565b5080f35b5080fd5b509034610289578160031936011261028957602090517ff7b34cf87af24ce01c1aff9f518b133989851466d994e0016fc14651fa02826c8152f35b50913461019a5760c060031936011261019a5780359160a07fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc3601126103b4577f3ed1f9ebfcdccde007991b17389e675d45f3736fcab75bd4a4e31bb9e02f9aed9160a091610335610753565b90602435825260208201906044358252808301606435815260608401926084358452608085019460a43586526103696107cb565b898b526001602052838b20905196878255825160018301558351600283015585516003830155865191015582519586525160208601525190840152516060830152516080820152a280f35b8380fd5b50903461028957816003193601126102895751908152602090f35b5090346102895760ff816020936103e936610793565b90825281865273ffffffffffffffffffffffffffffffffffffffff83832091168252855220541690519015158152f35b5082903461012c578060031936011261012c575060035490546005546006546007549451938452602084019290925260408301526060820152608081019190915260a090f35b50913461019a578160031936011261019a576104879061047d61083c565b6024359035610a45565b92825193849215158352602090848285015280518095850152825b8581106104e257505050601f837fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe092606080968601015201168101030190f35b8181018301518782016060015286945082016104a2565b5090346102895761050936610793565b913373ffffffffffffffffffffffffffffffffffffffff84160361053257509061028591610968565b8490517f6697b232000000000000000000000000000000000000000000000000000000008152fd5b5090346102895760016102859161057361026d36610793565b6108be565b5091903461019a57602060031936011261019a578060c09383358152600260205220805492600182015492600283015490600560038501549385015494015494815196875260208701528501526060840152608083015260a0820152f35b5091903461019a5760a060031936011261019a576105f2610753565b918035835260208301916024358352830190604435825260608401926064358452608085019460843586526106256107cb565b5160035551905551600555516006555160075580f35b50913461019a57602060031936011261019a57816020936001923581528085522001549051908152f35b9050833461019a57602060031936011261019a57357fffffffff00000000000000000000000000000000000000000000000000000000811680910361019a57602092507f7965db0b0000000000000000000000000000000000000000000000000000000081149081156106da575b5015158152f35b7f01ffc9a700000000000000000000000000000000000000000000000000000000915014836106d3565b6040519060c0820182811067ffffffffffffffff82111761072457604052565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6040519060a0820182811067ffffffffffffffff82111761072457604052565b604051906040820182811067ffffffffffffffff82111761072457604052565b60031960409101126107c6576004359060243573ffffffffffffffffffffffffffffffffffffffff811681036107c65790565b600080fd5b3360009081527fad3228b676f7d3cd4284a5443f17f1962b36e491b30a40b2405849e597ba5fb5602052604081205460ff16156108055750565b604490604051907fe2517d3f0000000000000000000000000000000000000000000000000000000082523360048301526024820152fd5b3360009081527f5fd6a7d52a124dba1daa3d033799972a5420d7d387145fab1c33aef3e344354560205260409020547ff7b34cf87af24ce01c1aff9f518b133989851466d994e0016fc14651fa02826c9060ff16156108055750565b80600052600060205260406000203360005260205260ff60406000205416156108055750565b906000918083528260205273ffffffffffffffffffffffffffffffffffffffff6040842092169182845260205260ff604084205416156000146109635780835282602052604083208284526020526040832060017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff008254161790557f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d339380a4600190565b505090565b906000918083528260205273ffffffffffffffffffffffffffffffffffffffff6040842092169182845260205260ff604084205416600014610963578083528260205260408320828452602052604083207fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0081541690557ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b339380a4600190565b91908201809211610a1657565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b91909160008181526020916001835260409485832080541515600014610e5957905b6002855286842090600482018054421015610e3f575b50600582018054421015610df4575b5082548111610d6457610aa0908254610a09565b600183015410610cd557600281015460038301541115610c4657600381015460048301541115610bb757600160029101549101541115610b2a575060019380519283019083821067ffffffffffffffff831117610afd5752815290565b6024837f4e487b710000000000000000000000000000000000000000000000000000000081526041600452fd5b9091936060817f73746f72616765000000000000000000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600789840152820152a2917f53746f72616765206c696d697420657863656564656400000000000000000000610bac610773565b916016835282015290565b50509091936060817f616374696f6e73506572446179000000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600d89840152820152a2917f4461696c7920616374696f6e206c696d69742065786365656465640000000000610c3b610773565b91601b835282015290565b50509091936060817f616374696f6e73506572486f75720000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600e89840152820152a2917f486f75726c7920616374696f6e206c696d697420657863656564656400000000610cca610773565b91601c835282015290565b50509091936060817f67617350657244617900000000000000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600989840152820152a2917f4461696c7920676173206c696d69742065786365656465640000000000000000610d59610773565b916018835282015290565b5050509091936060817f676173506572416374696f6e00000000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600c89840152820152a2917f4761732070657220616374696f6e206578636565646564000000000000000000610de9610773565b916017835282015290565b85835585600384015562015180420190814211610e12575538610a8c565b6024877f4e487b710000000000000000000000000000000000000000000000000000000081526011600452fd5b856002840155610e10420190814211610e12575538610a7d565b50600390610a67565b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8114610a16576001019056fea26469706673582212203672f29a4549709e07ccf76a5299ba2825d28e36f66ec145c76619fa065eeaac64736f6c634300081400332f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+  "deployedBytecode": "0x608060408181526004918236101561001657600080fd5b600090813560e01c90816301ffc9a71461066557508063248a9ca31461063b57806324ae7892146105d6578063259039f4146105785780632f2ff15d1461055a57806336568abe146104f957806337fa15a71461045f578063561f30d91461041957806391d14854146103d3578063a217fddf146103b8578063aeaa8966146102c8578063b3de42141461028d578063d547741f14610254578063e013fa0a1461019e578063e5435dce1461012f5763fb20d172146100d457600080fd5b3461012c57602060031936011261012c5782358152600160208181529183902080549181015460028201546003830154929096015494519283529282019290925260408101939093526060830152608082015260a090f35b80fd5b5091903461019a57606060031936011261019a5760039161014e61083c565b358352600260205282206101656024358254610a09565b8155600181016101786044358254610a09565b9055600281016101888154610e62565b9055016101958154610e62565b905580f35b8280fd5b50913461019a57602060031936011261019a57818360c09460a06101c0610704565b82815282602082015282858201528260608201528260808201520152823581526002602052206101ee610704565b9181549384845260018301546020850190815260028401549082860191825260a0600560038701549560608901968752870154966080890197885201549601958652825196875251602087015251908501525160608401525160808301525160a0820152f35b5090346102895760016102859161028061026d36610793565b9390928387528660205286200154610898565b610968565b5080f35b5080fd5b509034610289578160031936011261028957602090517ff7b34cf87af24ce01c1aff9f518b133989851466d994e0016fc14651fa02826c8152f35b50913461019a5760c060031936011261019a5780359160a07fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc3601126103b4577f3ed1f9ebfcdccde007991b17389e675d45f3736fcab75bd4a4e31bb9e02f9aed9160a091610335610753565b90602435825260208201906044358252808301606435815260608401926084358452608085019460a43586526103696107cb565b898b526001602052838b20905196878255825160018301558351600283015585516003830155865191015582519586525160208601525190840152516060830152516080820152a280f35b8380fd5b50903461028957816003193601126102895751908152602090f35b5090346102895760ff816020936103e936610793565b90825281865273ffffffffffffffffffffffffffffffffffffffff83832091168252855220541690519015158152f35b5082903461012c578060031936011261012c575060035490546005546006546007549451938452602084019290925260408301526060820152608081019190915260a090f35b50913461019a578160031936011261019a576104879061047d61083c565b6024359035610a45565b92825193849215158352602090848285015280518095850152825b8581106104e257505050601f837fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe092606080968601015201168101030190f35b8181018301518782016060015286945082016104a2565b5090346102895761050936610793565b913373ffffffffffffffffffffffffffffffffffffffff84160361053257509061028591610968565b8490517f6697b232000000000000000000000000000000000000000000000000000000008152fd5b5090346102895760016102859161057361026d36610793565b6108be565b5091903461019a57602060031936011261019a578060c09383358152600260205220805492600182015492600283015490600560038501549385015494015494815196875260208701528501526060840152608083015260a0820152f35b5091903461019a5760a060031936011261019a576105f2610753565b918035835260208301916024358352830190604435825260608401926064358452608085019460843586526106256107cb565b5160035551905551600555516006555160075580f35b50913461019a57602060031936011261019a57816020936001923581528085522001549051908152f35b9050833461019a57602060031936011261019a57357fffffffff00000000000000000000000000000000000000000000000000000000811680910361019a57602092507f7965db0b0000000000000000000000000000000000000000000000000000000081149081156106da575b5015158152f35b7f01ffc9a700000000000000000000000000000000000000000000000000000000915014836106d3565b6040519060c0820182811067ffffffffffffffff82111761072457604052565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6040519060a0820182811067ffffffffffffffff82111761072457604052565b604051906040820182811067ffffffffffffffff82111761072457604052565b60031960409101126107c6576004359060243573ffffffffffffffffffffffffffffffffffffffff811681036107c65790565b600080fd5b3360009081527fad3228b676f7d3cd4284a5443f17f1962b36e491b30a40b2405849e597ba5fb5602052604081205460ff16156108055750565b604490604051907fe2517d3f0000000000000000000000000000000000000000000000000000000082523360048301526024820152fd5b3360009081527f5fd6a7d52a124dba1daa3d033799972a5420d7d387145fab1c33aef3e344354560205260409020547ff7b34cf87af24ce01c1aff9f518b133989851466d994e0016fc14651fa02826c9060ff16156108055750565b80600052600060205260406000203360005260205260ff60406000205416156108055750565b906000918083528260205273ffffffffffffffffffffffffffffffffffffffff6040842092169182845260205260ff604084205416156000146109635780835282602052604083208284526020526040832060017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff008254161790557f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d339380a4600190565b505090565b906000918083528260205273ffffffffffffffffffffffffffffffffffffffff6040842092169182845260205260ff604084205416600014610963578083528260205260408320828452602052604083207fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0081541690557ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b339380a4600190565b91908201809211610a1657565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b91909160008181526020916001835260409485832080541515600014610e5957905b6002855286842090600482018054421015610e3f575b50600582018054421015610df4575b5082548111610d6457610aa0908254610a09565b600183015410610cd557600281015460038301541115610c4657600381015460048301541115610bb757600160029101549101541115610b2a575060019380519283019083821067ffffffffffffffff831117610afd5752815290565b6024837f4e487b710000000000000000000000000000000000000000000000000000000081526041600452fd5b9091936060817f73746f72616765000000000000000000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600789840152820152a2917f53746f72616765206c696d697420657863656564656400000000000000000000610bac610773565b916016835282015290565b50509091936060817f616374696f6e73506572446179000000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600d89840152820152a2917f4461696c7920616374696f6e206c696d69742065786365656465640000000000610c3b610773565b91601b835282015290565b50509091936060817f616374696f6e73506572486f75720000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600e89840152820152a2917f486f75726c7920616374696f6e206c696d697420657863656564656400000000610cca610773565b91601c835282015290565b50509091936060817f67617350657244617900000000000000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600989840152820152a2917f4461696c7920676173206c696d69742065786365656465640000000000000000610d59610773565b916018835282015290565b5050509091936060817f676173506572416374696f6e00000000000000000000000000000000000000007f9bd65289cb72fac3c86f948fbdf11a14ef9d37b170e85786fb58811e4c2906fa935191888352600c89840152820152a2917f4761732070657220616374696f6e206578636565646564000000000000000000610de9610773565b916017835282015290565b85835585600384015562015180420190814211610e12575538610a8c565b6024877f4e487b710000000000000000000000000000000000000000000000000000000081526011600452fd5b856002840155610e10420190814211610e12575538610a7d565b50600390610a67565b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8114610a16576001019056fea26469706673582212203672f29a4549709e07ccf76a5299ba2825d28e36f66ec145c76619fa065eeaac64736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
