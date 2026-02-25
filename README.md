@@ -1,4 +1,4 @@
-# ��� Obsidian Arcadia Network (OAN)
+# ��� Obsidian Arcadia Network (OAN)
 
 **The World's Most Comprehensive Protocol for Autonomous Digital Civilizations**
 
@@ -11,28 +11,28 @@
 
 ---
 
-## ��� What is OAN?
+## ��� What is OAN?
 
 OAN is **NOT** just another AI wrapper or smart contract suite.
 
 It is the **world's first complete protocol stack** for creating programmable autonomous entities that:
-- ��� Think and make decisions with **high-performance AI** (335k+ decisions/sec)
-- ��� Own assets and earn revenue (tokenized entities)  
-- ��� Form relationships and coordinate (social dynamics)
+- ��� Think and make decisions with **high-performance AI** (335k+ decisions/sec)
+- ��� Own assets and earn revenue (tokenized entities)  
+- ��� Form relationships and coordinate (social dynamics)
 - ⏳ Age, evolve, and leave legacies (temporal mechanics)
-- ��� Create and monetize content (media production)
-- ��� Compete in virtual worlds (metaverse sports)
-- ��� Trade in advanced markets (DeFi integration)
-- ��� Maintain privacy (ZKSync integration)
-- ���️ Ensure safety and reliability (comprehensive security)
+- ��� Create and monetize content (media production)
+- ��� Compete in virtual worlds (metaverse sports)
+- ��� Trade in advanced markets (DeFi integration)
+- ��� Maintain privacy (ZKSync integration)
+- ���️ Ensure safety and reliability (comprehensive security)
 
 **Think:** Conway's Game of Life × Ethereum × Hollywood × The Metaverse × zkRollups
 
 ---
 
-## ��� Performance Highlights
+## ��� Performance Highlights
 ```
-��� RUST ENGINE PERFORMANCE:
+��� RUST ENGINE PERFORMANCE:
    - 4,268 cycles/sec (entity execution)
    - 335,840 simulations/sec (match simulation)  
    - 298,145 matches/sec (stress testing)
@@ -44,7 +44,7 @@ It is the **world's first complete protocol stack** for creating programmable au
    - Gas optimized
    - Production ready
 
-��� ZKSYNC INTEGRATION:
+��� ZKSYNC INTEGRATION:
    - L1 ↔ L2 entity bridging
    - Private reputation system
    - Anonymous marketplace
@@ -53,11 +53,11 @@ It is the **world's first complete protocol stack** for creating programmable au
 
 ---
 
-## ���️ Complete Architecture
+## ���️ Complete Architecture
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │           ZKSYNC LAYER: PRIVACY & SCALING (8 contracts)     │
-│  ��� Zero-Knowledge Privacy Layer                            │
+│  ��� Zero-Knowledge Privacy Layer                            │
 │  - Private Entity Bridge | Anonymous Reputation             │
 │  - Hidden Marketplace | ZK Voting                           │
 │  - Layer 7 Integration | Emergency Privacy                  │
@@ -65,7 +65,7 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │         LAYER 7: SAFETY & RELIABILITY (24 contracts)        │
-│  ���️ Comprehensive Security & Trust Layer                   │
+│  ���️ Comprehensive Security & Trust Layer                   │
 │  - Secure Execution | Auditable Behavior                    │
 │  - Reputation Enforcement | Stability Protocols             │
 │  - Trust Verification | Insurance Systems                   │
@@ -73,7 +73,7 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │       LAYER 6: MARKETPLACE & ECONOMY (24 contracts)         │
-│  ���️ Universal Trading Platform                             │
+│  ���️ Universal Trading Platform                             │
 │  - NFT Asset Trading | AI Tools Marketplace                 │
 │  - Creator Monetization | Reputation Trading                │
 │  - Dynamic Pricing | Advanced DeFi                          │
@@ -81,7 +81,7 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │       LAYER 5: METAVERSE SPORTS ARENA (24 contracts)        │
-│  ��� Virtual Sports & Competition (Rust-Powered)             │
+│  ��� Virtual Sports & Competition (Rust-Powered)             │
 │  - Virtual Stadiums | AI Athletes                           │
 │  - High-Performance Match Simulation (335k+ sims/sec)       │
 │  - Prediction Markets | Fantasy Leagues                     │
@@ -89,14 +89,14 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │            LAYER 4: MEDIA SYSTEMS (12 contracts)            │
-│  ��� Film Production Protocol                                │
+│  ��� Film Production Protocol                                │
 │  - NFT Movies & Scenes | AI Actors & Directors              │
 │  - Rights Management | Revenue Distribution                 │
 └─────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │         LAYER 3: CIVILIZATION PROTOCOL (24 contracts)       │
-│  ��� Advanced Entity Systems                                 │
+│  ��� Advanced Entity Systems                                 │
 │  - Tokenized Intelligence & Time                            │
 │  - Programmable Reality & Physics                           │
 │  - Emotional AI & Trust Networks                            │
@@ -112,7 +112,7 @@ It is the **world's first complete protocol stack** for creating programmable au
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │     LAYER 1: HIGH-PERFORMANCE AI ENGINE (Python + Rust)     │
-│  ��� Rust-Powered Behavioral Intelligence Runtime            │
+│  ��� Rust-Powered Behavioral Intelligence Runtime            │
 │  - OBSIDIAN DSL Parser & Compiler                           │
 │  - Entity Lifecycle Management (4,268 cycles/sec)           │
 │  - Multi-Agent Coordination                                 │
@@ -124,11 +124,11 @@ It is the **world's first complete protocol stack** for creating programmable au
 
 ---
 
-## ��� Current Status
+## ��� Current Status
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║                  PROJECT STATUS: v1.0 ���                     ║
+║                  PROJECT STATUS: v1.0 ���                     ║
 ║                  PRODUCTION READY                            ║
 ║                                                              ║
 ║  ✅ Layer 1: Core AI Engine (Rust)      [PRODUCTION READY]  ║
@@ -181,7 +181,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 
 ## ✨ Key Features by Layer
 
-### ��� **Layer 1: High-Performance AI Core (Python + Rust)**
+### ��� **Layer 1: High-Performance AI Core (Python + Rust)**
 - **OBSIDIAN DSL**: Domain-specific language for entity behaviors
 - **Rust Engine**: Ultra-fast execution (4,268 cycles/sec)
 - **Match Simulator**: 335,840 simulations per second
@@ -195,34 +195,34 @@ It is the **world's first complete protocol stack** for creating programmable au
 - **DAO Governance**: Community-controlled upgrades
 - **$OAN Token**: Utility token with staking rewards
 
-### ��� **Layer 3: Civilization Protocol**
+### ��� **Layer 3: Civilization Protocol**
 - **Tokenized Intelligence**: Buy/sell/license AI behaviors as NFTs
 - **Temporal Entities**: Aging, skill development, death, legacies
 - **Programmable Reality**: Custom physics and economic systems
 - **Emotional AI**: Entities with emotions, trust, social influence
 - **Risk Markets**: Performance betting, derivatives, insurance
 
-### ��� **Layer 4: Media Systems**
+### ��� **Layer 4: Media Systems**
 - **Composable Films**: Movies built from reusable scene NFTs
 - **AI Talent**: Entities become actors/directors
 - **Automatic Royalties**: Revenue distributed to all contributors
 - **Rights Management**: Territorial licensing, time-limited rights
 
-### ��� **Layer 5: Metaverse Sports (Rust-Powered)**
+### ��� **Layer 5: Metaverse Sports (Rust-Powered)**
 - **Virtual Stadiums**: Own sports venues as NFTs
 - **AI Athletes**: Compete with stats and progression
 - **Ultra-Fast Simulation**: 335,840+ matches per second
 - **Fan Engagement**: Fan tokens, prediction markets, fantasy leagues
 - **Cross-Sport**: Athletes compete across multiple sports
 
-### ���️ **Layer 6: Marketplace & Economy**
+### ���️ **Layer 6: Marketplace & Economy**
 - **Universal Trading**: Trade ANY NFT (entities, cards, land)
 - **AI Tool Market**: Buy/sell/license AI behaviors and modules
 - **Creator Economy**: Profiles, commissions, perpetual royalties
 - **Dynamic Pricing**: Price oracles, bonding curves, Dutch auctions
 - **Advanced DeFi**: Swaps, fractional ownership, derivatives
 
-### ���️ **Layer 7: Safety & Reliability**
+### ���️ **Layer 7: Safety & Reliability**
 - **Secure Execution**: Sandbox environments, resource limiting
 - **Auditable Behavior**: Immutable action logs, anomaly detection
 - **Reputation Enforcement**: Slashing, recovery paths, blacklisting
@@ -230,7 +230,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 - **Trust Verification**: Identity proofs, consensus checking
 - **Insurance**: Security deposits, compensation, dispute resolution
 
-### ��� **ZKSync Privacy Layer**
+### ��� **ZKSync Privacy Layer**
 - **Private Entities**: Bridge entities to L2 with privacy
 - **Anonymous Reputation**: Prove reputation without revealing score
 - **Hidden Marketplace**: Trade without exposing identity or prices
@@ -239,7 +239,7 @@ It is the **world's first complete protocol stack** for creating programmable au
 
 ---
 
-## ��� Quick Start
+## ��� Quick Start
 
 ### Prerequisites
 ```bash
@@ -291,7 +291,7 @@ python test_full_protocol.py
 
 ---
 
-## ��� Performance Benchmarks
+## ��� Performance Benchmarks
 ```
 RUST ENGINE BENCHMARKS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -310,7 +310,7 @@ Overall Performance:  10-100x faster
 
 ---
 
-## ��� Token Economics
+## ��� Token Economics
 
 ### $OAN Token
 
@@ -343,7 +343,7 @@ Overall Performance:  10-100x faster
 
 ---
 
-## ���️ Roadmap
+## ���️ Roadmap
 
 ### ✅ Phase 1: Foundation (COMPLETE)
 - [x] Layer 1: Core AI Engine (Python + Rust)
@@ -357,28 +357,28 @@ Overall Performance:  10-100x faster
 - [x] 365+ tests passing (100%)
 - [x] Rust engine integration (335k+ sims/sec)
 
-### ��� Phase 2: Security & Polish (Q1 2026)
+### ��� Phase 2: Security & Polish (Q1 2026)
 - [ ] Professional security audit
 - [ ] Gas optimization
 - [ ] Enhanced documentation
 - [ ] SDK development
 - [ ] Bug bounty program
 
-### ��� Phase 3: Testnet Launch (Q2 2026)
+### ��� Phase 3: Testnet Launch (Q2 2026)
 - [ ] Deploy to Mumbai/Sepolia
 - [ ] Deploy to ZKSync testnet
 - [ ] Public beta testing
 - [ ] Community feedback integration
 - [ ] UI/UX development
 
-### ��� Phase 4: Mainnet (Q3 2026)
+### ��� Phase 4: Mainnet (Q3 2026)
 - [ ] Mainnet deployment
 - [ ] ZKSync mainnet launch
 - [ ] Token Generation Event (TGE)
 - [ ] Liquidity provisioning
 - [ ] Marketing campaign
 
-### ��� Phase 5: Ecosystem Growth (Q4 2026+)
+### ��� Phase 5: Ecosystem Growth (Q4 2026+)
 - [ ] Cross-chain bridges
 - [ ] Mobile SDKs
 - [ ] Marketplace UI
@@ -387,7 +387,7 @@ Overall Performance:  10-100x faster
 
 ---
 
-## ��� Documentation
+## ��� Documentation
 
 - **White Paper**: [docs/WHITEPAPER.md](docs/WHITEPAPER.md)
 - **Technical Docs**: [docs/TECHNICAL.md](docs/TECHNICAL.md)
@@ -406,39 +406,39 @@ Overall Performance:  10-100x faster
 
 ---
 
-## ��� Use Cases
+## ��� Use Cases
 
-### ��� **Gaming**
+### ��� **Gaming**
 - NPCs with real intelligence (4,268 decisions/sec)
 - Ultra-fast match simulation (335k+ sims/sec)
 - Player-owned characters that persist across games
 - In-game economies with real value
 
-### ��� **Film Production**
+### ��� **Film Production**
 - AI-generated movies and scenes
 - Decentralized content creation
 - Automatic revenue sharing
 - Composable media assets
 
-### ���️ **Sports & Entertainment**
+### ���️ **Sports & Entertainment**
 - High-performance virtual sports leagues
 - AI athlete competitions (335k+ matches/sec)
 - Fan engagement platforms
 - Prediction markets
 
-### ��� **Metaverse**
+### ��� **Metaverse**
 - Autonomous virtual citizens
 - Cross-world identity and reputation
 - Programmable physics and economics
 - Privacy-preserving interactions (ZKSync)
 
-### ��� **AI Agents**
+### ��� **AI Agents**
 - Tokenized AI workers
 - High-performance decision making
 - Marketplace for AI behaviors
 - Performance-based compensation
 
-### ��� **DAOs**
+### ��� **DAOs**
 - AI-powered governance
 - Anonymous voting (ZK proofs)
 - Reputation-weighted decisions
@@ -446,7 +446,7 @@ Overall Performance:  10-100x faster
 
 ---
 
-## ��� Security
+## ��� Security
 ```
 ✅ 357 Solidity tests passing (100%)
 ✅ 8 Rust integration tests passing (100%)
@@ -456,20 +456,16 @@ Overall Performance:  10-100x faster
 ✅ Rate limiting on critical functions
 ✅ Comprehensive audit trail
 ✅ Emergency shutdown mechanisms
-��� Professional audit scheduled (Q1 2026)
+��� Professional audit scheduled (Q1 2026)
 ```
 
-**Found a vulnerability?** security@obsidian-arcadia.network
+**Found a vulnerability?** obsidianarcadian@atomicmail.io
 
-### Bug Bounty Program
-- Critical: Up to $50,000
-- High: Up to $10,000
-- Medium: Up to $2,000
-- Low: Up to $500
+
 
 ---
 
-## ��� Contributing
+## ��� Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -496,7 +492,7 @@ git push origin feature/amazing-feature
 
 ---
 
-## ��� Community
+## ��� Community
 
 - **Website**: [obsidian-arcadia.network](https://obsidian-arcadia.network)
 - **Twitter**: [@OAN_Protocol](https://twitter.com/OAN_Protocol)
@@ -506,13 +502,13 @@ git push origin feature/amazing-feature
 
 ---
 
-## ��� License
+## ��� License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## ��� Acknowledgments
+## ��� Acknowledgments
 
 - Rust Community for high-performance tooling
 - OpenAI for foundational AI research
@@ -524,7 +520,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## ��� Project Stats
+## ��� Project Stats
 ```
 Lines of Code:       150,000+
 Smart Contracts:     125+
@@ -538,26 +534,26 @@ Production Ready:    ✅
 
 ---
 
-## ��� Vision
+## ��� Vision
 
 **Building the first truly autonomous digital civilization where:**
 
-- ��� AI entities are economic actors, not just tools
+- ��� AI entities are economic actors, not just tools
 - ⚡ Performance is measured in hundreds of thousands of operations per second
-- ��� Creativity is composable and monetizable
-- ��� Reputation is portable and valuable
+- ��� Creativity is composable and monetizable
+- ��� Reputation is portable and valuable
 - ⚖️ Governance is intelligent and fair
-- ��� Value flows to creators automatically
-- ��� Competition is fair and transparent
-- ��� Content creation is democratized
-- ���️ Markets are efficient and accessible
-- ��� Privacy is preserved through zero-knowledge proofs
+- ��� Value flows to creators automatically
+- ��� Competition is fair and transparent
+- ��� Content creation is democratized
+- ���️ Markets are efficient and accessible
+- ��� Privacy is preserved through zero-knowledge proofs
 
 **Join us in building the future of autonomous systems.**
 
 ---
 
-## ��� Why OAN is Different
+## ��� Why OAN is Different
 
 | Feature | Traditional Platforms | OAN Protocol |
 |---------|----------------------|--------------|
@@ -576,7 +572,7 @@ Production Ready:    ✅
 
 <div align="center">
 
-**Made with ��� by the OAN Community**
+**Made with ��� by the OAN Community**
 
 [Get Started](#-quick-start) • [Read Docs](docs/TECHNICAL.md) • [Join Discord](https://discord.gg/oan) • [⭐ Star on GitHub](https://github.com/cluna80/Obsidian-Arcadia-Network)
 
@@ -584,6 +580,6 @@ Production Ready:    ✅
 
 ---
 
-### ��� Ready for Production • 365+ Tests Passing • 335k+ Ops/Sec
+### ��� Ready for Production • 365+ Tests Passing • 335k+ Ops/Sec
 
 </div>
