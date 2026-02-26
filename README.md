@@ -1,3 +1,7 @@
+
+<img width="1536" height="1024" alt="df55b630-e1ea-4745-abde-ca37a1aeb9f7" src="https://github.com/user-attachments/assets/af2cfc3f-431a-4e30-8a85-95b11d00fc72" />
+
+
 # ï¿½ï¿½ï¿½ Obsidian Arcadia Network (OAN)
 
 **The World's Most Comprehensive Protocol for Autonomous Digital Civilizations**
@@ -586,7 +590,7 @@ Production Ready:    âœ…
 
 ---
 
-## í²° Live Economy Demo - Investor Pitch
+## ï¿½ï¿½ï¿½ Live Economy Demo - Investor Pitch
 
 **See OAN's autonomous economy in action with real revenue generation!**
 ```bash
