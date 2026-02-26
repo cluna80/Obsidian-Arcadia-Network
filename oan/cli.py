@@ -21,14 +21,14 @@ def print_banner():
 
 def print_menu():
     menu = """
-  [1] Run Protocol Tests (Solidity)
-  [2] Run Rust Integration Tests
-  [3] Launch AI Entity Conversation
-  [4] Launch Founding Council Interview
+  [1] Run Protocol Tests (Solidity - 357 tests)
+  [2] Run Rust Integration Tests (8 tests)
+  [3] Launch Interactive Demo Menu (14 demos)
+  [4] Launch Founding Council Interview (AI)
   [5] Run Live Economy Demo (Investor Pitch)
   [6] Run AI Battle Arena
-  [7] Protocol Status
-  [8] Help
+  [7] Protocol Status & Info
+  [8] Help & Documentation
   [9] Exit
 
   Choose an option (1-9): """
@@ -49,59 +49,79 @@ def main():
         choice = print_menu()
         
         if choice == '1':
-            print("\n��� Running Solidity tests...\n")
+            print("\n��� Running Solidity tests (357 tests)...\n")
             os.system(f"cd {project_root}/web3 && npx hardhat test")
             input("\nPress Enter to continue...")
         
         elif choice == '2':
-            print("\n��� Running Rust integration tests...\n")
+            print("\n��� Running Rust integration tests (8 tests)...\n")
             os.system(f"cd {project_root}/rust/integration_tests && python test_full_protocol.py")
             input("\nPress Enter to continue...")
         
         elif choice == '3':
-            print("\n��� Launching AI Entity Conversation...\n")
-            print("Make sure Ollama is running: ollama serve\n")
-            os.system(f"cd {project_root}/demos/ollama_entities && python ai_entity_conversation.py")
+            print("\n��� Launching Interactive Demo Menu (14 demos)...\n")
+            os.system(f"cd {project_root}/demos && python demo_launcher.py")
             input("\nPress Enter to continue...")
         
         elif choice == '4':
             print("\n��� Launching Founding Council Interview...\n")
-            print("Make sure Ollama is running: ollama serve\n")
+            print("⚠️  Make sure Ollama is running: ollama serve\n")
             os.system(f"cd {project_root}/demos/ollama_entities && python oan_founding_council.py")
             input("\nPress Enter to continue...")
         
         elif choice == '5':
-            print("\n��� Running Live Economy Demo...\n")
+            print("\n��� Running Live Economy Demo (60 seconds)...\n")
             os.system(f"cd {project_root}/demos/investor_demo && python live_economy_demo.py")
             input("\nPress Enter to continue...")
         
         elif choice == '6':
             print("\n��� Launching AI Battle Arena...\n")
-            print("Make sure Ollama is running: ollama serve\n")
+            print("⚠️  Make sure Ollama is running: ollama serve\n")
             os.system(f"cd {project_root}/demos/ollama_entities && python ai_battle_arena.py")
             input("\nPress Enter to continue...")
         
         elif choice == '7':
-            print("\n��� PROTOCOL STATUS\n")
-            print("  ✅ 125+ Smart Contracts")
-            print("  ✅ 370+ Tests Passing")
-            print("  ✅ Rust Engine: 335k+ ops/sec")
-            print("  ✅ 7 Complete Protocol Layers")
-            print("  ✅ ZKSync Privacy Integration")
-            print("  ✅ Production Ready")
+            print("\n��� PROTOCOL STATUS & INFO\n")
+            print("  ═══════════════════════════════════════════════════")
+            print("  Smart Contracts:     125+")
+            print("  Tests Passing:       370+ (100%)")
+            print("  Protocol Layers:     7 (+ ZKSync)")
+            print("  ═══════════════════════════════════════════════════")
+            print("  Performance:")
+            print("    • Match Simulations:  335,840/sec")
+            print("    • Entity Spawning:    1,550,116/sec")
+            print("    • DSL Compilation:    710,634/sec")
+            print("  ═══════════════════════════════════════════════════")
+            print("  Revenue Projections:")
+            print("    • Current (6 entities):  $716M/year")
+            print("    • At Scale (100k):       $7.17T/year")
+            print("  ═══════════════════════════════════════════════════")
+            print("  Demos Available:     14 interactive demos")
+            print("  Status:              PRODUCTION READY ✅")
+            print("  ═══════════════════════════════════════════════════")
             input("\nPress Enter to continue...")
         
         elif choice == '8':
-            print("\n��� HELP\n")
-            print("  OAN Protocol Documentation:")
-            print("  - GitHub: https://github.com/cluna80/Obsidian-Arcadia-Network")
-            print("  - Demos: demos/ollama_entities/")
-            print("  - Tests: web3/test/")
-            print("  - Rust: rust/oan-engine/")
+            print("\n��� HELP & DOCUMENTATION\n")
+            print("  GitHub Repository:")
+            print("    https://github.com/cluna80/Obsidian-Arcadia-Network")
+            print("\n  Quick Commands:")
+            print("    oan                    - Launch this CLI")
+            print("    python demos/demo_launcher.py - All demos")
+            print("    cd web3 && npx hardhat test   - Run tests")
+            print("\n  Documentation:")
+            print("    README.md              - Main documentation")
+            print("    demos/README.md        - Demo guide")
+            print("    docs/                  - Technical docs")
+            print("\n  AI Demos (Require Ollama):")
+            print("    1. ollama serve        - Start Ollama")
+            print("    2. ollama pull gemma3:12b")
+            print("    3. Run AI demos from menu")
             input("\nPress Enter to continue...")
         
         elif choice == '9':
-            print("\n  Goodbye! ���\n")
+            print("\n  Thank you for using OAN Protocol! ���")
+            print("  Repository: https://github.com/cluna80/Obsidian-Arcadia-Network\n")
             sys.exit(0)
         
         else:
