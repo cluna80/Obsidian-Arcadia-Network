@@ -5,7 +5,13 @@ setup(
     version="1.0.0",
     author="OAN Development Team",
     description="Autonomous AI agent network with behavioral intelligence",
-    long_description=open("README.md", encoding="utf-8").read(),
+    long_description=open("README.md", encoding="utf-8",
+    entry_points={
+        'console_scripts': [
+            'oan=oan.cli:main',
+        ],
+    },
+).read(),
     long_description_content_type="text/markdown",
     packages=find_packages(exclude=["tests", "tests.*", "examples"]),
     python_requires=">=3.8",
