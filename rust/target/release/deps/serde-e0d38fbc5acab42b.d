@@ -1,0 +1,14 @@
+C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\rust\target\release\deps\serde-e0d38fbc5acab42b.d: C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\rust\target\release\build\serde-c6492e92c4a7e28d\out/private.rs
+
+C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\rust\target\release\deps\libserde-e0d38fbc5acab42b.rlib: C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\rust\target\release\build\serde-c6492e92c4a7e28d\out/private.rs
+
+C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\rust\target\release\deps\libserde-e0d38fbc5acab42b.rmeta: C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\rust\target\release\build\serde-c6492e92c4a7e28d\out/private.rs
+
+C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\krizz\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+C:\Users\krizz\OneDrive\Desktop\ObsidianArcadia\rust\target\release\build\serde-c6492e92c4a7e28d\out/private.rs:
+
+# env-dep:OUT_DIR=C:\\Users\\krizz\\OneDrive\\Desktop\\ObsidianArcadia\\rust\\target\\release\\build\\serde-c6492e92c4a7e28d\\out
