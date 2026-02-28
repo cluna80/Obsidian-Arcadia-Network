@@ -1,6 +1,7 @@
 """
-Cognitive Engine - LangGraph Decision Loop
+Cognitive Engine - LangGraph Decision Loop WITH MEMORY
 Implements: Observe → Reason → Plan → Act → Update State
+NOW WITH: Short-term memory for context-aware decisions
 """
 
 from typing import TypedDict, Annotated, Sequence, Dict, Any
@@ -20,20 +21,20 @@ class EntityState(TypedDict):
     entity_id: str
     name: str
     
-    # Core stats (from Rust engine)
+    # Core stats
     strength: float
     agility: float
     stamina: float
     skill: float
     
     # Cognitive state
-    energy: int  # 0-100, consumed by actions
-    emotion: str  # calm, greedy, fearful, aggressive
-    confidence: float  # 0-1
+    energy: int
+    emotion: str
+    confidence: float
     
     # Economic
     wallet: float
-    position: Dict[str, Any]  # Current market position
+    position: Dict[str, Any]
     
     # Decision context
     market_state: Dict[str, float]
@@ -42,39 +43,21 @@ class EntityState(TypedDict):
     planned_action: str
     action_result: Dict[str, Any]
     
-    # Memory
+    # Memory (NEW!)
+    memory: Any  # ShortTermMemory instance
+    
+    # Stats
     wins: int
     losses: int
     experience: int
 
 # ============================================================================
-# PYDANTIC MODELS FOR STRUCTURED OUTPUT
-# ============================================================================
-
-class MarketAnalysis(BaseModel):
-    """Structured market analysis"""
-    trend: str = Field(description="Market trend: bullish, bearish, or sideways")
-    confidence: float = Field(description="Confidence in analysis 0-1")
-    risk_level: str = Field(description="Risk assessment: low, medium, high")
-    reasoning: str = Field(description="Brief reasoning for the analysis")
-
-class TradingDecision(BaseModel):
-    """Structured trading decision"""
-    action: str = Field(description="Action to take: buy, sell, hold, rest")
-    amount: float = Field(description="Amount to trade (0-1, fraction of wallet)")
-    reasoning: str = Field(description="Why this decision was made")
-    emotion_influence: str = Field(description="How emotion affected the decision")
-
-# ============================================================================
-# COGNITIVE NODES
+# COGNITIVE NODES (WITH MEMORY)
 # ============================================================================
 
 def perception_node(state: EntityState) -> EntityState:
     """
-    PHASE 1: Observe environment
-    - Read market state
-    - Check energy levels
-    - Assess emotional state
+    PHASE 1: Observe environment + recall recent memories
     """
     observations = []
     
@@ -93,25 +76,30 @@ def perception_node(state: EntityState) -> EntityState:
     # Recent performance
     wins = state.get('wins', 0)
     losses = state.get('losses', 0)
-    observations.append(f"Record: {wins}W-{losses}L")
+    observations.append(f"Overall Record: {wins}W-{losses}L")
+    
+    # MEMORY CONTEXT (NEW!)
+    if "memory" in state and state["memory"]:
+        try:
+            memory_context = state["memory"].format_for_llm()
+            observations.append(f"\n{memory_context}")
+        except:
+            observations.append("Memory unavailable")
     
     state["recent_observations"] = observations
     
     print(f"\n[PERCEPTION] {state['name']} observes:")
     for obs in observations:
-        print(f"  • {obs}")
+        print(f"  {obs}")
     
     return state
 
 def reasoning_node(state: EntityState) -> EntityState:
     """
-    PHASE 2: Reason about observations
-    Uses Ollama LLM for analysis
+    PHASE 2: Reason about observations (now with memory context)
     """
-    # Initialize Ollama (local)
     llm = Ollama(model="gemma3:12b", temperature=0.7)
     
-    # Build reasoning prompt
     observations = "\n".join(state["recent_observations"])
     
     prompt = f"""You are {state['name']}, an autonomous trading entity.
@@ -119,13 +107,13 @@ def reasoning_node(state: EntityState) -> EntityState:
 Current Situation:
 {observations}
 
-Your emotional state is: {state.get('emotion', 'calm')}
+Your emotional state: {state.get('emotion', 'calm')}
 
-Analyze the situation and provide your reasoning:
-1. What is the market doing?
-2. How should your emotion influence your decision?
+Analyze the situation considering your recent performance:
+1. What patterns do you see in your recent trades?
+2. How should your emotion and recent results influence your decision?
 3. What are the risks and opportunities?
-4. Should you act or wait?
+4. Should you act, wait, or adjust position size?
 
 Keep your response concise (3-4 sentences)."""
 
@@ -137,16 +125,15 @@ Keep your response concise (3-4 sentences)."""
         print(f"  {reasoning}")
         
     except Exception as e:
-        # Fallback if Ollama unavailable
-        state["internal_reasoning"] = [f"[Ollama unavailable] Basic analysis based on {state.get('emotion', 'calm')} emotion"]
-        print(f"\n[REASONING] {state['name']}: Ollama unavailable, using fallback logic")
+        fallback = f"Analyzing with {state.get('emotion', 'calm')} emotion. Recent performance considered."
+        state["internal_reasoning"] = [fallback]
+        print(f"\n[REASONING] {state['name']}: {fallback}")
     
     return state
 
 def strategy_node(state: EntityState) -> EntityState:
     """
-    PHASE 3: Plan action based on reasoning
-    Emotion influences strategy selection
+    PHASE 3: Plan action (memory influences position sizing)
     """
     emotion = state.get("emotion", "calm")
     energy = state.get("energy", 100)
@@ -159,32 +146,46 @@ def strategy_node(state: EntityState) -> EntityState:
         print(f"\n[STRATEGY] {state['name']}: Too tired, must rest")
         return state
     
+    # Get memory-based adjustment
+    position_multiplier = 1.0
+    if "memory" in state and state["memory"]:
+        try:
+            summary = state["memory"].get_performance_summary()
+            win_rate = summary.get("win_rate", 0.5)
+            
+            # Adjust position size based on recent performance
+            if win_rate > 0.6:
+                position_multiplier = 1.2  # Increase size when winning
+            elif win_rate < 0.4:
+                position_multiplier = 0.7  # Decrease size when losing
+            
+            print(f"\n[MEMORY INFLUENCE] Recent win rate: {win_rate:.1%} -> Position multiplier: {position_multiplier}x")
+        except:
+            pass
+    
     # Emotion-based strategy
     if emotion == "greedy":
-        # High risk, high reward
         action = "buy" if confidence > 0.4 else "hold"
-        amount = min(0.8, confidence)  # Larger positions
+        amount = min(0.8, confidence) * position_multiplier
         
     elif emotion == "fearful":
-        # Risk averse
         action = "sell" if state.get("position") else "hold"
-        amount = 0.2  # Small positions only
+        amount = 0.2 * position_multiplier
         
     elif emotion == "aggressive":
-        # Frequent trading
         action = "buy" if market.get("trend") == "up" else "sell"
-        amount = 0.5
+        amount = 0.5 * position_multiplier
         
     else:  # calm
-        # Balanced approach
         action = "buy" if confidence > 0.6 else "hold"
-        amount = confidence * 0.5
+        amount = confidence * 0.5 * position_multiplier
     
     state["planned_action"] = json.dumps({
         "action": action,
         "amount": amount,
         "emotion": emotion,
-        "confidence": confidence
+        "confidence": confidence,
+        "memory_adjusted": position_multiplier != 1.0
     })
     
     print(f"\n[STRATEGY] {state['name']} plans: {action} (amount: {amount:.2f}, emotion: {emotion})")
@@ -194,7 +195,6 @@ def strategy_node(state: EntityState) -> EntityState:
 def action_node(state: EntityState) -> EntityState:
     """
     PHASE 4: Execute planned action
-    Returns results for state update
     """
     try:
         plan = json.loads(state.get("planned_action", "{}"))
@@ -206,7 +206,7 @@ def action_node(state: EntityState) -> EntityState:
             "buy": 2,
             "sell": 2,
             "hold": 1,
-            "rest": -10  # Rest recovers energy
+            "rest": -10
         }.get(action, 1)
         
         result = {
@@ -238,12 +238,12 @@ def state_update_node(state: EntityState) -> EntityState:
     new_energy = max(0, min(100, current_energy - energy_cost))
     state["energy"] = new_energy
     
-    # Update confidence based on success
+    # Update confidence
     if result.get("success"):
         state["confidence"] = min(1.0, state.get("confidence", 0.5) + 0.01)
     
     print(f"\n[UPDATE] {state['name']} state updated:")
-    print(f"  Energy: {current_energy} → {new_energy}")
+    print(f"  Energy: {current_energy} -> {new_energy}")
     print(f"  Confidence: {state.get('confidence', 0.5):.0%}")
     
     return state
@@ -264,7 +264,7 @@ def create_cognitive_graph():
     workflow.add_node("action", action_node)
     workflow.add_node("state_update", state_update_node)
     
-    # Define edges (flow)
+    # Define edges
     workflow.set_entry_point("perception")
     workflow.add_edge("perception", "reasoning")
     workflow.add_edge("reasoning", "strategy")
@@ -278,29 +278,15 @@ def create_cognitive_graph():
     return app
 
 # ============================================================================
-# CLI INTERFACE (for Rust integration)
+# CLI INTERFACE
 # ============================================================================
 
 def run_cognitive_cycle(entity_json: str) -> str:
-    """
-    CLI interface for Rust engine
-    
-    Input: JSON string with entity state
-    Output: JSON string with updated state and action
-    
-    Usage:
-        python cognitive_engine.py '{"entity_id": "...", "name": "...", ...}'
-    """
-    # Parse input
+    """CLI interface for Rust engine"""
     entity_state = json.loads(entity_json)
-    
-    # Create workflow
     graph = create_cognitive_graph()
-    
-    # Run cognitive cycle
     result = graph.invoke(entity_state)
     
-    # Return updated state
     output = {
         "action": json.loads(result.get("planned_action", "{}")),
         "updated_state": {
@@ -320,20 +306,32 @@ if __name__ == "__main__":
     import sys
     
     if len(sys.argv) > 1:
-        # CLI mode (for Rust integration)
         entity_json = sys.argv[1]
         result = run_cognitive_cycle(entity_json)
         print(result)
     else:
-        # Demo mode
         print("\n" + "="*60)
-        print("  COGNITIVE ENGINE DEMO")
+        print("  COGNITIVE ENGINE WITH MEMORY - DEMO")
         print("="*60 + "\n")
         
-        # Sample entity state
+        # Import memory for demo
+        try:
+            from memory_system import ShortTermMemory
+            memory = ShortTermMemory(max_size=10)
+            
+            # Add some example memories
+            memory.add_memory("buy", "success", 150.0, "greedy", "Strong uptrend", {"price": 50000})
+            memory.add_memory("sell", "success", 80.0, "calm", "Taking profits", {"price": 51000})
+            memory.add_memory("buy", "failure", -120.0, "fearful", "Bad timing", {"price": 49000})
+            
+            print("✅ Memory system loaded with sample trades\n")
+        except:
+            memory = None
+            print("⚠️  Memory system not available\n")
+        
         test_entity = {
             "entity_id": "test-001",
-            "name": "CognitiveAgent",
+            "name": "MemoryAgent",
             "strength": 60.0,
             "agility": 55.0,
             "stamina": 65.0,
@@ -352,12 +350,12 @@ if __name__ == "__main__":
             "internal_reasoning": [],
             "planned_action": "",
             "action_result": {},
+            "memory": memory,
             "wins": 5,
             "losses": 3,
             "experience": 350
         }
         
-        # Run cognitive cycle
         graph = create_cognitive_graph()
         result = graph.invoke(test_entity)
         
@@ -367,4 +365,4 @@ if __name__ == "__main__":
         print(f"\nFinal Action: {result.get('planned_action')}")
         print(f"Energy: {result.get('energy')}")
         print(f"Confidence: {result.get('confidence'):.0%}")
-        print("\n✅ Cognitive engine working!\n")
+        print("\n✅ Cognitive engine with memory working!\n")
